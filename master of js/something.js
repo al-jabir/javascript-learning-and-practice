@@ -553,23 +553,23 @@ next()
 //     console.log(n + ' Welcome to our coding practice now')
 //   },
 // }
-// ob.atHome = 'Home'
-// ob.atHome = 'HomeFuck'
-// ob.job = 'Mern Stack Developer'
-// console.log(ob)
-// console.log(ob.job)
-// console.log(ob.office)
-// console.log(ob.age)
-// console.log('king')
+ob.atHome = 'Home'
+ob.atHome = 'HomeFuck'
+ob.job = 'Mern Stack Developer'
+console.log(ob)
+console.log(ob.job)
+console.log(ob.office)
+console.log(ob.age)
+console.log('king')
 
-// ob.job('Mr. X')
-// ob.job('Mr. Jonh')
-// ob.job('Miss Sexy')
-// ob.job('Miss fuck')
-// console.log(ob)
-// for (let rami in ob) {
-//   console.log(rami)
-// }
+ob.job('Mr. X')
+ob.job('Mr. Jonh')
+ob.job('Miss Sexy')
+ob.job('Miss fuck')
+console.log(ob)
+for (let rami in ob) {
+  console.log(rami)
+}
 
 const re = [
   33,
