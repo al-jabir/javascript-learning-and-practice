@@ -571,19 +571,19 @@ next()
 //   console.log(rami)
 // }
 
-// const re = [
-//   33,
-//   55,
-//   2,
-//   { name: 'Fuck', age: 24, status: 'single', job: 'Learner' },
-//   'mafia',
-//   ['king', 'fucking', 'bou'],
-// ]
-// re[5][2] = 'I will be sex with you dare'
-// console.log(re)
-// console.log(re[3].name.toUpperCase())
-// console.log(re[5])
-// console.log(re[5][2])
+const re = [
+  33,
+  55,
+  2,
+  { name: 'Fuck', age: 24, status: 'single', job: 'Learner' },
+  'mafia',
+  ['king', 'fucking', 'bou'],
+]
+re[5][2] = 'I will be sex with you dare'
+console.log(re)
+console.log(re[3].name.toUpperCase())
+console.log(re[5])
+console.log(re[5][2])
 
 function dak(name, ages) {
   var myAge = 24
