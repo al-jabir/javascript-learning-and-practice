@@ -4184,301 +4184,301 @@ function gobal() {
  * higher order function
  ***********************/
 
-// example 1 without higher order function
+example 1 without higher order function
 
-// var num = [1, 4, 8];
+var num = [1, 4, 8];
 
-// var res = [];
+var res = [];
 
-// for (i = 0; i < num.length; i++) {
-//   res.push(num[i]);
-// }
-// console.log(res);
+for (i = 0; i < num.length; i++) {
+  res.push(num[i]);
+}
+console.log(res);
 
-// Example 2 with higher order function
+Example 2 with higher order function
 
-// var num = [1, 4, 8];
+var num = [1, 4, 8];
 
-// var res = num.map((li) => {
-//   return li * li;
-// });
+var res = num.map((li) => {
+  return li * li;
+});
 
-// var res = num.map((li) => li * li * li);
-// console.log(res);
+var res = num.map((li) => li * li * li);
+console.log(res);
 
-// example 1 without higher order function
+example 1 without higher order function
 
-// var players = [
-//   {
-//     name: 'knight',
-//     age: 21,
-//   },
-//   {
-//     name: 'emma',
-//     age: 19,
-//   },
-//   {
-//     name: 'abdullah',
-//     age: 25,
-//   },
-// ];
+var players = [
+  {
+    name: 'knight',
+    age: 21,
+  },
+  {
+    name: 'emma',
+    age: 19,
+  },
+  {
+    name: 'abdullah',
+    age: 25,
+  },
+];
 
-// var playNameList = [];
+var playNameList = [];
 
-// for (i = 0; i < players.length; i++) {
-//   if (players[i].age <= 19) {
-//     playNameList.push(players[i]);
-//   }
-// }
-// console.log(playNameList);
+for (i = 0; i < players.length; i++) {
+  if (players[i].age <= 19) {
+    playNameList.push(players[i]);
+  }
+}
+console.log(playNameList);
 
-// example 2 with higher order function
+example 2 with higher order function
 
-// var players = [
-//   {
-//     name: 'knight',
-//     age: 21,
-//   },
-//   {
-//     name: 'emma',
-//     age: 19,
-//   },
-//   {
-//     name: 'abdullah',
-//     age: 25,
-//   },
-// ];
+var players = [
+  {
+    name: 'knight',
+    age: 21,
+  },
+  {
+    name: 'emma',
+    age: 19,
+  },
+  {
+    name: 'abdullah',
+    age: 25,
+  },
+];
 
-// var playNameList = players.filter((player) => player.age > 21);
-// console.log(playNameList);
+var playNameList = players.filter((player) => player.age > 21);
+console.log(playNameList);
 
-// const arr = [1, 3, 5, 7, 9, 11, 23, 55, 70, 22];
+const arr = [1, 3, 5, 7, 9, 11, 23, 55, 70, 22];
 
-// const res = arr.filter((li) => li % 2 !== 0);
-// console.log(res);
-// let t = 0;
-// const sum = arr.forEach((v) => {
-//   return (t += v);
-// });
-// console.log(t);
+const res = arr.filter((li) => li % 2 !== 0);
+console.log(res);
+let t = 0;
+const sum = arr.forEach((v) => {
+  return (t += v);
+});
+console.log(t);
 
-// Array.map() build in by me
+Array.map() build in by me
 
-// const language = [
-//   'JavaScript',
-//   'Python',
-//   'PHP',
-//   'Java',
-//   'C Programming',
-//   'C++',
-// ];
+const language = [
+  'JavaScript',
+  'Python',
+  'PHP',
+  'Java',
+  'C Programming',
+  'C++',
+];
 
-// function mapJabir(arr, fn) {
-//   const newArray = [];
+function mapJabir(arr, fn) {
+  const newArray = [];
 
-//   for (let i = 0; i < arr.length; i++) {
-//     newArray.push(fn(arr[i]));
-//   }
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(fn(arr[i]));
+  }
 
-//   return newArray;
-// }
+  return newArray;
+}
 
-// const myArray = mapJabir(language, function (lang) {
-//   return lang.length;
-// });
-// console.log(myArray);
+const myArray = mapJabir(language, function (lang) {
+  return lang.length;
+});
+console.log(myArray);
 
-// const person = ['jabir', 'rafin', 'sahed', 'mafia'];
+const person = ['jabir', 'rafin', 'sahed', 'mafia'];
 
-// function myPerson(arr, inx) {
-//   let myPersonRes = [];
+function myPerson(arr, inx) {
+  let myPersonRes = [];
 
-//   for (let i = 0; i < arr.length; i++) {
-//     myPersonRes.push(inx(arr[i]));
-//   }
-//   return myPersonRes;
-// }
+  for (let i = 0; i < arr.length; i++) {
+    myPersonRes.push(inx(arr[i]));
+  }
+  return myPersonRes;
+}
 
-// const res = myPerson(person, function (lan) {
-//   return lan.length;
-// });
-// console.log(res);
+const res = myPerson(person, function (lan) {
+  return lan.length;
+});
+console.log(res);
 
-// const myArr = [2, 4, 5, 77, 88, 22, 14, 17];
+const myArr = [2, 4, 5, 77, 88, 22, 14, 17];
 
-// function myArrD(arr, inx) {
-//   const trueRes = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     trueRes.push(inx(arr[i]));
-//   }
-//   return trueRes;
-// }
-// let r = 0;
-// const res = myArrD(myArr, function (v) {
-//   return (r += v);
-// });
-// console.log(res);
+function myArrD(arr, inx) {
+  const trueRes = [];
+  for (let i = 0; i < arr.length; i++) {
+    trueRes.push(inx(arr[i]));
+  }
+  return trueRes;
+}
+let r = 0;
+const res = myArrD(myArr, function (v) {
+  return (r += v);
+});
+console.log(res);
 
-//foreach
-// const arr = [3, 5, 9];
+foreach
+const arr = [3, 5, 9];
 
-// arr.forEach((v, i, arr) => {
-//   return (arr[i] = v * 5);
-// });
-// console.log(arr);
+arr.forEach((v, i, arr) => {
+  return (arr[i] = v * 5);
+});
+console.log(arr);
 
-// function myArr(arr, cb) {
-//   for (var i = 0; i < arr.length; i++) {
-//     cb(arr[i]);
-//   }
-// }
+function myArr(arr, cb) {
+  for (var i = 0; i < arr.length; i++) {
+    cb(arr[i]);
+  }
+}
 
-// myArr(arr, function (v) {
-//   console.log(v);
-// });
+myArr(arr, function (v) {
+  console.log(v);
+});
 
-// function myArr(arr, cb) {
-//   for (let i = 0; i < arr.length; i++) {
-//     cb(arr[i], i, arr);
-//   }
-// }
-// let s = 0;
+function myArr(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i, arr);
+  }
+}
+let s = 0;
 
-// const res = myArr(arr, function (v) {
-//   return (s += v);
-// });
-// console.log(s);
+const res = myArr(arr, function (v) {
+  return (s += v);
+});
+console.log(s);
 
-// const res2 = myArr(arr, function (v, i, arr) {
-//   console.log(v, i, arr);
-// });
+const res2 = myArr(arr, function (v, i, arr) {
+  console.log(v, i, arr);
+});
 
-// const arr = [3, 5, 9, 10];
+const arr = [3, 5, 9, 10];
 
-// function myMap(arr) {
-//   var newArr = [];
+function myMap(arr) {
+  var newArr = [];
 
-//   for (i = 0; i < arr.length; i++) {
-//     // var temp = arr[i] * arr[i];
-//     newArr.push(arr[i] * arr[i] * arr[i]);
-//   }
-//   return newArr;
-// }
+  for (i = 0; i < arr.length; i++) {
+    var temp = arr[i] * arr[i];
+    newArr.push(arr[i] * arr[i] * arr[i]);
+  }
+  return newArr;
+}
 
-// console.log(myMap(arr));
+console.log(myMap(arr));
 
-// function myMap(arr, cb) {
-//   let resArr = [];
-//   for (i = 0; i < arr.length; i++) {
-//     resArr.push(cb(arr[i], i, arr));
-//   }
-//   return resArr;
-// }
+function myMap(arr, cb) {
+  let resArr = [];
+  for (i = 0; i < arr.length; i++) {
+    resArr.push(cb(arr[i], i, arr));
+  }
+  return resArr;
+}
 
-// const s = myMap(arr, function (v, i, arr) {
-//   return v, i, arr;
-// });
-// console.log(s);
+const s = myMap(arr, function (v, i, arr) {
+  return v, i, arr;
+});
+console.log(s);
 
-// let ss = myMap(arr, function (v) {
-//   return v * 3;
-// });
-// console.log(ss);
+let ss = myMap(arr, function (v) {
+  return v * 3;
+});
+console.log(ss);
 
-// const arr = [3, 5, 9, 10, 3, 2, 1, 44, 22];
+const arr = [3, 5, 9, 10, 3, 2, 1, 44, 22];
 
-// let ss = arr.filter((li) => li > 10);
+let ss = arr.filter((li) => li > 10);
 
 // // console.log(ss);
-// function myFilter(arr, cb) {
-//   let fil = [];
-//   for (i = 0; i < arr.length; i++) {
-//     if (cb(arr[i], i, arr)) {
-//       fil.push(arr[i]);
-//     }
-//   }
-//   return fil;
-// }
+function myFilter(arr, cb) {
+  let fil = [];
+  for (i = 0; i < arr.length; i++) {
+    if (cb(arr[i], i, arr)) {
+      fil.push(arr[i]);
+    }
+  }
+  return fil;
+}
 
-// let s = myFilter(arr, function (v) {
-//   return v % 2 === 0;
-// });
-// console.log(s);
+let s = myFilter(arr, function (v) {
+  return v % 2 === 0;
+});
+console.log(s);
 
-// let ress = myFilter(arr, function (v) {
-//   return v > 10;
-// });
-// console.log(ress);
+let ress = myFilter(arr, function (v) {
+  return v > 10;
+});
+console.log(ress);
 
-// let sw = myFilter(arr, function (v) {
-//   return v % 2 !== 0;
-// });
-// console.log(sw);
+let sw = myFilter(arr, function (v) {
+  return v % 2 !== 0;
+});
+console.log(sw);
 
-// const arr = [3, 5, 9, 10, 3, 2, 13, 44, 22];
+const arr = [3, 5, 9, 10, 3, 2, 13, 44, 22];
 
-// function myReduce(arr, cb, acc) {
-//   for (i = 0; i < arr.length; i++) {
-//     acc = cb(acc, arr[i]);
-//   }
-//   return acc;
-// }
+function myReduce(arr, cb, acc) {
+  for (i = 0; i < arr.length; i++) {
+    acc = cb(acc, arr[i]);
+  }
+  return acc;
+}
 
-// const sum = myReduce(
-//   arr,
-//   function (a, b) {
-//     return a + b;
-//   },
-//   0
-// );
-// console.log(sum);
+const sum = myReduce(
+  arr,
+  function (a, b) {
+    return a + b;
+  },
+  0
+);
+console.log(sum);
 
-// const max = myReduce(
-//   arr,
-//   function (a, b) {
-//     return Math.max(a, b);
-//   },
-//   0
-// );
-// console.log(max);
+const max = myReduce(
+  arr,
+  function (a, b) {
+    return Math.max(a, b);
+  },
+  0
+);
+console.log(max);
 
-// const min = myReduce(
-//   arr,
-//   function (a, b) {
-//     return Math.min(a, b);
-//   },
-//   arr[0]
-// );
-// console.log(min);
+const min = myReduce(
+  arr,
+  function (a, b) {
+    return Math.min(a, b);
+  },
+  arr[0]
+);
+console.log(min);
 
-// const arr = [2, 5, 8, 80, 22, 11, 55, 28];
+const arr = [2, 5, 8, 80, 22, 11, 55, 28];
 
-// function myFind(arr, cb) {
-//   for (i = 0; i < arr.length; i++) {
-//     if (cb(arr[i], i)) {
-//       // return arr[i];
-//       return i;
-//     }
-//   }
-// }
+function myFind(arr, cb) {
+  for (i = 0; i < arr.length; i++) {
+    if (cb(arr[i], i)) {
+      // return arr[i];
+      return i;
+    }
+  }
+}
 
-// const res = myFind(arr, function (v) {
-//   return v === 8;
-// });
-// console.log(res);
+const res = myFind(arr, function (v) {
+  return v === 8;
+});
+console.log(res);
 
-// var arr = [2, 5, 8, 80, 22, 11, 55, 28];
-// arr.sort(function (a, b) {
-//   if (a > b) {
-//     return 1;
-//   } else if (a < b) {
-//     return -1;
-//   } else {
-//     return 0;
-//   }
-// });
+var arr = [2, 5, 8, 80, 22, 11, 55, 28];
+arr.sort(function (a, b) {
+  if (a > b) {
+    return 1;
+  } else if (a < b) {
+    return -1;
+  } else {
+    return 0;
+  }
+});
 
-// console.log(arr);
+console.log(arr);
 
 /***********************
  * Asynchronas and callback func
@@ -5235,6 +5235,6 @@ const getPosition = function () {
 
 getPosition().then(d => console.log(d));
 
-import './api.js';
-import './something.js';
+import './api.js'
+import './something.js'
 
