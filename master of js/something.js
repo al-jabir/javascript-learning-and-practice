@@ -598,7 +598,7 @@ function hello(age) {
 
 dak('Mafia', hello)
 */
-/*
+
 
 const person = {
   fname: 'Al',
@@ -642,24 +642,24 @@ console.log(str6.charCodeAt(3))
 let arr = 'Jabir  is so very hard developer'
 console.log(arr.indexOf('hard'))
 console.log(arr.lastIndexOf('developer'))
-// console.log(arr.startWith())
-// console.log(arr.endWith())
+console.log(arr.startWith())
+console.log(arr.endWith())
 
-let arr3 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
-arr3.splice(3, 1, 'Fucking')
-arr3[arr3.length] = 'Gangstar'
-console.log(arr3.sort())
-console.log(arr3.join(' | '))
-console.log(arr3.splice(5, 0, 'Fuck', 'sex'))
+// let arr3 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
+// arr3.splice(3, 1, 'Fucking')
+// arr3[arr3.length] = 'Gangstar'
+// console.log(arr3.sort())
+// console.log(arr3.join(' | '))
+// console.log(arr3.splice(5, 0, 'Fuck', 'sex'))
 
-let arr5 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
+// let arr5 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
 
-for (i of arr5) {
-  console.log(i)
-}
-for (i in arr5) {
-  console.log(i)
-}
+// for (i of arr5) {
+//   console.log(i)
+// }
+// for (i in arr5) {
+//   console.log(i)
+// }
 
 console.log(arr5.sort())
 console.log(arr5.reverse())
@@ -671,20 +671,20 @@ arr5.forEach(function (v, i, a) {
 })
 console.log(c)
 
-const d = new Date('1998-09-09').getMonth()
+// const d = new Date('1998-09-09').getMonth()
 
-console.log(d)
+// console.log(d)
 
-const dd = new Date()
-const days = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thrusday',
-  'Friday',
-  'Saturday',
-]
+// const dd = new Date()
+// const days = [
+//   'Sunday',
+//   'Monday',
+//   'Tuesday',
+//   'Wednesday',
+//   'Thrusday',
+//   'Friday',
+//   'Saturday',
+// ]
 console.log(days[dd.getDay()].toUpperCase())
 
 const m = new Date()
@@ -713,7 +713,7 @@ console.log(Math.floor(Math.random() * 9) + 1)
 console.log(arr5.delete('king'))
 
 
-
+*****/
 //How to data search of match
 
 const arr = [4, 9, 2, 10, 44, 29, 18]
