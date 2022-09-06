@@ -774,16 +774,16 @@ function three() {
 one()
 */
 // String Mathod
-// let str = 'My name is Al Jabir '
-// str.startsWith('is')
-// console.log(str)
-// console.log(str.includes('is'))
-// console.log(str.includes('Jabir'))
-// console.log(str.includes('Al Jabir'))
-// console.log(str.includes(' '))
-// console.log(str.includes('name'))
-// console.log(str.repeat(3))
-// console.log(`${str} ${'Developer '.repeat(3)}`)
+let str = 'My name is Al Jabir '
+str.startsWith('is')
+console.log(str)
+console.log(str.includes('is'))
+console.log(str.includes('Jabir'))
+console.log(str.includes('Al Jabir'))
+console.log(str.includes(' '))
+console.log(str.includes('name'))
+console.log(str.repeat(3))
+console.log(`${str} ${'Developer '.repeat(3)}`)
 // learn stack learner
 // string compare
 let str = 'K ak'
