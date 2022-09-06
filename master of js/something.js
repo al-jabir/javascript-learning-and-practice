@@ -671,20 +671,20 @@ arr5.forEach(function (v, i, a) {
 })
 console.log(c)
 
-// const d = new Date('1998-09-09').getMonth()
+const d = new Date('1998-09-09').getMonth()
 
-// console.log(d)
+console.log(d)
 
-// const dd = new Date()
-// const days = [
-//   'Sunday',
-//   'Monday',
-//   'Tuesday',
-//   'Wednesday',
-//   'Thrusday',
-//   'Friday',
-//   'Saturday',
-// ]
+const dd = new Date()
+const days = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thrusday',
+  'Friday',
+  'Saturday',
+]
 console.log(days[dd.getDay()].toUpperCase())
 
 const m = new Date()
