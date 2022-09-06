@@ -512,78 +512,78 @@ next()
 
 */
 // Array learn of junayed site
-/*
-let nam = [
-  'jabir',
-  'makia',
-  'bal',
-  'king',
-  'fuck',
-  'sexy',
-  'fuck off',
-  'korean',
-  'mallu',
-]
 
-for (i = 0; i < nam.length; i++) {
-  console.log('Name: ' + nam[i].toUpperCase())
-}
-console.log(nam)
-nam[4] = 'fucking'
-nam[9] = 'check your pet'
-console.log(nam[4])
-console.log(nam[9])
-console.log(nam.length)
-// console.log(nam.reverse())
-console.log(nam.splice(0, 4))
+// let nam = [
+//   'jabir',
+//   'makia',
+//   'bal',
+//   'king',
+//   'fuck',
+//   'sexy',
+//   'fuck off',
+//   'korean',
+//   'mallu',
+// ]
 
-let arr = [1, 4, 6, 9, 13]
-let newArr = arr.splice(4)
-console.log(arr)
-console.log(newArr)
+// for (i = 0; i < nam.length; i++) {
+//   console.log('Name: ' + nam[i].toUpperCase())
+// }
+// console.log(nam)
+// nam[4] = 'fucking'
+// nam[9] = 'check your pet'
+// console.log(nam[4])
+// console.log(nam[9])
+// console.log(nam.length)
+// // console.log(nam.reverse())
+// console.log(nam.splice(0, 4))
 
-//Object
+// let arr = [1, 4, 6, 9, 13]
+// let newArr = arr.splice(4)
+// console.log(arr)
+// console.log(newArr)
 
-const ob = {
-  name: 'King',
-  age: 22,
-  job: 'Frontend Developer',
-  office: 'Remote',
-  details: function (n) {
-    console.log(n + ' Welcome to our coding practice now')
-  },
-}
-ob.atHome = 'Home'
-ob.atHome = 'HomeFuck'
-ob.job = 'Mern Stack Developer'
-console.log(ob)
-console.log(ob.job)
-console.log(ob.office)
-console.log(ob.age)
-console.log('king')
+// //Object
+
+// const ob = {
+//   name: 'King',
+//   age: 22,
+//   job: 'Frontend Developer',
+//   office: 'Remote',
+//   details: function (n) {
+//     console.log(n + ' Welcome to our coding practice now')
+//   },
+// }
+// ob.atHome = 'Home'
+// ob.atHome = 'HomeFuck'
+// ob.job = 'Mern Stack Developer'
+// console.log(ob)
+// console.log(ob.job)
+// console.log(ob.office)
+// console.log(ob.age)
+// console.log('king')
 
 // ob.job('Mr. X')
 // ob.job('Mr. Jonh')
 // ob.job('Miss Sexy')
 // ob.job('Miss fuck')
-console.log(ob)
-for (let rami in ob) {
-  console.log(rami)
-}
+// console.log(ob)
+// for (let rami in ob) {
+//   console.log(rami)
+// }
 
-const re = [
-  33,
-  55,
-  2,
-  { name: 'Fuck', age: 24, status: 'single', job: 'Learner' },
-  'mafia',
-  ['king', 'fucking', 'bou'],
-]
-re[5][2] = 'I will be sex with you dare'
-console.log(re)
-console.log(re[3].name.toUpperCase())
-console.log(re[5])
-console.log(re[5][2])
+// const re = [
+//   33,
+//   55,
+//   2,
+//   { name: 'Fuck', age: 24, status: 'single', job: 'Learner' },
+//   'mafia',
+//   ['king', 'fucking', 'bou'],
+// ]
+// re[5][2] = 'I will be sex with you dare'
+// console.log(re)
+// console.log(re[3].name.toUpperCase())
+// console.log(re[5])
+// console.log(re[5][2])
 
 function dak(name, ages) {
   var myAge = 24
@@ -597,7 +597,7 @@ function hello(age) {
 }
 
 dak('Mafia', hello)
-*/
+
 
 
 const person = {
