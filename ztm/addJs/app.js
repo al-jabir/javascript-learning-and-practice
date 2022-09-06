@@ -1,18 +1,18 @@
-// const urls = [
-//   `https://jsonplaceholder.typicode.com/posts`,
-//   `https://jsonplaceholder.typicode.com/albums`,
-// ];
-// Promise.all(
-//   urls.map(url => {
-//     return fetch(url).then(res => res.json());
-//   })
-// ).then(data => console.log(data));
+const urls = [
+  `https://jsonplaceholder.typicode.com/posts`,
+  `https://jsonplaceholder.typicode.com/albums`,
+];
+Promise.all(
+  urls.map(url => {
+    return fetch(url).then(res => res.json());
+  })
+).then(data => console.log(data));
 
-// const res = async url => {
-//   const ser = await fetch(url);
-//   const data = await ser.json();
-//   console.log(data[7].title);
-// };
+const res = async url => {
+  const ser = await fetch(url);
+  const data = await ser.json();
+  console.log(data[7].title);
+};
 
 // // res(`https://jsonplaceholder.typicode.com/albums`);
 const textHome = document.getElementById('hom');
