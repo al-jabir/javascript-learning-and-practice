@@ -15,39 +15,39 @@
 // };
 
 // // res(`https://jsonplaceholder.typicode.com/albums`);
-// const textHome = document.getElementById('hom');
+const textHome = document.getElementById('hom');
 
-// async function resAPi(url) {
-//   const check = await fetch(url);
-//   const data = await check.json();
-//   console.log(data);
-//   textHome.innerHTML = `<p>${data.body}</p>`;
-// }
+async function resAPi(url) {
+  const check = await fetch(url);
+  const data = await check.json();
+  console.log(data);
+  textHome.innerHTML = `<p>${data.body}</p>`;
+}
 
-// resAPi(`https://jsonplaceholder.typicode.com/posts/33`);
+resAPi(`https://jsonplaceholder.typicode.com/posts/33`);
 
-// const getUrl = [
-//   'https://jsonplaceholder.typicode.com/todos',
-//   'https://jsonplaceholder.typicode.com/users', //users
-//   'https://jsonplaceholder.typicode.com/photos', // photos
-// ];
+const getUrl = [
+  'https://jsonplaceholder.typicode.com/todos',
+  'https://jsonplaceholder.typicode.com/users', //users
+  'https://jsonplaceholder.typicode.com/photos', // photos
+];
 
-// const checkApi = async () => {
-//   const [todos, photos, users] = await Promise.all(
-//     getUrl.map(url => {
-//       fetch(url).then(data => data.json());
-//     })
-//   );
-//   console.log(users);
-// };
-// checkApi();
+const checkApi = async () => {
+  const [todos, photos, users] = await Promise.all(
+    getUrl.map(url => {
+      fetch(url).then(data => data.json());
+    })
+  );
+  console.log(users);
+};
+checkApi();
 
-// async function fetchStarship() {
-//   const response = await fetch('https://jsonplaceholder.typicode.com/users');
-//   const data = await response.json();
-//   console.log(data);
-// }
-// fetchStarship();
+async function fetchStarship() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const data = await response.json();
+  console.log(data);
+}
+fetchStarship();
 const urls = [
   'https://jsonplaceholder.typicode.com/users',
   'https://jsonplaceholdeTYPO.typicode.com/posts',
