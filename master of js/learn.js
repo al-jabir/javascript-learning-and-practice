@@ -4091,27 +4091,27 @@ function gobal() {
  *
  ***********************/
 
-// class Person {
-//   constructor(name, age) {
-//     this.name = name;
-//     this.age = age;
-//   }
-//   call() {
-//     console.log(`My name is ${this.name}`);
-//   }
-//   get setName() {
-//     return this.name;
-//   }
-//   set setName(name) {
-//     this.name = name;
-//   }
-// }
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  call() {
+    console.log(`My name is ${this.name}`);
+  }
+  get setName() {
+    return this.name;
+  }
+  set setName(name) {
+    this.name = name;
+  }
+}
 
-// let s = new Person('King', 24);
-// console.log(s.setName);
-// s.setName = 'mafia';
+let s = new Person('King', 24);
+console.log(s.setName);
+s.setName = 'mafia';
 
-// console.log(s.name);
+console.log(s.name);
 
 /***********************
  *
