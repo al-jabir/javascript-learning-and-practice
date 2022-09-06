@@ -544,15 +544,15 @@ next()
 
 // //Object
 
-// const ob = {
-//   name: 'King',
-//   age: 22,
-//   job: 'Frontend Developer',
-//   office: 'Remote',
-//   details: function (n) {
-//     console.log(n + ' Welcome to our coding practice now')
-//   },
-// }
+const ob = {
+  name: 'King',
+  age: 22,
+  job: 'Frontend Developer',
+  office: 'Remote',
+  details: function (n) {
+    console.log(n + ' Welcome to our coding practice now')
+  },
+}
 ob.atHome = 'Home'
 ob.atHome = 'HomeFuck'
 ob.job = 'Mern Stack Developer'
