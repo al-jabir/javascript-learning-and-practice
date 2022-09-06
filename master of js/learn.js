@@ -4630,95 +4630,95 @@ function gobal() {
 
 //*************Promise */
 
-// const hasClient = true;
-// const myPromise = new Promise((resolve, reject) => {
-//   if (!hasClient) {
-//     const client = {
-//       name: 'Jack',
-//       location: 'Fiverr',
-//       work: 'any',
-//     };
-//     resolve(client);
-//   } else {
-//     reject('Already cancled order of fiverr');
-//   }
-// });
+const hasClient = true;
+const myPromise = new Promise((resolve, reject) => {
+  if (!hasClient) {
+    const client = {
+      name: 'Jack',
+      location: 'Fiverr',
+      work: 'any',
+    };
+    resolve(client);
+  } else {
+    reject('Already cancled order of fiverr');
+  }
+});
 
-// myPromise
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+myPromise
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const r = true;
-// const res = () => {
-//   return new Promise((resolve, reject) => {
-//     if (!r) {
-//       resolve('I will be solve');
-//     } else {
-//       reject('I do not working fuck');
-//     }
-//   });
-// };
+const r = true;
+const res = () => {
+  return new Promise((resolve, reject) => {
+    if (!r) {
+      resolve('I will be solve');
+    } else {
+      reject('I do not working fuck');
+    }
+  });
+};
 
-// res()
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+res()
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const rr = false;
-// const res2 = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (!rr) {
-//         resolve('How can I help you?');
-//       } else {
-//         reject('I do not wait for you');
-//       }
-//     }, 2500);
-//   });
-// };
+const rr = false;
+const res2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (!rr) {
+        resolve('How can I help you?');
+      } else {
+        reject('I do not wait for you');
+      }
+    }, 2500);
+  });
+};
 
-// res2()
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+res2()
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const url = 'https://jsonplaceholder.typicode.com/photos';
+const url = 'https://jsonplaceholder.typicode.com/photos';
 
-// fetch(url)
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .then((p) => {
-//     console.log(p);
-//   });
+fetch(url)
+  .then((data) => {
+    return data.json();
+  })
+  .then((p) => {
+    console.log(p);
+  });
 
-// const res = new Promise((resolve, reject) => {
-//   if (false) {
-//     resolve('I will be solve with you');
-//   } else {
-//     reject('I am not sure with you');
-//   }
-// });
+const res = new Promise((resolve, reject) => {
+  if (false) {
+    resolve('I will be solve with you');
+  } else {
+    reject('I am not sure with you');
+  }
+});
 
-// const ch = async () => {
-//   try {
-//     const data = await res;
-//     console.log(data);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// };
-// ch();
+const ch = async () => {
+  try {
+    const data = await res;
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+ch();
 
 /************************
       Recursion in JS
