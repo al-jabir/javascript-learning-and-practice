@@ -405,7 +405,7 @@ console.log(cou)
 // console.log(generateRandomNumber(1000))
 // const randomNumber2 = Math.floor(Math.random() * 100)
 // console.log(randomNumber2)
-/*
+
 
 let arr = [4, 5, 6, 3, 2, 5, 32, 11, 44, 55, 33, 24]
 
@@ -433,7 +433,7 @@ updates.forEach(function (v, i, a) {
   }
 })
 console.log('toal: ' + na)
-*/
+
 /*
 const arr2 = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
 
