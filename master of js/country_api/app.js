@@ -30,7 +30,7 @@ const getCountryData = function (country) {
 
 getCountryData('bangladesh');
 
-// fetch(`https://restcountries.com/v3.1/name/bangladesh`)
-//   .then(res => res.json())
-//   .then(data => console.log(data));
-// console.log(98);
+fetch(`https://restcountries.com/v3.1/name/bangladesh`)
+  .then(res => res.json())
+  .then(data => console.log(data));
+console.log(98);
