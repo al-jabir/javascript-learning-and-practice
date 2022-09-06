@@ -4776,281 +4776,281 @@ function gobal() {
 
 // callback
 
-// function getRequest(url, callback) {
-//   const xhr = new XMLHttpRequest();
+function getRequest(url, callback) {
+  const xhr = new XMLHttpRequest();
 
-//   xhr.open('get', url);
+  xhr.open('get', url);
 
-//   xhr.onreadystatechange = function () {
-//     if (xhr.readyState === 4) {
-//       if (xhr.status === 200) {
-//         let response = JSON.parse(xhr.response);
-//         callback(null, response);
-//       } else {
-//         callback(xhr.status, null);
-//       }
-//     }
-//   };
-//   xhr.send();
-// }
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        let response = JSON.parse(xhr.response);
+        callback(null, response);
+      } else {
+        callback(xhr.status, null);
+      }
+    }
+  };
+  xhr.send();
+}
 
-// getRequest('https://jsonplaceholder.typicode.com/posts', (err, res) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(res);
-//     res.forEach((li) => {
-//       console.log(li.title);
-//     });
-//   }
-// });
+getRequest('https://jsonplaceholder.typicode.com/posts', (err, res) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+    res.forEach((li) => {
+      console.log(li.title);
+    });
+  }
+});
 
-// getRequest('https://jsonplaceholder.typicode.com/todos', (err, res) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(res);
-//     res.forEach((li) => {
-//       console.log(li.title);
-//     });
-//   }
-// });
+getRequest('https://jsonplaceholder.typicode.com/todos', (err, res) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+    res.forEach((li) => {
+      console.log(li.title);
+    });
+  }
+});
 
 // promise api
 
-// const BASE_URL = 'https://jsonplaceholder.typicode.com';
-// function getRequest(url) {
-//   return new Promise((resolve, reject) => {
-//     const xhr = new XMLHttpRequest();
+const BASE_URL = 'https://jsonplaceholder.typicode.com';
+function getRequest(url) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
 
-//     xhr.open('get', url);
+    xhr.open('get', url);
 
-//     xhr.onreadystatechange = function () {
-//       if (xhr.readyState === 4) {
-//         if (xhr.status === 200) {
-//           let response = JSON.parse(xhr.response);
-//           resolve(response);
-//         } else {
-//           reject(new Error('Something error of  data'));
-//         }
-//       }
-//     };
-//     xhr.send();
-//   });
-// }
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          let response = JSON.parse(xhr.response);
+          resolve(response);
+        } else {
+          reject(new Error('Something error of  data'));
+        }
+      }
+    };
+    xhr.send();
+  });
+}
 
-// getRequest(`${BASE_URL}/posts/213`)
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err.message);
-//   });
+getRequest(`${BASE_URL}/posts/213`)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
 
-// function sum(n) {
-//   if (n === 0) {
-//     return 0;
-//   } else {
-//     return sum(n - 1) + n;
-//   }
-// }
-// console.log(sum(5));
+function sum(n) {
+  if (n === 0) {
+    return 0;
+  } else {
+    return sum(n - 1) + n;
+  }
+}
+console.log(sum(5));
 
-// const isLoggedIn = '';
+const isLoggedIn = '';
 
-// const access = isLoggedIn ? isLoggedIn : false;
-// console.log(access);
+const access = isLoggedIn ? isLoggedIn : false;
+console.log(access);
 
 // ES6
 
-// const ranks = [2, 5, 7, 31, 4, 6, 5, 4];
-// const res = ranks.findIndex((i, ix) => {
-//   return i === 5 && ix > 1;
-// });
+const ranks = [2, 5, 7, 31, 4, 6, 5, 4];
+const res = ranks.findIndex((i, ix) => {
+  return i === 5 && ix > 1;
+});
 
-// console.log(res);
+console.log(res);
 
-//rest perameter
+rest perameter
 
-// function myFunc(...arr) {
-//   console.log(arr);
-// }
-// myFunc(453, 'king', 'my', 'fuck', 'sobuj', 'noti');
+function myFunc(...arr) {
+  console.log(arr);
+}
+myFunc(453, 'king', 'my', 'fuck', 'sobuj', 'noti');
 
 /******* Clever Programmer ***** */
 
-// const weather = prompt('enter your weather type and text now: ');
+const weather = prompt('enter your weather type and text now: ');
 
-// if (weather == 'rainy') {
-//   console.log('grab your umbrellah');
-// } else {
-//   console.log('wear your sunglass');
-// }
+if (weather == 'rainy') {
+  console.log('grab your umbrellah');
+} else {
+  console.log('wear your sunglass');
+}
 
-// tipCalculators
+tipCalculators
 
-// function calculatorFood(food, tip) {
-//   const tipParcent = tip / 100;
-//   const tipAmmount = food * tipParcent;
-//   const total = food + tipAmmount;
-//   return total;
-// }
+function calculatorFood(food, tip) {
+  const tipParcent = tip / 100;
+  const tipAmmount = food * tipParcent;
+  const total = food + tipAmmount;
+  return total;
+}
 
-// console.log(calculatorFood(100, 20));
+console.log(calculatorFood(100, 20));
 
-// const arr = [1, 2, 3, 4];
+const arr = [1, 2, 3, 4];
 
-// let inx = 0;
+let inx = 0;
 
-// function next() {
-//   return arr[inx++];
-// }
-// console.log(next());
-// console.log(next());
-// console.log(next());
-// console.log(next());
-// console.log(next());
+function next() {
+  return arr[inx++];
+}
+console.log(next());
+console.log(next());
+console.log(next());
+console.log(next());
+console.log(next());
 
-// const channel = 'Stack';
-// console.log(channel[Symbol.iterator]); // [Function: [Symbol.iterator]]
-// console.log(channel[Symbol.iterator].toString()); // function [Symbol.iterator]() { [native code] }
+const channel = 'Stack';
+console.log(channel[Symbol.iterator]); // [Function: [Symbol.iterator]]
+console.log(channel[Symbol.iterator].toString()); // function [Symbol.iterator]() { [native code] }
 
-// const str = 'Jabir';
-// const list = str[Symbol.iterator]();
-// console.log(list.next());
-// console.log(list.next());
-// console.log(list.next());
-// console.log(list.next());
-// console.log(list.next());
-// console.log(list.next());
+const str = 'Jabir';
+const list = str[Symbol.iterator]();
+console.log(list.next());
+console.log(list.next());
+console.log(list.next());
+console.log(list.next());
+console.log(list.next());
+console.log(list.next());
 
-// const str2 = 'Mafia';
+const str2 = 'Mafia';
 
-// const check = str2[Symbol.iterator]();
+const check = str2[Symbol.iterator]();
 
-// while (true) {
-//   const data = check.next();
-//   if (data.done) {
-//     break;
-//   }
-//   console.log(data.value);
-// }
+while (true) {
+  const data = check.next();
+  if (data.done) {
+    break;
+  }
+  console.log(data.value);
+}
 
-// const range = {
-//   start: 0,
-//   stop: 100,
-//   step: 5,
-// };
+const range = {
+  start: 0,
+  stop: 100,
+  step: 5,
+};
 
-// // for (let s of range) {
-// //   console.log(s);
-// // }
+for (let s of range) {
+  console.log(s);
+}
 
-// range[Symbol.iterator] = function () {
-//   let current = this.start;
-//   const stop = this.stop;
-//   const step = this.step;
-//   return {
-//     next() {
-//       const o = {
-//         value: current,
-//         done: current > stop,
-//       };
-//       current += step;
-//       return o;
-//     },
-//   };
-// };
+range[Symbol.iterator] = function () {
+  let current = this.start;
+  const stop = this.stop;
+  const step = this.step;
+  return {
+    next() {
+      const o = {
+        value: current,
+        done: current > stop,
+      };
+      current += step;
+      return o;
+    },
+  };
+};
 
-// const rangeIterator = range[Symbol.iterator]();
-// console.log(rangeIterator.next()); // { value: 0, done: false }
-// console.log(rangeIterator.next()); // { value: 5, done: false }
-// console.log(rangeIterator.next()); // { value: 10, done: false }
+const rangeIterator = range[Symbol.iterator]();
+console.log(rangeIterator.next()); // { value: 0, done: false }
+console.log(rangeIterator.next()); // { value: 5, done: false }
+console.log(rangeIterator.next()); // { value: 10, done: false }
 
-// function* myGenerator() {
-//   yield 1;
-//   yield 2;
-//   yield 3;
-// }
+function* myGenerator() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
 
-// const ress = myGenerator();
-// console.log(ress.next());
-// console.log(ress.next());
-// console.log(ress.next());
-// console.log(ress.next());
+const ress = myGenerator();
+console.log(ress.next());
+console.log(ress.next());
+console.log(ress.next());
+console.log(ress.next());
 
-// function introduce(name, shirt) {
-//   const person = {
-//     name: name,
-//     shirt: shirt,
-//     assest: 10000,
-//     libirirs: 5000,
-//     netWort: function () {
-//       return this.assest - this.libirirs;
-//     },
-//   };
-//   const intro = `I am ${person.name} and the ${
-//     person.shirt
-//   } color of shirt and networt ${person.netWort()}`;
-//   return intro;
-// }
-// console.log(introduce('king', 'purple'));
+function introduce(name, shirt) {
+  const person = {
+    name: name,
+    shirt: shirt,
+    assest: 10000,
+    libirirs: 5000,
+    netWort: function () {
+      return this.assest - this.libirirs;
+    },
+  };
+  const intro = `I am ${person.name} and the ${
+    person.shirt
+  } color of shirt and networt ${person.netWort()}`;
+  return intro;
+}
+console.log(introduce('king', 'purple'));
 
-// const introducer = (name, shirt) => {
-//   const person = {
-//     name: name,
-//     shirt: shirt,
-//     assets: 100000,
-//     liabilities: 50000,
-//     netWorth: function () {
-//       return this.assets - this.liabilities;
-//     },
-//   };
+const introducer = (name, shirt) => {
+  const person = {
+    name: name,
+    shirt: shirt,
+    assets: 100000,
+    liabilities: 50000,
+    netWorth: function () {
+      return this.assets - this.liabilities;
+    },
+  };
 
-//   const intro = `Hi, my name is ${person.name} and the color of my shirt is ${
-//     person.shirt
-//   } and my net worth is $${person.netWorth()} USD`;
+  const intro = `Hi, my name is ${person.name} and the color of my shirt is ${
+    person.shirt
+  } and my net worth is $${person.netWorth()} USD`;
 
-//   return intro;
-// };
+  return intro;
+};
 
-// console.log(introducer('Qazi', 'black'));
-// console.log(introducer('Leonardo', 'white'));
+console.log(introducer('Qazi', 'black'));
+console.log(introducer('Leonardo', 'white'));
 
-// const letterFriquncy = (phrase) => {
-//   console.log(phrase);
+const letterFriquncy = (phrase) => {
+  console.log(phrase);
 
-//   let freq = {};
+  let freq = {};
 
-//   for (const leter of phrase) {
-//     if (leter in freq) {
-//       freq[leter] = freq[leter] + 1;
-//     } else {
-//       freq[leter] = 1;
-//     }
-//   }
-//   return freq;
-// };
+  for (const leter of phrase) {
+    if (leter in freq) {
+      freq[leter] = freq[leter] + 1;
+    } else {
+      freq[leter] = 1;
+    }
+  }
+  return freq;
+};
 
-// console.log(letterFriquncy('jabir'));
-// console.log(letterFriquncy('jabir will be mafia as your wish'));
+console.log(letterFriquncy('jabir'));
+console.log(letterFriquncy('jabir will be mafia as your wish'));
 
-// const wordFrequency = (phrase) => {
-//   console.log(phrase);
+const wordFrequency = (phrase) => {
+  console.log(phrase);
 
-//   let freq = [];
+  let freq = [];
 
-//   let word = phrase.split(' ');
+  let word = phrase.split(' ');
 
-//   for (words of word) {
-//     if (words in freq) {
-//       freq[words] += 1;
-//     } else {
-//       freq[words] = 1;
-//     }
-//   }
-//   return freq;
-// };
+  for (words of word) {
+    if (words in freq) {
+      freq[words] += 1;
+    } else {
+      freq[words] = 1;
+    }
+  }
+  return freq;
+};
 
 // console.log(wordFrequency('king will be king of mafia of mafia'));
 
@@ -5060,72 +5060,72 @@ function gobal() {
  *
  ****************************/
 
-// const restaurent = {
-//   name: 'Italian Food',
-//   locationse: `Sylhet,Bangladesh`,
-//   categories: ['chinese', 'pizza', 'kaschi'],
-//   startMenu: ['salat', 'lemon', 'water'],
-//   mainMenu: ['pixxa', 'pasta', 'sisota'],
-// };
-// const restaurent2 = {
-//   name: 'Italian Food',
-//   locationse: `Sylhet,Bangladesh`,
-//   categories: ['chinese', 'pizza', 'kaschi'],
-//   startMenu: ['salat', 'lemon', 'water'],
-//   mainMenu: ['pixxa', 'pasta', 'sisota'],
-// };
-// const restaurent3 = {
-//   name: 'Italian Food',
-//   locationse: `Sylhet,Bangladesh`,
-//   categories: ['chinese', 'pizza', 'kaschi'],
-//   startMenu: ['salat', 'lemon', 'water'],
-//   mainMenu: ['pixxa', 'pasta', 'sisota'],
-// };
+const restaurent = {
+  name: 'Italian Food',
+  locationse: `Sylhet,Bangladesh`,
+  categories: ['chinese', 'pizza', 'kaschi'],
+  startMenu: ['salat', 'lemon', 'water'],
+  mainMenu: ['pixxa', 'pasta', 'sisota'],
+};
+const restaurent2 = {
+  name: 'Italian Food',
+  locationse: `Sylhet,Bangladesh`,
+  categories: ['chinese', 'pizza', 'kaschi'],
+  startMenu: ['salat', 'lemon', 'water'],
+  mainMenu: ['pixxa', 'pasta', 'sisota'],
+};
+const restaurent3 = {
+  name: 'Italian Food',
+  locationse: `Sylhet,Bangladesh`,
+  categories: ['chinese', 'pizza', 'kaschi'],
+  startMenu: ['salat', 'lemon', 'water'],
+  mainMenu: ['pixxa', 'pasta', 'sisota'],
+};
 
-// let checkRestu = [
-//   ...restaurent3.startMenu,
-//   ...restaurent3.mainMenu,
-//   'king',
-//   'beef',
-//   'fish',
-// ];
+let checkRestu = [
+  ...restaurent3.startMenu,
+  ...restaurent3.mainMenu,
+  'king',
+  'beef',
+  'fish',
+];
 
-// console.log(checkRestu);
-// [a, , b] = restaurent.startMenu;
-// console.log(a, b);
+console.log(checkRestu);
+[a, , b] = restaurent.startMenu;
+console.log(a, b);
 
-//destructuring with object
+destructuring with object
 
-// const { name, locationse, startMenu } = restaurent;
-// console.log(name, locationse, startMenu);
+const { name, locationse, startMenu } = restaurent;
+console.log(name, locationse, startMenu);
 
-//spread operator
+spread operator
 
-// let arr = [1, 2, 3, 4, 5];
-// let arr2 = [12, 23, 34, 65, 78];
+let arr = [1, 2, 3, 4, 5];
+let arr2 = [12, 23, 34, 65, 78];
 
-// const arres = [...arr, ...arr2];
-// console.log(arres);
+const arres = [...arr, ...arr2];
+console.log(arres);
 
-// const add = (...num) => {
-//   let sum = 0;
-//   for (i = 0; i < num.length; i++) {
-//     sum += num[i];
-//   }
-//   console.log(sum);
-// };
-// add(2, 5);
-// add(2, 5, 4, 5);
-// add(2, 5, 5, 3, 2, 6);
-// add(2, 5, 7, 9, 4, 3, 2, 1, 3, 2, 55);
+const add = (...num) => {
+  let sum = 0;
+  for (i = 0; i < num.length; i++) {
+    sum += num[i];
+  }
+  console.log(sum);
+};
+add(2, 5);
+add(2, 5, 4, 5);
+add(2, 5, 5, 3, 2, 6);
+add(2, 5, 7, 9, 4, 3, 2, 1, 3, 2, 55);
 
-// const arrName = greeting => name => console.log(`${greeting} ${name}`);
+const arrName = greeting => name => console.log(`${greeting} ${name}`);
 
-// arrName('Hey')('Jabir');
+arrName('Hey')('Jabir');
 
-// const fullName = fname => lname => console.log(`${fname} ${lname}`);
+const fullName = fname => lname => console.log(`${fname} ${lname}`);
 
-// fullName('Md')('Jabir');
+fullName('Md')('Jabir');
 
 /****************************
  *
@@ -5133,69 +5133,69 @@ function gobal() {
  *
  ****************************/
 
-// const Person = function (f, l) {
-//   this.f = f;
-//   this.l = l;
-//   console.log(`${f} ${l}`);
-// };
+const Person = function (f, l) {
+  this.f = f;
+  this.l = l;
+  console.log(`${f} ${l}`);
+};
 
-// const check = new Person('ki', 'ai');
+const check = new Person('ki', 'ai');
 
-// const Person = function (name, birth) {
-//   this.name = name;
-//   this.birth = birth;
-// };
+const Person = function (name, birth) {
+  this.name = name;
+  this.birth = birth;
+};
 
-// console.log(Person.prototype);
+console.log(Person.prototype);
 
-// Person.prototype.mainBirth = function () {
-//   console.log(2020 - this.birth);
-// };
+Person.prototype.mainBirth = function () {
+  console.log(2020 - this.birth);
+};
 
-// const res = new Person('King', '1998');
-// res.mainBirth();
+const res = new Person('King', '1998');
+res.mainBirth();
 
-// const Car = function (name, speed) {
-//   this.name = name;
-//   this.speed = speed;
-// };
+const Car = function (name, speed) {
+  this.name = name;
+  this.speed = speed;
+};
 
-// const result = new Car('Audi', '10');
-// console.log(result);
-// console.log(Car.prototype);
-// Car.prototype.updateSpeed = function () {
-//   this.speed += 9;
-//   console.log(`${this.name} is going to at ${this.speed} km/h`);
-// };
+const result = new Car('Audi', '10');
+console.log(result);
+console.log(Car.prototype);
+Car.prototype.updateSpeed = function () {
+  this.speed += 9;
+  console.log(`${this.name} is going to at ${this.speed} km/h`);
+};
 
-// result.updateSpeed();
-// result.updateSpeed();
-// result.updateSpeed();
-// result.updateSpeed();
-// class Person {
-//   constructor(n, l) {
-//     this.n = n;
-//     this.l = l;
-//   }
-//   call() {
-//     console.log(`My name is ${this.n}`);
-//   }
-//   call2() {
-//     return `I am ${this.l}`;
-//   }
-// }
+result.updateSpeed();
+result.updateSpeed();
+result.updateSpeed();
+result.updateSpeed();
+class Person {
+  constructor(n, l) {
+    this.n = n;
+    this.l = l;
+  }
+  call() {
+    console.log(`My name is ${this.n}`);
+  }
+  call2() {
+    return `I am ${this.l}`;
+  }
+}
 
-// const e = new Person('King', 'Mafia');
-// console.log(e);
-// e.call();
+const e = new Person('King', 'Mafia');
+console.log(e);
+e.call();
 
-// console.log(e.call2());
+console.log(e.call2());
 
-// const request = new XMLHttpRequest();
-// request.open('GET', 'https://restcountries.com/v3.1/name/bangladesh');
-// request.send();
+const request = new XMLHttpRequest();
+request.open('GET', 'https://restcountries.com/v3.1/name/bangladesh');
+request.send();
 
-// console.log(request.responText);
+console.log(request.responText);
 
 /****************************
  *
@@ -5203,23 +5203,23 @@ function gobal() {
  *
  ****************************/
 
-// const showcountry = country => {
-//   const res = fetch(`https://restcountries.com/v3.1/name/${country}`).then(
-//     data => console.log(data)
-//   );
-// };
-// showcountry('bangladesh');
-// const showcountry2 = country => {
-//   const res = fetch(`https://restcountries.com/v3.1/name/${country}`)
-//     .then(s => s.json())
-//     .then(data => {
-//       console.log(data);
-//       let ress = `<h1>${data[0].capital}</h1>`;
-//       return (document.querySelector('body').innerHTML = ress);
-//     });
-// };
+const showcountry = country => {
+  const res = fetch(`https://restcountries.com/v3.1/name/${country}`).then(
+    data => console.log(data)
+  );
+};
+showcountry('bangladesh');
+const showcountry2 = country => {
+  const res = fetch(`https://restcountries.com/v3.1/name/${country}`)
+    .then(s => s.json())
+    .then(data => {
+      console.log(data);
+      let ress = `<h1>${data[0].capital}</h1>`;
+      return (document.querySelector('body').innerHTML = ress);
+    });
+};
 // // showcountry2('bangladesh');
-// showcountry2('malaysia');
+showcountry2('malaysia');
 
 /*****************
 
@@ -5227,13 +5227,14 @@ function gobal() {
 
 ****************/
 
-// const getPosition = function () {
-//   return new Promise((resolve, reject) => {
-//     navigator.geolocation.getCurrentPosition(resolve, reject);
-//   });
-// };
+const getPosition = function () {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
 
-// getPosition().then(d => console.log(d));
+getPosition().then(d => console.log(d));
 
-// import './api.js';
-// import './something.js';
+import './api.js';
+import './something.js';
+
