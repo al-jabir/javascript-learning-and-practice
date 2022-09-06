@@ -475,7 +475,7 @@ console.log('songa = ' + n)
 // console.log(fillArr)
 // const a = arr.filter((v) => typeof v == 'number')
 // console.log(a)
-/*
+
 
 const numbers = [1, 2, 3, 4, false, 'a', NaN, 5, 6]
 const filteredArr = numbers.filter((v) => v).map((v) => v.toString())
@@ -510,7 +510,7 @@ next()
 next()
 
 
-*/
+
 // Array learn of junayed site
 
 let nam = [
