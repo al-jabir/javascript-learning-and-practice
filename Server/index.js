@@ -1,9 +1,9 @@
-/*let temp = prompt("Enter your number type now: ")
+let temp = prompt("Enter your number type now: ")
 
 let res = 9/5*temp +32
 alert(res+ ' degree')
 console.log("You have task complete")
-*/
+
 
 /*
 learn JS
