@@ -54,24 +54,24 @@ const urls = [
   'https://jsonplaceholder.typicode.com/albums',
 ];
 
-// const getData = async function () {
-//   try {
-//     const [users, posts, albums] = await Promise.all(
-//       urls.map(async function (url) {
-//         const response = await fetch(url);
-//         return response.json();
-//       })
-//     );
-//     console.log('users', users);
-//     console.log('posta', posts);
-//     console.log('albums', albums);
-//   } catch (err) {
-//     console.log('ooooooops', err);
-//   }
-// };
+const getData = async function () {
+  try {
+    const [users, posts, albums] = await Promise.all(
+      urls.map(async function (url) {
+        const response = await fetch(url);
+        return response.json();
+      })
+    );
+    console.log('users', users);
+    console.log('posta', posts);
+    console.log('albums', albums);
+  } catch (err) {
+    console.log('ooooooops', err);
+  }
+};
 
-// const getData = async () => {
-//     const [users, posts, albums] = await Promise.all(urls.map(url =>{
-//         const res = await fetch(url)
-//     }))
-// };
+const getData = async () => {
+    const [users, posts, albums] = await Promise.all(urls.map(url =>{
+        const res = await fetch(url)
+    }))
+};
