@@ -715,7 +715,7 @@ console.log(Math.floor(Math.random() * 9) + 1)
 
 *****/
 //How to data search of match
-/**
+
 const arr = [4, 9, 2, 10, 44, 29, 18]
 const find = 20
 let notFound = false
@@ -731,7 +731,7 @@ if (!notFound) {
 }
 
 
-******/
+
 // Function invoked
 const person = {
   fullName: function () {
