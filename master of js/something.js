@@ -865,36 +865,36 @@ console.log(sum)
 console.log(count)
 */
 // reverse in Array
-// const arr = [1, 5, 33, 21, 2, 36, 4, 45, 6, 7]
-// for (i = 0; i < arr.length / 2; i++) {
-//   var temp = arr[i]
-//   arr[i] = arr[arr.length - 1 - i]
-//   arr[arr.length - 1 - i] = temp
-// }
-// console.log(arr)
-// const a = arr.sort()
-// const b = arr.reverse()
-// console.log(arr)
-// console.log(a)
-// console.log(b)
-// console.log(arr.sort())
-//Object with Stack learner
-// let point = {
-//   x: 40,
-//   y: 50,
-//   z: 98,
-// }
-// point.xx = 1998
-// console.log(point.z)
-// console.log(point['x'])
-// let show = 'xx'
-// console.log(point[show])
-// console.log(point)
-// point.x = 24
-// point.s
-// console.log(point)
-// console.log(point.s)
-// console.log(point)
+const arr = [1, 5, 33, 21, 2, 36, 4, 45, 6, 7]
+for (i = 0; i < arr.length / 2; i++) {
+  var temp = arr[i]
+  arr[i] = arr[arr.length - 1 - i]
+  arr[arr.length - 1 - i] = temp
+}
+console.log(arr)
+const a = arr.sort()
+const b = arr.reverse()
+console.log(arr)
+console.log(a)
+console.log(b)
+console.log(arr.sort())
+Object with Stack learner
+let point = {
+  x: 40,
+  y: 50,
+  z: 98,
+}
+point.xx = 1998
+console.log(point.z)
+console.log(point['x'])
+let show = 'xx'
+console.log(point[show])
+console.log(point)
+point.x = 24
+point.s
+console.log(point)
+console.log(point.s)
+console.log(point)
 
 let obj = {
   a: 24,
