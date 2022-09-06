@@ -513,29 +513,29 @@ next()
 */
 // Array learn of junayed site
 
-// let nam = [
-//   'jabir',
-//   'makia',
-//   'bal',
-//   'king',
-//   'fuck',
-//   'sexy',
-//   'fuck off',
-//   'korean',
-//   'mallu',
-// ]
+let nam = [
+  'jabir',
+  'makia',
+  'bal',
+  'king',
+  'fuck',
+  'sexy',
+  'fuck off',
+  'korean',
+  'mallu',
+]
 
-// for (i = 0; i < nam.length; i++) {
-//   console.log('Name: ' + nam[i].toUpperCase())
-// }
-// console.log(nam)
-// nam[4] = 'fucking'
-// nam[9] = 'check your pet'
-// console.log(nam[4])
-// console.log(nam[9])
-// console.log(nam.length)
+for (i = 0; i < nam.length; i++) {
+  console.log('Name: ' + nam[i].toUpperCase())
+}
+console.log(nam)
+nam[4] = 'fucking'
+nam[9] = 'check your pet'
+console.log(nam[4])
+console.log(nam[9])
+console.log(nam.length)
 // // console.log(nam.reverse())
-// console.log(nam.splice(0, 4))
+console.log(nam.splice(0, 4))
 
 let arr = [1, 4, 6, 9, 13]
 let newArr = arr.splice(4)
