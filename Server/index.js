@@ -259,15 +259,15 @@ function comp(str) {
       console.log('Consonants');
   }
 }
-// comp(prompt())
+comp(prompt())
 
-// let num = prompt('Enter the number: ')
-// num = parseInt(num)
+let num = prompt('Enter the number: ')
+num = parseInt(num)
 
-// let num2 = isNaN(num)
-// console.log(num)
+let num2 = isNaN(num)
+console.log(num)
 
-// result grade marks of function
+result grade marks of function
 
 function grade(n) {
   if (n > 80) {
