@@ -353,7 +353,6 @@ console.log(person)
 //     index = 0
 //   }
 // }, 1000)
-/*
 
 
 let count = 1
@@ -395,7 +394,7 @@ while (i < person.length) {
 console.log(cou)
 
 
-*/
+
 function generateRandomNumber(max) {
   const randomNumber = Math.floor(Math.random() * max)
   return randomNumber
