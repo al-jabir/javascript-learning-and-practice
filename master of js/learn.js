@@ -3847,28 +3847,28 @@ function gobal() {
  *
  ***************/
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-//   // this.eat = function () {
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.eat = function () {
 
-//   // };
-// }
-// Person.prototype = {
-//   eat: function () {
-//     console.log(`${this.name} is play cricket`);
-//   },
-// };
+  };
+}
+Person.prototype = {
+  eat: function () {
+    console.log(`${this.name} is play cricket`);
+  },
+};
 
-// const sarah = new Person('sarah', 21);
-// // sarah.eat();
-// console.log(sarah);
-// const knight = new Person('Knight', 19);
-// console.log(knight);
+const sarah = new Person('sarah', 21);
+sarah.eat();
+console.log(sarah);
+const knight = new Person('Knight', 19);
+console.log(knight);
 
-// const f = function Person() {};
+const f = function Person() {};
 
-// console.dir(f);
+console.dir(f);
 
 //*****prototype chain
 
