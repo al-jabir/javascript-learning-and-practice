@@ -3779,17 +3779,17 @@ function gobal() {
 
 //prototype inherit
 
-// const Person = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// };
+const Person = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+};
 
-// Person.prototype.checks = function () {
-//   console.log(
-//     `My name is ${this.name} and ${this.age} years old. I will be ${this.job} developer.`
-//   );
-// };
+Person.prototype.checks = function () {
+  console.log(
+    `My name is ${this.name} and ${this.age} years old. I will be ${this.job} developer.`
+  );
+};
 
 console.log(Person.prototype);
 const res = new Person('javir', 19, 'Mern Stack');
