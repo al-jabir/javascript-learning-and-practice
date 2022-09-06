@@ -786,27 +786,27 @@ one()
 // console.log(`${str} ${'Developer '.repeat(3)}`)
 // learn stack learner
 // string compare
-// let str = 'K ak'
-// let str2 = 'Laj kah'
-// console.log(str < str2)
-// let c = str.concat(' ', str2)
-// console.log(c)
-// let d = c.substr(5, 2)
-// console.log(d)
-// let str5 = 'My name is Khan'
-// console.log(str5.slice(3, 7))
-// let nam = 'Ami Mafia of king'
-// let len = 0
-// while (true) {
-//   if (nam.charAt(len) == ' ') {
-//     break
-//   } else {
-//     len++
-//   }
-// }
-// let s = nam.length
-// console.log(len)
-// console.log(s)
+let str = 'K ak'
+let str2 = 'Laj kah'
+console.log(str < str2)
+let c = str.concat(' ', str2)
+console.log(c)
+let d = c.substr(5, 2)
+console.log(d)
+let str5 = 'My name is Khan'
+console.log(str5.slice(3, 7))
+let nam = 'Ami Mafia of king'
+let len = 0
+while (true) {
+  if (nam.charAt(len) == ' ') {
+    break
+  } else {
+    len++
+  }
+}
+let s = nam.length
+console.log(len)
+console.log(s)
 //Array with stack learner
 
 let arr = [4, 9, 22, 'mai', 'bob', 'sex', 88, 2]
