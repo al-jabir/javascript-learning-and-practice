@@ -3872,38 +3872,38 @@ function gobal() {
 
 //*****prototype chain
 
-// Object.prototype.jabir = function () {
-//   console.log(`I am Jabir`);
-// };
+Object.prototype.jabir = function () {
+  console.log(`I am Jabir`);
+};
 
-// const s = {};
+const s = {};
 
-// s.jabir();
-// console.dir(s);
+s.jabir();
+console.dir(s);
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
 
-// function Cricketer(name, age, type, country) {
-//   Person.call(this, name, age);
-//   this.type = type;
-//   this.country = country;
-// }
+function Cricketer(name, age, type, country) {
+  Person.call(this, name, age);
+  this.type = type;
+  this.country = country;
+}
 
-// Person.prototype = {
-//   eat: function () {
-//     console.log(`${this.name} is playing`);
-//   },
-// };
+Person.prototype = {
+  eat: function () {
+    console.log(`${this.name} is playing`);
+  },
+};
 
-// Cricketer.prototype = Object.create(Person.prototype);
+Cricketer.prototype = Object.create(Person.prototype);
 
-// Cricketer.prototype.constructor = Cricketer;
+Cricketer.prototype.constructor = Cricketer;
 
-// let sakib = new Cricketer('sakib', 35, 'right-hand', 'bd');
-// sakib.eat();
+let sakib = new Cricketer('sakib', 35, 'right-hand', 'bd');
+sakib.eat();
 
 //**********prototype inheritance */
 
