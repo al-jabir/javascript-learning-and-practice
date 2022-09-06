@@ -843,7 +843,7 @@ arr3.shift()
 console.log(arr3)
 
 // Multi Dimensional Array
-/*
+
 const arr = [
   [2, 5, 6, 7, 8, 2],
   [2, 52, 64, 76, 85, 23],
@@ -863,7 +863,7 @@ for (i = 0; i < arr.length; i++) {
 
 console.log(sum)
 console.log(count)
-*/
+
 // reverse in Array
 const arr = [1, 5, 33, 21, 2, 36, 4, 45, 6, 7]
 for (i = 0; i < arr.length / 2; i++) {
