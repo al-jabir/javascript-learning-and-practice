@@ -748,7 +748,7 @@ if (!notFound) {
 // }
 // console.log(person.fullName.call(person2))
 // practice and practice
-/*
+
 let str = 'king'
 console.log(str[str.length - 1])
 console.log(str.charAt(2))
@@ -772,7 +772,7 @@ function three() {
   console.log(s3 + name)
 }
 one()
-*/
+
 // String Mathod
 let str = 'My name is Al Jabir '
 str.startsWith('is')
