@@ -4602,31 +4602,31 @@ function gobal() {
 
 /********* Practice and Practice *******/
 
-//error handling
+error handling
 
-// const arr = [3, 4, 5, 6, 11, 3, 2];
+const arr = [3, 4, 5, 6, 11, 3, 2];
 
-// function myArr(arr, cb) {
-//   let newArr = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     if (cb(arr[i])) {
-//       newArr.push(arr[i]);
-//     }
-//   }
-//   return newArr;
-// }
+function myArr(arr, cb) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
 
-// const s = myArr(arr, function (v) {
-//   return v % 2 === 0;
-// });
+const s = myArr(arr, function (v) {
+  return v % 2 === 0;
+});
 
-// console.log(s);
+console.log(s);
 
-// const s2 = myArr(arr, function (v) {
-//   return v > 5;
-// });
+const s2 = myArr(arr, function (v) {
+  return v > 5;
+});
 
-// console.log(s2);
+console.log(s2);
 
 //*************Promise */
 
