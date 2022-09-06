@@ -1,206 +1,206 @@
-// let name = 'king';
-// const myName = ' Al Jabir';
-// var ownName = 'Abdullah';
+let name = 'king';
+const myName = ' Al Jabir';
+var ownName = 'Abdullah';
 
-// const fullName = ownName.concat(myName);
-// console.log(name);
-// console.log(myName);
-// console.log(ownName);
-// console.log(fullName);
+const fullName = ownName.concat(myName);
+console.log(name);
+console.log(myName);
+console.log(ownName);
+console.log(fullName);
 
-// length
+length
 
-// console.log(fullName.length);
+console.log(fullName.length);
 
-//increement and decreements
+increement and decreements
 
-// let num = 5;
-// num += 6;
-// console.log(num++);
-// console.log(++num);
+let num = 5;
+num += 6;
+console.log(num++);
+console.log(++num);
 
-//padStart methods
+padStart methods
 
-// let text = '5';
-// let padded = text.padStart(4, 'x');
-// console.log(padded);
+let text = '5';
+let padded = text.padStart(4, 'x');
+console.log(padded);
 
-// let s = 'jabir';
-// let padd = s.padStart(11, 'x');
-// console.log(padd);
+let s = 'jabir';
+let padd = s.padStart(11, 'x');
+console.log(padd);
 
-//Array
+Array
 
-// const car = ['Toyota', 'Audi', 'BMW', 'Suzuki'];
+const car = ['Toyota', 'Audi', 'BMW', 'Suzuki'];
 
-// const carResult = car.map(cars => cars);
-// console.log(carResult[1]);
+const carResult = car.map(cars => cars);
+console.log(carResult[1]);
 
-// const fruit = ['apple', 'mango', 'ansa', 'bal'];
+const fruit = ['apple', 'mango', 'ansa', 'bal'];
 
-// console.log(fruit.join(' - '));
+console.log(fruit.join(' - '));
 
-// const latter = new Set(['a', 'b', 'c', 'd', 'f']);
-// console.log(latter);
+const latter = new Set(['a', 'b', 'c', 'd', 'f']);
+console.log(latter);
 
-// const obj = { name: 'John', age: 30, city: 'New York' };
+const obj = { name: 'John', age: 30, city: 'New York' };
 
-// console.log(JSON.stringify(obj));
-// console.log(obj);
+console.log(JSON.stringify(obj));
+console.log(obj);
 
-// function displayOutput(out) {
-//   console.log(out);
-// }
+function displayOutput(out) {
+  console.log(out);
+}
 
-// function getSumOfNum(a, b) {
-//   let sum = a + b;
-//   return sum;
-// }
+function getSumOfNum(a, b) {
+  let sum = a + b;
+  return sum;
+}
 
-// let results = getSumOfNum(5, 9);
-// displayOutput(results);
+let results = getSumOfNum(5, 9);
+displayOutput(results);
 
-// function displayOutput(out) {
-//   console.log(out);
-// }
+function displayOutput(out) {
+  console.log(out);
+}
 
-// function getSumOfNum(a, b) {
-//   let sum = a * b;
-//   displayOutput(sum);
-// }
+function getSumOfNum(a, b) {
+  let sum = a * b;
+  displayOutput(sum);
+}
 
-// getSumOfNum(5, 76);
-// getSumOfNum(5, 6);
-// getSumOfNum(5, 5);
-// getSumOfNum(5, 16);
+getSumOfNum(5, 76);
+getSumOfNum(5, 6);
+getSumOfNum(5, 5);
+getSumOfNum(5, 16);
 
-// function showOutput(out) {
-//   console.log(out);
-// }
+function showOutput(out) {
+  console.log(out);
+}
 
-// function fill(MyCallBack) {
-//   let req = new XMLHttpRequest();
-//   req.open('GET', './app.js');
+function fill(MyCallBack) {
+  let req = new XMLHttpRequest();
+  req.open('GET', './app.js');
 
-//   req.onload = function () {
-//     if (req.status === 2000) {
-//       MyCallBack(this.responseText);
-//     } else {
-//       MyCallBack('err ' + req.status);
-//     }
-//   };
-//   req.send();
-// }
+  req.onload = function () {
+    if (req.status === 2000) {
+      MyCallBack(this.responseText);
+    } else {
+      MyCallBack('err ' + req.status);
+    }
+  };
+  req.send();
+}
 
-// fill(showOutput);
+fill(showOutput);
 
-// function showOutput(print) {
-//   console.log(print);
-// }
+function showOutput(print) {
+  console.log(print);
+}
 
-// const myPromise = new Promise((resolve, reject) => {
-//   let req = new XMLHttpRequest();
-//   req.open('GET', 'https://jsonplaceholder.typicode.com/photos/1');
+const myPromise = new Promise((resolve, reject) => {
+  let req = new XMLHttpRequest();
+  req.open('GET', 'https://jsonplaceholder.typicode.com/photos/1');
 
-//   req.onload = () => {
-//     if (req.status === 200) {
-//       resolve(req.response);
-//     } else {
-//       reject('Error this link');
-//     }
-//   };
-//   req.send();
-// });
+  req.onload = () => {
+    if (req.status === 200) {
+      resolve(req.response);
+    } else {
+      reject('Error this link');
+    }
+  };
+  req.send();
+});
 
-// myPromise.then(data => showOutput(data)).catch(err => showOutput(err));
+myPromise.then(data => showOutput(data)).catch(err => showOutput(err));
 
-// function showConsole(print) {
-//   console.log(print);
-// }
+function showConsole(print) {
+  console.log(print);
+}
 
-// const myPromise2 = new Promise((res, rej) => {
-//   let req = new XMLHttpRequest();
-//   req.open('GET', 'https://jsonplaceholder.typicode.com/photos', true);
+const myPromise2 = new Promise((res, rej) => {
+  let req = new XMLHttpRequest();
+  req.open('GET', 'https://jsonplaceholder.typicode.com/photos', true);
 
-//   req.onload = function () {
-//     if (req.status == 200) {
-//       res(JSON.parse(req.response));
-//     } else {
-//       rej('This is error of the code');
-//     }
-//   };
-//   req.send();
-// });
+  req.onload = function () {
+    if (req.status == 200) {
+      res(JSON.parse(req.response));
+    } else {
+      rej('This is error of the code');
+    }
+  };
+  req.send();
+});
 
-// myPromise2.then(data => showConsole(data)).catch(err => showConsole(err));
+myPromise2.then(data => showConsole(data)).catch(err => showConsole(err));
 
-// let x = 5;
+let x = 5;
 
-// function my() {
-//   let y = 9;
-//   return function () {
-//     let z = 10;
-//     return function () {
-//       let a = 98;
-//       return function () {
-//         console.log(a + x + y + z);
-//       };
-//     };
-//   };
-// }
-// console.dir(my()()());
+function my() {
+  let y = 9;
+  return function () {
+    let z = 10;
+    return function () {
+      let a = 98;
+      return function () {
+        console.log(a + x + y + z);
+      };
+    };
+  };
+}
+console.dir(my()()());
 
-// let x = 9;
+let x = 9;
 
-// const func = () => {
-//   let y = 8;
-//   const func2 = () => {
-//     let z = 19;
-//     const func3 = () => {
-//       console.log(x + y + z);
-//     };
-//     func3();
-//   };
-//   func2();
-// };
-// func();
+const func = () => {
+  let y = 8;
+  const func2 = () => {
+    let z = 19;
+    const func3 = () => {
+      console.log(x + y + z);
+    };
+    func3();
+  };
+  func2();
+};
+func();
 
-// console.dir(func);
+console.dir(func);
 
-// (function () {
-//   let a = {
-//     name: 'king',
-//     age: 22,
-//   };
-//   console.log(a);
-// })();
+(function () {
+  let a = {
+    name: 'king',
+    age: 22,
+  };
+  console.log(a);
+})();
 
-// // console.log(myFunc);
+// console.log(myFunc);
 
-// const hTag = document.querySelector('h1');
+const hTag = document.querySelector('h1');
 
-// console.dir(hTag.parentElement);
-// console.log(hTag.parentNode);
+console.dir(hTag.parentElement);
+console.log(hTag.parentNode);
 
-// console.log(hTag.childNodes);
+console.log(hTag.childNodes);
 
-// const details = {
-//   name: 'king',
-//   address: 'sylhet',
-//   job: 'frontend developer',
-//   check: {
-//     per: 18,
-//     jobType: 'agency',
-//     buject: '3000k',
-//   },
-//   location: 'remote',
-// };
+const details = {
+  name: 'king',
+  address: 'sylhet',
+  job: 'frontend developer',
+  check: {
+    per: 18,
+    jobType: 'agency',
+    buject: '3000k',
+  },
+  location: 'remote',
+};
 
-// const {
-//   name,
-//   address,
-//   job,
-//   check: { per, jobType, buject },
-//   location,
-// } = details;
-// console.log(jobType);
+const {
+  name,
+  address,
+  job,
+  check: { per, jobType, buject },
+  location,
+} = details;
+console.log(jobType);
