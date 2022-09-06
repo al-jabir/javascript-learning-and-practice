@@ -4724,55 +4724,55 @@ function gobal() {
       Recursion in JS
 *************************/
 
-//f(n-1)+n=f(n)
+f(n-1)+n=f(n)
 
-// function sum(n) {
-//   if (n === 0) {
-//     return 0;
-//   } else {
-//     return sum(n - 1) + n;
-//   }
-// }
-// console.log(sum(6));
-// let n = 6;
-// console.log((n * (n + 1)) / 2);
+function sum(n) {
+  if (n === 0) {
+    return 0;
+  } else {
+    return sum(n - 1) + n;
+  }
+}
+console.log(sum(6));
+let n = 6;
+console.log((n * (n + 1)) / 2);
 
-// const second = () => {
-//   console.log(`i am seceond`);
-// };
+const second = () => {
+  console.log(`i am seceond`);
+};
 
-// const third = () => {
-//   console.log('I am third');
-// };
+const third = () => {
+  console.log('I am third');
+};
 
-// const first = () => {
-//   console.log('I am fist');
-//   setTimeout(second, 2000);
-//   new Promise((resolve, reject) => resolve('I am resolve now')).then((res) =>
-//     console.log(res)
-//   );
-//   third();
-// };
-// first();
+const first = () => {
+  console.log('I am fist');
+  setTimeout(second, 2000);
+  new Promise((resolve, reject) => resolve('I am resolve now')).then((res) =>
+    console.log(res)
+  );
+  third();
+};
+first();
 
-//XMLHttprequest
+XMLHttprequest
 
-// const xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 
-// xhr.open('get', 'https://jsonplaceholder.typicode.com/users');
+xhr.open('get', 'https://jsonplaceholder.typicode.com/users');
 
-// xhr.onreadystatechange = function (e) {
-//   if (xhr.readyState === 4) {
-//     if (xhr.status === 200) {
-//       let users = JSON.parse(xhr.response);
-//       console.log(users);
-//     } else {
-//       console.log(xhr.status);
-//     }
-//   }
-// };
+xhr.onreadystatechange = function (e) {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      let users = JSON.parse(xhr.response);
+      console.log(users);
+    } else {
+      console.log(xhr.status);
+    }
+  }
+};
 
-// xhr.send();
+xhr.send();
 
 // callback
 
