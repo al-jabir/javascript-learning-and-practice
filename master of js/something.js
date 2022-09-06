@@ -537,10 +537,10 @@ next()
 // // console.log(nam.reverse())
 // console.log(nam.splice(0, 4))
 
-// let arr = [1, 4, 6, 9, 13]
-// let newArr = arr.splice(4)
-// console.log(arr)
-// console.log(newArr)
+let arr = [1, 4, 6, 9, 13]
+let newArr = arr.splice(4)
+console.log(arr)
+console.log(newArr)
 
 // //Object
 
