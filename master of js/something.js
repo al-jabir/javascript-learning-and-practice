@@ -733,20 +733,20 @@ if (!notFound) {
 
 ******/
 // Function invoked
-// const person = {
-//   fullName: function () {
-//     return `${this.f} ${this.l}`
-//   },
-// }
-// const person1 = {
-//   f: 'Al',
-//   l: 'Jabir',
-// }
-// const person2 = {
-//   f: 'King',
-//   l: 'Mafia',
-// }
-// console.log(person.fullName.call(person2))
+const person = {
+  fullName: function () {
+    return `${this.f} ${this.l}`
+  },
+}
+const person1 = {
+  f: 'Al',
+  l: 'Jabir',
+}
+const person2 = {
+  f: 'King',
+  l: 'Mafia',
+}
+console.log(person.fullName.call(person2))
 // practice and practice
 
 let str = 'king'
