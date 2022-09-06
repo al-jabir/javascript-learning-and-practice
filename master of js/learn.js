@@ -3724,23 +3724,23 @@ function gobal() {
 // person.check.apply(jaker, [2022]);
 // person.check.call(jaker, 2019);
 
-// const myPerson = {
-//   name: 'king',
-//   age: 19,
-//   person2: {
-//     name: 'mafia',
-//     job: 'hacker',
-//     person3: {
-//       name: 'kally',
-//       age: 19,
-//       res: function (msg, job, locations, city) {
-//         console.log(
-//           `${msg}, my name is ${this.name} and I am ${this.age} years old. I will be ${job} developer at ${locations}. I live in ${city} now`
-//         );
-//       },
-//     },
-//   },
-// };
+const myPerson = {
+  name: 'king',
+  age: 19,
+  person2: {
+    name: 'mafia',
+    job: 'hacker',
+    person3: {
+      name: 'kally',
+      age: 19,
+      res: function (msg, job, locations, city) {
+        console.log(
+          `${msg}, my name is ${this.name} and I am ${this.age} years old. I will be ${job} developer at ${locations}. I live in ${city} now`
+        );
+      },
+    },
+  },
+};
 
 const cyber = {
   name: 'Knight Kaly',
