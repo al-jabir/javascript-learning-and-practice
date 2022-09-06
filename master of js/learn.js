@@ -3742,40 +3742,40 @@ function gobal() {
 //   },
 // };
 
-// const cyber = {
-//   name: 'Knight Kaly',
-//   age: 21,
-// };
+const cyber = {
+  name: 'Knight Kaly',
+  age: 21,
+};
 
-// myPerson.person2.person3.res.call(
-//   myPerson.person2.person3,
-//   'Hey',
-//   'Mern Stack',
-//   'remote',
-//   'sylhet'
-// );
+myPerson.person2.person3.res.call(
+  myPerson.person2.person3,
+  'Hey',
+  'Mern Stack',
+  'remote',
+  'sylhet'
+);
 
-// myPerson.person2.person3.res.apply(cyber, [
-//   'Hi',
-//   'Frontend',
-//   'munich',
-//   'sylhet',
-// ]);
+myPerson.person2.person3.res.apply(cyber, [
+  'Hi',
+  'Frontend',
+  'munich',
+  'sylhet',
+]);
 
-// const person = {
-//   name: 'fuck',
-//   age: 19,
-//   check: function () {
-//     setTimeout(
-//       function () {
-//         console.log(`my name is ${this.name}`);
-//       }.bind(person),
-//       2000
-//     );
-//   },
-// };
+const person = {
+  name: 'fuck',
+  age: 19,
+  check: function () {
+    setTimeout(
+      function () {
+        console.log(`my name is ${this.name}`);
+      }.bind(person),
+      2000
+    );
+  },
+};
 
-// person.check();
+person.check();
 
 //prototype inherit
 
