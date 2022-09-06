@@ -808,7 +808,7 @@ one()
 // console.log(len)
 // console.log(s)
 //Array with stack learner
-/**
+
 let arr = [4, 9, 22, 'mai', 'bob', 'sex', 88, 2]
 const a = (arr[3] = 'Fuck')
 arr[8] = 'Mafia'
@@ -834,14 +834,14 @@ console.log(sum)
 console.log(count)
 
 const arr3 = [3, 5, 7, 9, 11, 13, 5, 33]
-// arr3.unshift(98)
-// arr3.splice(0, 1, 98, 1998, 24)
-// arr3[3] = null
-// arr3.pop()
-// arr3.unshift()
-// arr3.shift()
+arr3.unshift(98)
+arr3.splice(0, 1, 98, 1998, 24)
+arr3[3] = null
+arr3.pop()
+arr3.unshift()
+arr3.shift()
 console.log(arr3)
-*/
+
 // Multi Dimensional Array
 /*
 const arr = [
