@@ -442,11 +442,11 @@ for (i = 0; i < arr2.length; i++) {
   if (typeof arr2[i] != 'number') {
     arr2[i] = undefined
   }
-  // else {
-  //   if (typeof arr2[i] == 'number') {
-  //     n++
-  //   }
-  // }
+  else {
+    if (typeof arr2[i] == 'number') {
+      n++
+    }
+  }
   if (arr[i] == undefined) {
     n++
   }
