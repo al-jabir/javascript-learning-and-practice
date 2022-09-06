@@ -4045,43 +4045,43 @@ function gobal() {
  *
  ************/
 
-// class Person {
-//   constructor(name, age) {
-//     this.name = name;
-//     this.age = age;
-//   }
-//   call() {
-//     console.log(`My name is ${this.name}`);
-//   }
-// }
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  call() {
+    console.log(`My name is ${this.name}`);
+  }
+}
 
-// class MyPerson extends Person {
-//   constructor(name, age, type, country) {
-//     super(name, age);
-//     this.name = name;
-//     this.age = age;
-//     this.type = type;
-//     this.country = country;
-//   }
+class MyPerson extends Person {
+  constructor(name, age, type, country) {
+    super(name, age);
+    this.name = name;
+    this.age = age;
+    this.type = type;
+    this.country = country;
+  }
 
-//   play() {
-//     console.log(`I will play with ${this.name} at ${this.country}`);
-//   }
-// }
+  play() {
+    console.log(`I will play with ${this.name} at ${this.country}`);
+  }
+}
 
-// const res = new MyPerson('Knight', 21, 'cyber hacker', 'England');
-// console.log(res);
-// console.dir(res);
+const res = new MyPerson('Knight', 21, 'cyber hacker', 'England');
+console.log(res);
+console.dir(res);
 
-// res.play();
-// res.play();
-// res.play();
-// res.play();
-// res.play();
+res.play();
+res.play();
+res.play();
+res.play();
+res.play();
 
-// const res2 = new Person('Emma', 19);
-// console.log(res2);
-// res2.call();
+const res2 = new Person('Emma', 19);
+console.log(res2);
+res2.call();
 
 /***********************
  *
