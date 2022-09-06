@@ -4484,121 +4484,121 @@ function gobal() {
  * Asynchronas and callback func
  ***********************/
 
-// const processOrder = (customer) => {
-//   console.log(`Processing order for customer 1`);
-//   setTimeout(() => {
-//     console.log(`coking is running`);
-//   }, 3000);
-//   console.log(`Order processed for customer 1`);
-// };
-// console.log(`take order for customer 1`);
-// processOrder();
-// console.log(`Complete order for customer 1`);
+const processOrder = (customer) => {
+  console.log(`Processing order for customer 1`);
+  setTimeout(() => {
+    console.log(`coking is running`);
+  }, 3000);
+  console.log(`Order processed for customer 1`);
+};
+console.log(`take order for customer 1`);
+processOrder();
+console.log(`Complete order for customer 1`);
 
-// const hasMeeting = true;
+const hasMeeting = true;
 
-// const meeting = new Promise((resolve, reject) => {
-//   if (!hasMeeting) {
-//     const meetingDetails = {
-//       name: 'Technical Meeting',
-//       location: 'Google meet',
-//       time: '3:00 AM',
-//     };
-//     resolve(meetingDetails);
-//   } else {
-//     reject(new Error('Meeting already scheduled!'));
-//   }
-// });
+const meeting = new Promise((resolve, reject) => {
+  if (!hasMeeting) {
+    const meetingDetails = {
+      name: 'Technical Meeting',
+      location: 'Google meet',
+      time: '3:00 AM',
+    };
+    resolve(meetingDetails);
+  } else {
+    reject(new Error('Meeting already scheduled!'));
+  }
+});
 
-// meeting
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err.message);
-//   });
-// console.log('Hey guys');
+meeting
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
+console.log('Hey guys');
 
-// const hasMeeting = false;
+const hasMeeting = false;
 
-// const meeting = new Promise((resolve, reject) => {
-//   if (!hasMeeting) {
-//     const meetingDetails = {
-//       name: 'Technical Meeting',
-//       location: 'Google meet',
-//       time: '3:00 AM',
-//     };
-//     resolve(meetingDetails);
-//   } else {
-//     reject(new Error('Meeting already scheduled!'));
-//   }
-// });
+const meeting = new Promise((resolve, reject) => {
+  if (!hasMeeting) {
+    const meetingDetails = {
+      name: 'Technical Meeting',
+      location: 'Google meet',
+      time: '3:00 AM',
+    };
+    resolve(meetingDetails);
+  } else {
+    reject(new Error('Meeting already scheduled!'));
+  }
+});
 
-// const addToCalender = (meetingDetails) => {
-//   const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`;
-//   return Promise.resolve(calender);
-// };
+const addToCalender = (meetingDetails) => {
+  const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`;
+  return Promise.resolve(calender);
+};
 
-// meeting
-//   .then(addToCalender)
-//   .then((res) => {
-//     console.log(res);
-//   })
-//   .catch((err) => {
-//     console.log(err.message);
-//   });
-// console.log('Hey guys');
+meeting
+  .then(addToCalender)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
+console.log('Hey guys');
 
-// const promise1 = Promise.resolve(`I will be solve`);
+const promise1 = Promise.resolve(`I will be solve`);
 
-// const promise2 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     resolve('I cant find for you');
-//   }, 2000);
-// });
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('I cant find for you');
+  }, 2000);
+});
 
-// promise1.then((res) => {
-//   console.log(res);
-// });
-// promise2.then((res) => {
-//   console.log(res);
-// });
+promise1.then((res) => {
+  console.log(res);
+});
+promise2.then((res) => {
+  console.log(res);
+});
 
-// Promise.all([promise1, promise2])
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+Promise.all([promise1, promise2])
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const hasMeeting = false;
+const hasMeeting = false;
 
-// const meeting = new Promise((resolve, reject) => {
-//   if (!hasMeeting) {
-//     const meetingDetails = {
-//       name: 'Technical Meeting',
-//       location: 'Google meet',
-//       time: '3:00 AM',
-//     };
-//     resolve(meetingDetails);
-//   } else {
-//     reject(new Error('Meeting already scheduled!'));
-//   }
-// });
+const meeting = new Promise((resolve, reject) => {
+  if (!hasMeeting) {
+    const meetingDetails = {
+      name: 'Technical Meeting',
+      location: 'Google meet',
+      time: '3:00 AM',
+    };
+    resolve(meetingDetails);
+  } else {
+    reject(new Error('Meeting already scheduled!'));
+  }
+});
 
-// const addToCalender = (meetingDetails) => {
-//   const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`;
-//   return ;Promise.resolve(calender)
-// };
+const addToCalender = (meetingDetails) => {
+  const calender = `${meetingDetails.name} has been scheduled on ${meetingDetails.location} at ${meetingDetails.time}`;
+  return ;Promise.resolve(calender)
+};
 
-// async function myMeeting() {
-//   const meetingDetails = await meeting;
-//   const calendar = await addToCalender(meetingDetails);
-//   console.log(calendar);
-// }
+async function myMeeting() {
+  const meetingDetails = await meeting;
+  const calendar = await addToCalender(meetingDetails);
+  console.log(calendar);
+}
 
-// myMeeting();
+myMeeting();
 
 /********* Practice and Practice *******/
 
