@@ -3791,54 +3791,54 @@ function gobal() {
 //   );
 // };
 
-// // console.log(Person.prototype);
-// const res = new Person('javir', 19, 'Mern Stack');
-// res.checks();
+console.log(Person.prototype);
+const res = new Person('javir', 19, 'Mern Stack');
+res.checks();
 
-// var Person = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// };
+var Person = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+};
 
-// var Teacher = function (name, age, job, subject) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-//   this.subject = subject;
-// };
+var Teacher = function (name, age, job, subject) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+  this.subject = subject;
+};
 
-// var Teacher = function (name, age, job, subject) {
-//   Person.call(this, name, age, job);
-//   this.subject = subject;
-// };
+var Teacher = function (name, age, job, subject) {
+  Person.call(this, name, age, job);
+  this.subject = subject;
+};
 
-// var kamaljeet = new Teacher('Kamaljeet Saini', 53, 'Teacher', 'CSE');
-// console.log(kamaljeet);
+var kamaljeet = new Teacher('Kamaljeet Saini', 53, 'Teacher', 'CSE');
+console.log(kamaljeet);
 
-// const Person = function (name, job, scl) {
-//   this.name = name;
-//   this.job = job;
-//   this.scl = scl;
-// };
+const Person = function (name, job, scl) {
+  this.name = name;
+  this.job = job;
+  this.scl = scl;
+};
 
-// const Res = function (name, job, scl, sub, batch) {
-//   Person.call(this, name, job, scl);
-//   this.sub = sub;
-//   this.batch = batch;
-// };
+const Res = function (name, job, scl, sub, batch) {
+  Person.call(this, name, job, scl);
+  this.sub = sub;
+  this.batch = batch;
+};
 
-// const res = new Res(
-//   'king',
-//   'student',
-//   'Sylhet engineering collage',
-//   'cse',
-//   '19-20'
-// );
+const res = new Res(
+  'king',
+  'student',
+  'Sylhet engineering collage',
+  'cse',
+  '19-20'
+);
 
-// console.log(res);
+console.log(res);
 
-// console.dir(res);
+console.dir(res);
 /***************
  *
  *
