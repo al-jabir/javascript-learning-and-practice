@@ -645,21 +645,21 @@ console.log(arr.lastIndexOf('developer'))
 console.log(arr.startWith())
 console.log(arr.endWith())
 
-// let arr3 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
-// arr3.splice(3, 1, 'Fucking')
-// arr3[arr3.length] = 'Gangstar'
-// console.log(arr3.sort())
-// console.log(arr3.join(' | '))
-// console.log(arr3.splice(5, 0, 'Fuck', 'sex'))
+let arr3 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
+arr3.splice(3, 1, 'Fucking')
+arr3[arr3.length] = 'Gangstar'
+console.log(arr3.sort())
+console.log(arr3.join(' | '))
+console.log(arr3.splice(5, 0, 'Fuck', 'sex'))
 
-// let arr5 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
+let arr5 = [9, 8, 7, 4, 3, 1, 'king', 'mafir']
 
-// for (i of arr5) {
-//   console.log(i)
-// }
-// for (i in arr5) {
-//   console.log(i)
-// }
+for (i of arr5) {
+  console.log(i)
+}
+for (i in arr5) {
+  console.log(i)
+}
 
 console.log(arr5.sort())
 console.log(arr5.reverse())
