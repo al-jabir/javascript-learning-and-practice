@@ -456,25 +456,26 @@ console.log(arr2)
 console.log('songa = ' + n)
 */
 // ai logic ta besi kore practice and try korte hbe that so very importants
-//const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
-// count = 0
-// for (let i = 0; i < arr.length; i++) {
-//   for (let j = i; j < arr.length - 1; j++) {
-//     if (!arr[j] || typeof arr[j] !== 'number') {
-//       arr[j] = arr[j + 1]
-//       arr[j + 1] = undefined
-//     }
-//   }
-//   if (arr[i] == undefined) {
-//     count++
-//   }
-// }
-// arr.length -= count
-// console.log(arr) // [1, 2, 3, 4, 5, 6, 7];
-// const fillArr = arr.filter((v) => typeof v == 'number')
-// console.log(fillArr)
-// const a = arr.filter((v) => typeof v == 'number')
-// console.log(a)
+
+const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
+count = 0
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i; j < arr.length - 1; j++) {
+    if (!arr[j] || typeof arr[j] !== 'number') {
+      arr[j] = arr[j + 1]
+      arr[j + 1] = undefined
+    }
+  }
+  if (arr[i] == undefined) {
+    count++
+  }
+}
+arr.length -= count
+console.log(arr) // [1, 2, 3, 4, 5, 6, 7];
+const fillArr = arr.filter((v) => typeof v == 'number')
+console.log(fillArr)
+const a = arr.filter((v) => typeof v == 'number')
+console.log(a)
 
 
 const numbers = [1, 2, 3, 4, false, 'a', NaN, 5, 6]
