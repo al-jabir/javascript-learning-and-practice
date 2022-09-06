@@ -3907,135 +3907,135 @@ function gobal() {
 
 //**********prototype inheritance */
 
-// function Person(name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// }
+function Person(name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+}
 
-// function Details(name, age, job, locations, level, duty) {
-//   Person.call(this, name, age, job);
-//   this.locations = locations;
-//   this.level = level;
-//   this.level = level;
-//   this.duty = duty;
-// }
+function Details(name, age, job, locations, level, duty) {
+  Person.call(this, name, age, job);
+  this.locations = locations;
+  this.level = level;
+  this.level = level;
+  this.duty = duty;
+}
 
-// const res = new Details('Al Jabir', 40, 'student', 'sylhet', 'senior', 'never');
+const res = new Details('Al Jabir', 40, 'student', 'sylhet', 'senior', 'never');
 
-// console.log(res);
-// console.log(res.job);
-// console.dir(res);
+console.log(res);
+console.log(res.job);
+console.dir(res);
 
-// // no perameter set bye default
+// no perameter set bye default
 
-// function Result(cpa, grade) {
-//   this.cpa = cpa;
-//   this.grade = grade;
-// }
+function Result(cpa, grade) {
+  this.cpa = cpa;
+  this.grade = grade;
+}
 
-// function UpdateRes(cpa, grade, sub, mark) {
-//   Result.call(this);
-//   this.sub = sub;
-//   this.mark = mark;
-// }
+function UpdateRes(cpa, grade, sub, mark) {
+  Result.call(this);
+  this.sub = sub;
+  this.mark = mark;
+}
 
-// const passing = new UpdateRes(3.5, 'A', 'DSA and Problem solving', '98');
-// console.log(passing);
+const passing = new UpdateRes(3.5, 'A', 'DSA and Problem solving', '98');
+console.log(passing);
 
-// var GeneralPeople = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// };
+var GeneralPeople = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+};
 
-// var Athlete = function (name, age, job, prize) {
-//   GeneralPeople.call(this);
-//   this.prize = 100;
-// };
+var Athlete = function (name, age, job, prize) {
+  GeneralPeople.call(this);
+  this.prize = 100;
+};
 
-// const j = new Athlete('mafia', 21, 'self learner', 'Silver');
-// console.log(j);
+const j = new Athlete('mafia', 21, 'self learner', 'Silver');
+console.log(j);
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
 
-// function Cricketer(name, age, type, country) {
-//   Person.call(this, name, age);
-//   this.type = type;
-//   this.country = country;
-// }
+function Cricketer(name, age, type, country) {
+  Person.call(this, name, age);
+  this.type = type;
+  this.country = country;
+}
 
-// Person.prototype = {
-//   eat: function () {
-//     console.log(`${this.name} is playing`);
-//   },
-// };
+Person.prototype = {
+  eat: function () {
+    console.log(`${this.name} is playing`);
+  },
+};
 
-// Cricketer.prototype = Object.create(Person.prototype);
+Cricketer.prototype = Object.create(Person.prototype);
 
 // // Cricketer.prototype.constructor = Cricketer;
-// Cricketer.prototype.play = function () {
-//   console.log(`I will play cricket with ${this.name}`);
-// };
+Cricketer.prototype.play = function () {
+  console.log(`I will play cricket with ${this.name}`);
+};
 
-// let sakib = new Cricketer('sakib', 35, 'right-hand', 'bd');
+let sakib = new Cricketer('sakib', 35, 'right-hand', 'bd');
 
-// sakib.eat();
+sakib.eat();
 
-// let tamin = new Cricketer('knight', 21, 'All-rounder', 'England');
-// console.log(tamin);
-// tamin.play();
+let tamin = new Cricketer('knight', 21, 'All-rounder', 'England');
+console.log(tamin);
+tamin.play();
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
 
-// function Check(name, age, job, height, country) {
-//   Person.call(this, name, age);
-//   this.job = job;
-//   this.height = height;
-//   this.country = country;
-//   this.res = function () {
-//     console.log(`hey ${this.name} I will be ${this.job} developer`);
-//   };
-// }
+function Check(name, age, job, height, country) {
+  Person.call(this, name, age);
+  this.job = job;
+  this.height = height;
+  this.country = country;
+  this.res = function () {
+    console.log(`hey ${this.name} I will be ${this.job} developer`);
+  };
+}
 
-// const res2 = new Check('Knight', 19, 'frontend', '5.6', 'Bangladesh');
+const res2 = new Check('Knight', 19, 'frontend', '5.6', 'Bangladesh');
 
-// console.log(res2);
-// console.dir(res2);
-// res2.res();
+console.log(res2);
+console.dir(res2);
+res2.res();
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
 
-// function Cricketer(name, age, type, country) {
-//   Person.call(this, name, age);
-//   this.type = type;
-//   this.country = country;
-// }
+function Cricketer(name, age, type, country) {
+  Person.call(this, name, age);
+  this.type = type;
+  this.country = country;
+}
 
-// Person.prototype = {
-//   eat: function () {
-//     console.log(`${this.name} is playing`);
-//   },
-// };
+Person.prototype = {
+  eat: function () {
+    console.log(`${this.name} is playing`);
+  },
+};
 
-// Cricketer.prototype = Object.create(Person.prototype);
-// Cricketer.prototype.fuck = function () {
-//   console.log(`I am playing with ${this.name}`);
-// };
+Cricketer.prototype = Object.create(Person.prototype);
+Cricketer.prototype.fuck = function () {
+  console.log(`I am playing with ${this.name}`);
+};
 
-// const res = new Cricketer('kign', 25, 'bating', 'BD');
-// console.log(res);
-// res.eat();
-// res.fuck();
+const res = new Cricketer('kign', 25, 'bating', 'BD');
+console.log(res);
+res.eat();
+res.fuck();
 
 /**********
  *
