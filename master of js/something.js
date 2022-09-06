@@ -895,32 +895,30 @@ console.log(count)
 // console.log(point)
 // console.log(point.s)
 // console.log(point)
-/*
+
 let obj = {
   a: 24,
   b: 98,
   c: 18,
-}
+};
 let obj2 = {
   a: '24',
   b: 98,
   c: 18,
-}
-obj.c = 'sex'
-console.log(obj)
+};
+obj.c = 'sex';
+console.log(obj);
 // delete obj.b
-console.log(obj)
-console.log(obj.a == obj2.a)
-console.log(typeof obj)
+console.log(obj);
+console.log(obj.a == obj2.a);
+console.log(typeof obj);
 
 //Object Mathod
 
-console.log(Object.keys(obj))
-console.log(Object.values(obj))
-console.log(Object.entries(obj))
+console.log(Object.keys(obj));
+console.log(Object.values(obj));
+console.log(Object.entries(obj));
 
-
-*/
 // Inner Function
 function something(greet, name) {
   function sayHi() {
