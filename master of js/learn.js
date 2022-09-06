@@ -4123,62 +4123,62 @@ function gobal() {
 
 // impicit binding
 
-// var Person = function (name, age) {
-//   return {
-//     name: name,
-//     age: age,
-//     print: function () {
-//       name: 'king', console.log(this.name);
-//     },
-//     fuckName: {
-//       name: 'mrs.XXX',
-//       output: function () {
-//         console.log(this.name);
-//       },
-//     },
-//   };
-// };
+var Person = function (name, age) {
+  return {
+    name: name,
+    age: age,
+    print: function () {
+      name: 'king', console.log(this.name);
+    },
+    fuckName: {
+      name: 'mrs.XXX',
+      output: function () {
+        console.log(this.name);
+      },
+    },
+  };
+};
 
-// var res = Person('king', 25);
-// // console.log(res);
+var res = Person('king', 25);
+// console.log(res);
 
-// res.print();
-// res.fuckName.output();
+res.print();
+res.fuckName.output();
 
-// explicit binding
+explicit binding
 
-// var outPut = function () {
-//   console.log(this.name + ' will be mafia');
-// };
+var outPut = function () {
+  console.log(this.name + ' will be mafia');
+};
 
-// var sakib = {
-//   name: 'sakib',
-//   age: 25,
-// };
+var sakib = {
+  name: 'sakib',
+  age: 25,
+};
 
-// outPut.call(sakib);
+outPut.call(sakib);
 
-// object rules
+object rules
 
-// const myObj = {
-//   name: 'king',
-//   age: 32,
-//   res: function (v1, v2, v3, v4, v5) {
-//     console.log(this.name, v1, v2, v3, v4, v5);
-//   },
-// };
-// const v1 = 'knight';
-// const v2 = 'mafia';
-// const v3 = 'hacking';
-// const v4 = 'cyber';
-// const v5 = 'bal';
-// const re = [v1, v2, v3, v4, v5];
-// // console.log(re);
+const myObj = {
+  name: 'king',
+  age: 32,
+  res: function (v1, v2, v3, v4, v5) {
+    console.log(this.name, v1, v2, v3, v4, v5);
+  },
+};
+const v1 = 'knight';
+const v2 = 'mafia';
+const v3 = 'hacking';
+const v4 = 'cyber';
+const v5 = 'bal';
+const re = [v1, v2, v3, v4, v5];
+console.log(re);
 
-// // myObj.res.apply(myObj, re);
+myObj.res.apply(myObj, re);
 
-// const ress = myObj.res.bind(myObj, v1, v2, v3, v4, v5);
-// ress();
+const ress = myObj.res.bind(myObj, v1, v2, v3, v4, v5);
+ress();
 
 /***********************
  * higher order function
@@ -5235,6 +5235,6 @@ const getPosition = function () {
 
 getPosition().then(d => console.log(d));
 
-import './api.js'
-import './something.js'
+import './api.js';
+import './something.js';
 
