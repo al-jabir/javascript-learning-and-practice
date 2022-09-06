@@ -706,14 +706,14 @@ const mm = [
 console.log(mm[m.getMonth()].toUpperCase())
 console.log(`years == ${new Date().getFullYear()}`)
 
-// console.log(days[dd.getUTCHours()])
+console.log(days[dd.getUTCHours()])
 
 console.log(Math.floor(Math.random() * 9) + 1)
 
-// console.log(arr5.delete('king'))
+console.log(arr5.delete('king'))
 
 
-*****/
+
 //How to data search of match
 
 const arr = [4, 9, 2, 10, 44, 29, 18]
