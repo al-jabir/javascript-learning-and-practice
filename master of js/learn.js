@@ -3550,28 +3550,28 @@ function gobal() {
 //   country: 'Bangladesh',
 // };
 
-// const player = Object.create(captain);
+const player = Object.create(captain);
 
-// player.name = 'Sadia';
+player.name = 'Sadia';
 
-// console.log(player);
+console.log(player);
 
-// console.log(captain.age);
-// console.log(captain.country);
+console.log(captain.age);
+console.log(captain.country);
 
-// function test() {}
+function test() {}
 
-// console.dir(test);
-// console.log(test.prototype);
+console.dir(test);
+console.log(test.prototype);
 
-// function Person(name, age) {
-//   let person = Object.create(Person.prototype);
+function Person(name, age) {
+  let person = Object.create(Person.prototype);
 
-//   person.name = name;
-//   person.age = age;
+  person.name = name;
+  person.age = age;
 
-//   return person;
-// }
+  return person;
+}
 
 Person.prototype = {
   eat() {
