@@ -3655,22 +3655,22 @@ function gobal() {
 //   },
 // };
 
-// const res = new PersonCheck('Mafia', 24, 'Frontend');
-// const res2 = new PersonCheck('sarah', 19, 'Cyber');
-// const res3 = new PersonCheck('Knight', 20, 'Mern stack');
-// const res4 = new PersonCheck('Jackie', 21, 'Backend');
-// res.king();
-// res2.king();
-// res3.king();
-// res4.king();
-// // console.dir(res);
+const res = new PersonCheck('Mafia', 24, 'Frontend');
+const res2 = new PersonCheck('sarah', 19, 'Cyber');
+const res3 = new PersonCheck('Knight', 20, 'Mern stack');
+const res4 = new PersonCheck('Jackie', 21, 'Backend');
+res.king();
+res2.king();
+res3.king();
+res4.king();
+// console.dir(res);
 
-// function king() {
-//   this.job = `I will be frontend developer.`;
-// }
+function king() {
+  this.job = `I will be frontend developer.`;
+}
 
-// king();
-// console.log(job);
+king();
+console.log(job);
 
 const myObj = {
   name: 'king',
