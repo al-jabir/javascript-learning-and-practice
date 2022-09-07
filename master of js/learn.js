@@ -3714,15 +3714,15 @@ function gobal() {
 //   },
 // };
 
-// const jaker = {
-//   name: 'King',
-//   dob: 2003,
-// };
+const jaker = {
+  name: 'King',
+  dob: 2003,
+};
 
-// person.check(2022);
+person.check(2022);
 
-// person.check.apply(jaker, [2022]);
-// person.check.call(jaker, 2019);
+person.check.apply(jaker, [2022]);
+person.check.call(jaker, 2019);
 
 const myPerson = {
   name: 'king',
