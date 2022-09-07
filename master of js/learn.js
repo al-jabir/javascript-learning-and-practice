@@ -1,4 +1,4 @@
-/*
+
 let arr = [2, 4, 5, 99, 23];
 let max = 0;
 let sum = 0;
@@ -11,287 +11,287 @@ for (i = 0; i < arr.length; i++) {
 }
 console.log(`min is ${max} and total sum is : ${sum}`);
 
-nams = "al jabir";
-nams = "My name is Abdullah";
-console.log(nams);
+// nams = "al jabir";
+// nams = "My name is Abdullah";
+// console.log(nams);
 
-let day = new Date().getDay();
-switch (day) {
-  case 0:
-    console.log("Today is Sunday");
-    break;
-  case 1:
-    console.log("Today is Monday");
-    break;
-  case 2:
-    console.log("Today is Tueday");
-    break;
-  case 3:
-    console.log("Today is Wedday");
-    break;
-  case 4:
-    console.log("Today is Thrusday");
-    break;
-  case 5:
-    console.log("Today is Friday");
-    break;
-  case 6:
-    console.log("Today is Satday");
-    break;
-  default:
-    console.log("There is no match of day");
-}
-
-
-//coding challenge #1
-
-const mark = 78
-const markHeight = 1.69
-const jonh = 92
-const jonhHeight = 1.95
-const bmiMark = mark/markHeight ** 2
-const bmiJonh = jonh/(jonhHeight * jonhHeight)
-const markhigherBMi = bmiMark > bmiJonh
-console.log(bmiMark,bmiJonh,markhigherBMi) 
-//end
-
-const name = 'Jabir'
-const job = 'Learner of JS'
-const BirthYear = 1998
-const year = 2022
-
-const res =`I am ${name}, 
-I am ${year - BirthYear} 
-years old ${job}!`
-console.log(res.toUpperCase())
-
-const age = 16
-
-if(age >= 18) console.log("Your are vote of elections")
-else console.log('You cant the vote of elections')
-
-let ages = 16;
-if(ages != 30) console.log('You can learn driving')
-
-const me = true
-const me2 = false
-console.log(me === me2)
-const showTrue = me && me2
-if(showTrue){
-    console.log("Sarah is able to drive")
-}else{
-    console.log('Some else should drive...')
-}
-
-let str = 'a'
-switch(str){
-    case 'a':
-    case 'e':
-case 'i':
-    case 'o':
-        case 'u':
-   console.log('This is vowels')
-   break
-   default:
-    console.log('consonats')
-}
-
-let sex = 15;
-let sex2 = sex >= 18 ? 'I will be sex at night':'I will be coding'
-console.log(sex2)
-let sm = 15
-sm >= 18 ? console.log('I will be dating with you oneday'):console.log('I am not sure what can i do?')
-
-// functions
-
-function calling(){
-    console.log('I will call with my wife....')
-}
-
-calling()
-calling()
-calling()
-calling()
-
-function ase(){
-    const a =9,b=5;
-    console.log(a,b)
-    const koitaAse = `ame kase ${a} ase. tar kase ${b} ase`
-   console.log(koitaAse)
-}
-ase()
-ase()
-ase()
-ase()
-let coun= 0;
-function namoto(n){
-    for(i=1; i<=10; i++){
-        console.log(`${n} * ${i} = ${n*i}`);
-        coun++;
-    }
-    console.log('counts = '+coun)
-}
-namoto(5)
-namoto(15)
-namoto(25)
-namoto(35)
-namoto(45)
-
-function calAge(birth){
-    const realYear = 2022 - birth;
-    return realYear;
-}
-const resOfAge = calAge(1998)
-const resOfAge2 = calAge(2000)
-const resOfAge3 = calAge(2002)
-const resOfAge4 = calAge(2004)
-console.log(resOfAge+' Years old')
-console.log(resOfAge2+' Years old')
-console.log(resOfAge3+' Years old')
-console.log(resOfAge4+' Years old')
-
-// Arrow functions
-
-const res33 = (n) => 2022 - n;
-console.log(res33(1998))
-
-const resofage = births =>{
-    const resi = 2022 - births
-    return resi
-}
-console.log(resofage(2003))
-const packAse = function(resofFruit){
-    return resofFruit * 2
-}
-
-function pack(mango,kg){
-    const resA = packAse(mango);
-    const resB = packAse(kg);
-    const resOfPack = `You have can ${resA} pack and ${resB} kg`
-    return resOfPack
-}
-
-console.log(pack(5,3))
+// let day = new Date().getDay();
+// switch (day) {
+//   case 0:
+//     console.log("Today is Sunday");
+//     break;
+//   case 1:
+//     console.log("Today is Monday");
+//     break;
+//   case 2:
+//     console.log("Today is Tueday");
+//     break;
+//   case 3:
+//     console.log("Today is Wedday");
+//     break;
+//   case 4:
+//     console.log("Today is Thrusday");
+//     break;
+//   case 5:
+//     console.log("Today is Friday");
+//     break;
+//   case 6:
+//     console.log("Today is Satday");
+//     break;
+//   default:
+//     console.log("There is no match of day");
+// }
 
 
-const calcAverage = (a,b,c) => (a+b+c)/3
-let dolphinsScore = calcAverage(44,23,71)
-let koalasScore = calcAverage(65,54,49)
-console.log(dolphinsScore,koalasScore)
+// //coding challenge #1
 
-const checkWinner = function(avgDolphins,avgKoalos){
-    if(avgDolphins >= 2 * avgKoalos){
-        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalos})`)
-    }else if(avgKoalos >=2 * avgDolphins){
-        console.log(`Koalas win  (${avgKoalos} vs ${avgDolphins})`)
-    }else{
-        console.log(`No team wins`)
-    }
-}
+// const mark = 78
+// const markHeight = 1.69
+// const jonh = 92
+// const jonhHeight = 1.95
+// const bmiMark = mark/markHeight ** 2
+// const bmiJonh = jonh/(jonhHeight * jonhHeight)
+// const markhigherBMi = bmiMark > bmiJonh
+// console.log(bmiMark,bmiJonh,markhigherBMi) 
+// //end
 
- dolphinsScore = calcAverage(33,55,88)
- koalasScore = calcAverage(88,55,22)
+// const name = 'Jabir'
+// const job = 'Learner of JS'
+// const BirthYear = 1998
+// const year = 2022
 
-checkWinner(dolphinsScore,koalasScore)
-checkWinner(443,199)
-console.log(dolphinsScore,koalasScore)
+// const res =`I am ${name}, 
+// I am ${year - BirthYear} 
+// years old ${job}!`
+// console.log(res.toUpperCase())
+
+// const age = 16
+
+// if(age >= 18) console.log("Your are vote of elections")
+// else console.log('You cant the vote of elections')
+
+// let ages = 16;
+// if(ages != 30) console.log('You can learn driving')
+
+// const me = true
+// const me2 = false
+// console.log(me === me2)
+// const showTrue = me && me2
+// if(showTrue){
+//     console.log("Sarah is able to drive")
+// }else{
+//     console.log('Some else should drive...')
+// }
+
+// let str = 'a'
+// switch(str){
+//     case 'a':
+//     case 'e':
+// case 'i':
+//     case 'o':
+//         case 'u':
+//    console.log('This is vowels')
+//    break
+//    default:
+//     console.log('consonats')
+// }
+
+// let sex = 15;
+// let sex2 = sex >= 18 ? 'I will be sex at night':'I will be coding'
+// console.log(sex2)
+// let sm = 15
+// sm >= 18 ? console.log('I will be dating with you oneday'):console.log('I am not sure what can i do?')
+
+// // functions
+
+// function calling(){
+//     console.log('I will call with my wife....')
+// }
+
+// calling()
+// calling()
+// calling()
+// calling()
+
+// function ase(){
+//     const a =9,b=5;
+//     console.log(a,b)
+//     const koitaAse = `ame kase ${a} ase. tar kase ${b} ase`
+//    console.log(koitaAse)
+// }
+// ase()
+// ase()
+// ase()
+// ase()
+// let coun= 0;
+// function namoto(n){
+//     for(i=1; i<=10; i++){
+//         console.log(`${n} * ${i} = ${n*i}`);
+//         coun++;
+//     }
+//     console.log('counts = '+coun)
+// }
+// namoto(5)
+// namoto(15)
+// namoto(25)
+// namoto(35)
+// namoto(45)
+
+// function calAge(birth){
+//     const realYear = 2022 - birth;
+//     return realYear;
+// }
+// const resOfAge = calAge(1998)
+// const resOfAge2 = calAge(2000)
+// const resOfAge3 = calAge(2002)
+// const resOfAge4 = calAge(2004)
+// console.log(resOfAge+' Years old')
+// console.log(resOfAge2+' Years old')
+// console.log(resOfAge3+' Years old')
+// console.log(resOfAge4+' Years old')
+
+// // Arrow functions
+
+// const res33 = (n) => 2022 - n;
+// console.log(res33(1998))
+
+// const resofage = births =>{
+//     const resi = 2022 - births
+//     return resi
+// }
+// console.log(resofage(2003))
+// const packAse = function(resofFruit){
+//     return resofFruit * 2
+// }
+
+// function pack(mango,kg){
+//     const resA = packAse(mango);
+//     const resB = packAse(kg);
+//     const resOfPack = `You have can ${resA} pack and ${resB} kg`
+//     return resOfPack
+// }
+
+// console.log(pack(5,3))
 
 
-// add sum of function
+// const calcAverage = (a,b,c) => (a+b+c)/3
+// let dolphinsScore = calcAverage(44,23,71)
+// let koalasScore = calcAverage(65,54,49)
+// console.log(dolphinsScore,koalasScore)
 
-function add(a,b){
-    console.log(a+b)
-    console.log(a-b)
-    console.log(a*b)
-    console.log(a/b)
-}
-add(5,5)
-add(15,5)
-add(5,15)
-add(5,2)
-add(115,51)
+// const checkWinner = function(avgDolphins,avgKoalos){
+//     if(avgDolphins >= 2 * avgKoalos){
+//         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalos})`)
+//     }else if(avgKoalos >=2 * avgDolphins){
+//         console.log(`Koalas win  (${avgKoalos} vs ${avgDolphins})`)
+//     }else{
+//         console.log(`No team wins`)
+//     }
+// }
 
-function add2(n1,n2){
-    const resing = n1*n2
-    console.log(`Res of value ${resing}`)
-}
-add2(4,5)
-add2(5,5)
-add2(9,9)
+//  dolphinsScore = calcAverage(33,55,88)
+//  koalasScore = calcAverage(88,55,22)
 
-const add3 = function(a,b){
-    const ress = a/b
-    return ress
-}
-console.log(add3(50,10))
-console.log(add3(30,10))
-console.log(add3(50,15))
-console.log(add3(50,20))
-
-const details = function(name,age,job){
-    const showOfYourDetails = `My name is ${name}. I am ${age} years old and I will be ${job} developer at remote jobs oneday insha'Allah`
-    return showOfYourDetails
-}
-console.log(details('Jabir',19,'Frontend/Mern stack'))
-//copy of site
-function callMyName(name, callback) {
-    var myAge = 20;
-    callback(myAge);
-    console.log('Is it interesting? Yes it is Mr.' + name);
-}
-
-function hello(age) {
-    console.log('I am passed through argument and my age is: ' + age);
-}
-
-callMyName('Zonayed Ahmed', hello);
-//test of callback function
- function msg(name){
-    console.log("Hello mr. "+name)
-    return function check(job){
-        console.log('Mr. '+name+' I will be attend your '+job)
-    }
- }
- msg('Jabir')('RND Company')
-
- // try to callback function
-
- function callings(name,callback){
-    let dak = 'Nagbari'
-    callback(dak)
-    console.log('my name is '+name)
- }
-
- function coming(kobe){
-    console.log('Tumi ki '+kobe+' te aso nki')
- }
- callings('King',coming)
+// checkWinner(dolphinsScore,koalasScore)
+// checkWinner(443,199)
+// console.log(dolphinsScore,koalasScore)
 
 
-//Contructor functions
+// // add sum of function
+
+// function add(a,b){
+//     console.log(a+b)
+//     console.log(a-b)
+//     console.log(a*b)
+//     console.log(a/b)
+// }
+// add(5,5)
+// add(15,5)
+// add(5,15)
+// add(5,2)
+// add(115,51)
+
+// function add2(n1,n2){
+//     const resing = n1*n2
+//     console.log(`Res of value ${resing}`)
+// }
+// add2(4,5)
+// add2(5,5)
+// add2(9,9)
+
+// const add3 = function(a,b){
+//     const ress = a/b
+//     return ress
+// }
+// console.log(add3(50,10))
+// console.log(add3(30,10))
+// console.log(add3(50,15))
+// console.log(add3(50,20))
+
+// const details = function(name,age,job){
+//     const showOfYourDetails = `My name is ${name}. I am ${age} years old and I will be ${job} developer at remote jobs oneday insha'Allah`
+//     return showOfYourDetails
+// }
+// console.log(details('Jabir',19,'Frontend/Mern stack'))
+// //copy of site
+// function callMyName(name, callback) {
+//     var myAge = 20;
+//     callback(myAge);
+//     console.log('Is it interesting? Yes it is Mr.' + name);
+// }
+
+// function hello(age) {
+//     console.log('I am passed through argument and my age is: ' + age);
+// }
+
+// callMyName('Zonayed Ahmed', hello);
+// //test of callback function
+//  function msg(name){
+//     console.log("Hello mr. "+name)
+//     return function check(job){
+//         console.log('Mr. '+name+' I will be attend your '+job)
+//     }
+//  }
+//  msg('Jabir')('RND Company')
+
+//  // try to callback function
+
+//  function callings(name,callback){
+//     let dak = 'Nagbari'
+//     callback(dak)
+//     console.log('my name is '+name)
+//  }
+
+//  function coming(kobe){
+//     console.log('Tumi ki '+kobe+' te aso nki')
+//  }
+//  callings('King',coming)
 
 
- const myResult = new Function ('a','b','return a*b')
- console.log(myResult(5,3))
- console.log(myResult(5,5))
- console.log(myResult(5,6))
- console.log(myResult(5,9))
- //something
- function myFunction(a, b) {
-    return a * b;
-  }
+// //Contructor functions
+
+
+//  const myResult = new Function ('a','b','return a*b')
+//  console.log(myResult(5,3))
+//  console.log(myResult(5,5))
+//  console.log(myResult(5,6))
+//  console.log(myResult(5,9))
+//  //something
+//  function myFunction(a, b) {
+//     return a * b;
+//   }
   
-  let x = myFunction(4, 3) * 2;
-  console.log(x)
+//   let x = myFunction(4, 3) * 2;
+//   console.log(x)
 
 
-  var foods = ['cake','cala','lichu','juice']
-  var numbers = [2,5,9,98]
+//   var foods = ['cake','cala','lichu','juice']
+//   var numbers = [2,5,9,98]
 
-  foods.forEach(function(v,a){
-    console.log(`index ${a+1} and valu ${v}`)
-  })
-*/
+//   foods.forEach(function(v,a){
+//     console.log(`index ${a+1} and valu ${v}`)
+//   })
+
 // Array
 /*
 const Year = [2003, 2005, 1998, 1996, 2001]
