@@ -3691,28 +3691,28 @@ function gobal() {
 
 // myObj.check.resi.res();
 
-// var myObj = {
-//   name: 'bal',
-//   job: 'sex',
-//   another: {
-//     name: 'fuck',
-//     job: 'dating',
-//     res: function () {
-//       name: 'Ahmed Zonayed',
-//         console.log(`My name is ${this.name} and I am ${this.job}`);
-//     }.call(myObj),
-//   },
-// };
+var myObj = {
+  name: 'bal',
+  job: 'sex',
+  another: {
+    name: 'fuck',
+    job: 'dating',
+    res: function () {
+      name: 'Ahmed Zonayed',
+        console.log(`My name is ${this.name} and I am ${this.job}`);
+    }.call(myObj),
+  },
+};
 
-// const person = {
-//   name: 'King',
-//   dob: 1998,
-//   check: function (currYear) {
-//     console.log(
-//       `My name is ${this.name} and I am ${currYear - this.dob} years old.`
-//     );
-//   },
-// };
+const person = {
+  name: 'King',
+  dob: 1998,
+  check: function (currYear) {
+    console.log(
+      `My name is ${this.name} and I am ${currYear - this.dob} years old.`
+    );
+  },
+};
 
 const jaker = {
   name: 'King',
