@@ -3585,19 +3585,19 @@ function gobal() {
 //   },
 // };
 
-// const sex = Person('Fucking', 19);
-// sex.play();
+const sex = Person('Fucking', 19);
+sex.play();
 
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
 
-// Person.prototype = {
-//   dev() {
-//     console.log(`I will be dev`);
-//   },
-// };
+Person.prototype = {
+  dev() {
+    console.log(`I will be dev`);
+  },
+};
 
 const sex = new Person('King', 19);
 sex.dev();
