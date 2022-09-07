@@ -3615,20 +3615,20 @@ function gobal() {
 //   }
 // }
 
-// const sex = new Person('Darling', 'Junior');
+const sex = new Person('Darling', 'Junior');
 
-// sex.frontend();
+sex.frontend();
 
-//prototype
+prototype
 
-// function MyDetails(name, age, job, village) {
-//   let person = Object.create(MyDetails.prototype);
-//   person.name = name;
-//   person.age = age;
-//   person.job = job;
-//   person.village = village;
-//   return person;
-// }
+function MyDetails(name, age, job, village) {
+  let person = Object.create(MyDetails.prototype);
+  person.name = name;
+  person.age = age;
+  person.job = job;
+  person.village = village;
+  return person;
+}
 
 MyDetails.prototype = {
   jabir() {
