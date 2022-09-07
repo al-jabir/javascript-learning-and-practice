@@ -11,36 +11,36 @@ for (i = 0; i < arr.length; i++) {
 }
 console.log(`min is ${max} and total sum is : ${sum}`);
 
-// nams = "al jabir";
-// nams = "My name is Abdullah";
-// console.log(nams);
+nams = "al jabir";
+nams = "My name is Abdullah";
+console.log(nams);
 
-// let day = new Date().getDay();
-// switch (day) {
-//   case 0:
-//     console.log("Today is Sunday");
-//     break;
-//   case 1:
-//     console.log("Today is Monday");
-//     break;
-//   case 2:
-//     console.log("Today is Tueday");
-//     break;
-//   case 3:
-//     console.log("Today is Wedday");
-//     break;
-//   case 4:
-//     console.log("Today is Thrusday");
-//     break;
-//   case 5:
-//     console.log("Today is Friday");
-//     break;
-//   case 6:
-//     console.log("Today is Satday");
-//     break;
-//   default:
-//     console.log("There is no match of day");
-// }
+let day = new Date().getDay();
+switch (day) {
+  case 0:
+    console.log("Today is Sunday");
+    break;
+  case 1:
+    console.log("Today is Monday");
+    break;
+  case 2:
+    console.log("Today is Tueday");
+    break;
+  case 3:
+    console.log("Today is Wedday");
+    break;
+  case 4:
+    console.log("Today is Thrusday");
+    break;
+  case 5:
+    console.log("Today is Friday");
+    break;
+  case 6:
+    console.log("Today is Satday");
+    break;
+  default:
+    console.log("There is no match of day");
+}
 
 
 // //coding challenge #1
