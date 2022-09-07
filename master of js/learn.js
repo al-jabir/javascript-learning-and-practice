@@ -3531,24 +3531,24 @@ function gobal() {
 //   },
 // };
 
-// function Person(name, age) {
-//   let person = Object.create(personMethod);
+function Person(name, age) {
+  let person = Object.create(personMethod);
 
-//   person.name = name;
-//   person.age = age;
+  person.name = name;
+  person.age = age;
 
-//   return person;
-// }
-// const sadia = Person('sadia', 19);
-// sadia.eat();
+  return person;
+}
+const sadia = Person('sadia', 19);
+sadia.eat();
 
-// // console.log(mahi);
+// console.log(mahi);
 
-// const captain = {
-//   name: 'Mashrafi',
-//   age: 36,
-//   country: 'Bangladesh',
-// };
+const captain = {
+  name: 'Mashrafi',
+  age: 36,
+  country: 'Bangladesh',
+};
 
 const player = Object.create(captain);
 
