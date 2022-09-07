@@ -3573,17 +3573,17 @@ function gobal() {
 //   return person;
 // }
 
-// Person.prototype = {
-//   eat() {
-//     console.log(`person is eating`);
-//   },
-//   sleep() {
-//     console.log(`person is sleeping`);
-//   },
-//   play() {
-//     console.log(`${this.name} person is playing ${this.age}`);
-//   },
-// };
+Person.prototype = {
+  eat() {
+    console.log(`person is eating`);
+  },
+  sleep() {
+    console.log(`person is sleeping`);
+  },
+  play() {
+    console.log(`${this.name} person is playing ${this.age}`);
+  },
+};
 
 const sex = Person('Fucking', 19);
 sex.play();
