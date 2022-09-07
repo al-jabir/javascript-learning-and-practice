@@ -3672,24 +3672,24 @@ function gobal() {
 // king();
 // console.log(job);
 
-// const myObj = {
-//   name: 'king',
-//   age: 19,
-//   job: 'developer',
-//   check: {
-//     name: 'fucking',
-//     job: 'sexy',
-//     resi: {
-//       sex: 'male',
-//       age: 19,
-//       res: function () {
-//         console.log(this);
-//       },
-//     },
-//   },
-// };
+const myObj = {
+  name: 'king',
+  age: 19,
+  job: 'developer',
+  check: {
+    name: 'fucking',
+    job: 'sexy',
+    resi: {
+      sex: 'male',
+      age: 19,
+      res: function () {
+        console.log(this);
+      },
+    },
+  },
+};
 
-// myObj.check.resi.res();
+myObj.check.resi.res();
 
 var myObj = {
   name: 'bal',
