@@ -45,14 +45,14 @@ switch (day) {
 
 // //coding challenge #1
 
-// const mark = 78
-// const markHeight = 1.69
-// const jonh = 92
-// const jonhHeight = 1.95
-// const bmiMark = mark/markHeight ** 2
-// const bmiJonh = jonh/(jonhHeight * jonhHeight)
-// const markhigherBMi = bmiMark > bmiJonh
-// console.log(bmiMark,bmiJonh,markhigherBMi) 
+const mark = 78
+const markHeight = 1.69
+const jonh = 92
+const jonhHeight = 1.95
+const bmiMark = mark/markHeight ** 2
+const bmiJonh = jonh/(jonhHeight * jonhHeight)
+const markhigherBMi = bmiMark > bmiJonh
+console.log(bmiMark,bmiJonh,markhigherBMi) 
 // //end
 
 // const name = 'Jabir'
