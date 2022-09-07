@@ -3630,30 +3630,30 @@ function gobal() {
 //   return person;
 // }
 
-// MyDetails.prototype = {
-//   jabir() {
-//     console.log(
-//       `I am ${this.name}. I am ${this.age} years old. I will be ${this.job} developer. I live in ${this.village}`
-//     );
-//   },
-// };
+MyDetails.prototype = {
+  jabir() {
+    console.log(
+      `I am ${this.name}. I am ${this.age} years old. I will be ${this.job} developer. I live in ${this.village}`
+    );
+  },
+};
 
-// const resPerson = new MyDetails('Jabir', 19, 'Frontend', 'Sylhet');
-// resPerson.jabir();
+const resPerson = new MyDetails('Jabir', 19, 'Frontend', 'Sylhet');
+resPerson.jabir();
 
-// function PersonCheck(name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// }
+function PersonCheck(name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+}
 
-// PersonCheck.prototype = {
-//   king() {
-//     console.log(
-//       `My name is ${this.name} and ${this.age} years old.I want to be ${this.job} developer`
-//     );
-//   },
-// };
+PersonCheck.prototype = {
+  king() {
+    console.log(
+      `My name is ${this.name} and ${this.age} years old.I want to be ${this.job} developer`
+    );
+  },
+};
 
 const res = new PersonCheck('Mafia', 24, 'Frontend');
 const res2 = new PersonCheck('sarah', 19, 'Cyber');
