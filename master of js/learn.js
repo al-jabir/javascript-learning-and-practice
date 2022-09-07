@@ -3599,21 +3599,21 @@ function gobal() {
 //   },
 // };
 
-// const sex = new Person('King', 19);
-// sex.dev();
+const sex = new Person('King', 19);
+sex.dev();
 
-// class Person {
-//   constructor(name, job) {
-//     this.name = name;
-//     this.job = job;
-//   }
-//   skill() {
-//     console.log(`I have something skills`);
-//   }
-//   frontend() {
-//     console.log(`I will be ${this.job} frontend developer `);
-//   }
-// }
+class Person {
+  constructor(name, job) {
+    this.name = name;
+    this.job = job;
+  }
+  skill() {
+    console.log(`I have something skills`);
+  }
+  frontend() {
+    console.log(`I will be ${this.job} frontend developer `);
+  }
+}
 
 const sex = new Person('Darling', 'Junior');
 
