@@ -3519,17 +3519,17 @@ function gobal() {
 // person.eat();
 // person.sleep();
 
-// const personMethod = {
-//   eat() {
-//     console.log(`person is eating`);
-//   },
-//   sleep() {
-//     console.log(`person is sleeping`);
-//   },
-//   play() {
-//     console.log(`person is playing`);
-//   },
-// };
+const personMethod = {
+  eat() {
+    console.log(`person is eating`);
+  },
+  sleep() {
+    console.log(`person is sleeping`);
+  },
+  play() {
+    console.log(`person is playing`);
+  },
+};
 
 function Person(name, age) {
   let person = Object.create(personMethod);
