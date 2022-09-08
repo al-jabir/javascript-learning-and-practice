@@ -1668,40 +1668,40 @@ console.log(s);
 
 /***** Learn ES6 *****/
 
-// const check(){
-//   if(true){
-//     const a = 33
-//     console.log(a)
-//   }
+const check(){
+  if(true){
+    const a = 33
+    console.log(a)
+  }
 
-// }
-// check()
+}
+check()
 
-// const amer = (function (n) {
-//   console.log('I will be Mafia of Hacker' + this.n);
-// })();
-// {
-//   var ss = function () {
-//     console.log('How to become developer');
-//   };
-// }
-// ss();
+const amer = (function (n) {
+  console.log('I will be Mafia of Hacker' + this.n);
+})();
+{
+  var ss = function () {
+    console.log('How to become developer');
+  };
+}
+ss();
 
-//Arrow function
+Arrow function
 
-// const func = () => {
-//   console.log('I will be kill you');
-// };
-// func();
-// const test = () => console.log('I want to be developer'.toUpperCase());
-// test();
+const func = () => {
+  console.log('I will be kill you');
+};
+func();
+const test = () => console.log('I want to be developer'.toUpperCase());
+test();
 
-//Normal function
+Normal function
 
-// const arr = [1998, 2000, 2005, 2003];
-// const army = arr.map(function (dob) {
-//   console.log(2022 - dob);
-// });
+const arr = [1998, 2000, 2005, 2003];
+const army = arr.map(function (dob) {
+  console.log(2022 - dob);
+});
 
 //Arrow function
 
