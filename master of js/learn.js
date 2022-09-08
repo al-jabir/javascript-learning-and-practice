@@ -928,7 +928,7 @@ point.s
 console.log(point)
 console.log(point.s)
 console.log(point)
-/*
+
 let obj = {
   a: 24,
   b: 98,
@@ -953,50 +953,50 @@ console.log(Object.values(obj))
 console.log(Object.entries(obj))
 
 
-*/
+
 
 // Inner Function
 
-// function something(greet, name) {
-//   function getFirstName() {
-//     if (name) {
-//       return name.split(' ')[0]
-//     }
-//   }
-//   var msg = greet + ' ' + getFirstName()
-//   console.log(msg)
-// }
-// something('Hi', 'Jack Ma')
+function something(greet, name) {
+  function getFirstName() {
+    if (name) {
+      return name.split(' ')[0]
+    }
+  }
+  var msg = greet + ' ' + getFirstName()
+  console.log(msg)
+}
+something('Hi', 'Jack Ma')
 
 // Nested Object
 
-// const obj = {
-//   name: 'king',
-//   age: 50,
-//   job: 'developer',
-//   person: {
-//     name: 'King',
-//     age: 23,
-//     job: 'Kill',
-//     village: 'Known never',
-//     person2: {
-//       name: 'Maffia',
-//       age: 19,
-//       job: 'sex',
-//     },
-//   },
-// }
-// obj.person.person2.job = 'Fucking with you'
+const obj = {
+  name: 'king',
+  age: 50,
+  job: 'developer',
+  person: {
+    name: 'King',
+    age: 23,
+    job: 'Kill',
+    village: 'Known never',
+    person2: {
+      name: 'Maffia',
+      age: 19,
+      job: 'sex',
+    },
+  },
+}
+obj.person.person2.job = 'Fucking with you'
 
-// console.log(obj.person.person2.job)
-// console.log(obj.person.person2)
-// console.log(obj)
+console.log(obj.person.person2.job)
+console.log(obj.person.person2)
+console.log(obj)
 
-// console.log('I love you')
+console.log('I love you')
 
-// Local Scope
+Local Scope
 
-/*
+
 function myCall() {
   let n = 'I will be developer'
   console.log(n)
@@ -1050,24 +1050,24 @@ function gobal() {
 }
 // console.log(s)
 // gobal()
-*/
 
-// function parent() {
-//   let x = 19
-//   return function () {
-//     let y = 1000
-//     console.log(x + y)
-//   }
-// }
-// parent()()
 
-// function ma(a) {
-//   return function (b) {
-//     let s = a * b
-//     console.log(s)
-//   }
-// }
-// ma(9)(9)
+function parent() {
+  let x = 19
+  return function () {
+    let y = 1000
+    console.log(x + y)
+  }
+}
+parent()()
+
+function ma(a) {
+  return function (b) {
+    let s = a * b
+    console.log(s)
+  }
+}
+ma(9)(9)
 
 //IIFE
 
