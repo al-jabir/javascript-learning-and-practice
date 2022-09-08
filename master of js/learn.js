@@ -1187,184 +1187,184 @@ const karimg = {
   },
 };
 
-// const mafia = {
-//   name: 'Mafia Khan',
-//   dob: 2003,
-// };
-// const mafia3 = {
-//   name: 'Emma Knight',
-//   dob: 2004,
-// };
-// const darLing = {
-//   name: 'Jarin Abdullah',
-//   dob: 2002,
-// };
+const mafia = {
+  name: 'Mafia Khan',
+  dob: 2003,
+};
+const mafia3 = {
+  name: 'Emma Knight',
+  dob: 2004,
+};
+const darLing = {
+  name: 'Jarin Abdullah',
+  dob: 2002,
+};
 
-// karimg.check(2022);
+karimg.check(2022);
 
-// karimg.check.call(mafia, 2022);
-// karimg.check.call(mafia3, 2022);
-// karimg.check.call(darLing, 2022);
+karimg.check.call(mafia, 2022);
+karimg.check.call(mafia3, 2022);
+karimg.check.call(darLing, 2022);
 
-// myCostumObj.localObj.localHost.checks.apply(myCostumObj);
+myCostumObj.localObj.localHost.checks.apply(myCostumObj);
 
-// const sadia = {
-//   name: 'Priyanka',
-//   age: 23,
-//   job: 'Gym',
-//   person: {
-//     name: 'Moniya',
-//     age: 19,
-//     job: 'Tiktoker',
-//     show: function () {
-//       console.log(`I am ${this.name}. I am ${this.job}`);
-//     },
-//   },
-// };
-// sadia.person.show.apply(sadia);
+const sadia = {
+  name: 'Priyanka',
+  age: 23,
+  job: 'Gym',
+  person: {
+    name: 'Moniya',
+    age: 19,
+    job: 'Tiktoker',
+    show: function () {
+      console.log(`I am ${this.name}. I am ${this.job}`);
+    },
+  },
+};
+sadia.person.show.apply(sadia);
 
-// const tiktok = {
-//   name: 'Balsal',
-//   dob: 1998,
-//   ageShow: function (year, text) {
-//     console.log(
-//       `${text} ${this.name} and Are you ${year - this.dob} years old`
-//     );
-//   },
-// };
-// tiktok.ageShow(2022, 'Hello dear,');
+const tiktok = {
+  name: 'Balsal',
+  dob: 1998,
+  ageShow: function (year, text) {
+    console.log(
+      `${text} ${this.name} and Are you ${year - this.dob} years old`
+    );
+  },
+};
+tiktok.ageShow(2022, 'Hello dear,');
 
-// const karim = {
-//   name: 'Karmi',
-//   dob: 2003,
-// };
+const karim = {
+  name: 'Karmi',
+  dob: 2003,
+};
 
-// tiktok.ageShow.apply(karim, [2021, 'Mr.']);
-// tiktok.ageShow.apply(karim, [2018, 'Hello World!']);
+tiktok.ageShow.apply(karim, [2021, 'Mr.']);
+tiktok.ageShow.apply(karim, [2018, 'Hello World!']);
 
-// var karims = {
-//   name: 'Karim Rahman',
-//   dob: 1996,
-//   age: function (currentYear, msg) {
-//     console.log(
-//       msg + ' ' + this.name + ' is ' + (currentYear - this.dob) + ' years old!'
-//     );
-//   },
-// };
-// var rahim = {
-//   name: 'Rahim Abdu',
-//   dob: 2004,
-// };
-// karims.age(2018, 'Hello World!');
+var karims = {
+  name: 'Karim Rahman',
+  dob: 1996,
+  age: function (currentYear, msg) {
+    console.log(
+      msg + ' ' + this.name + ' is ' + (currentYear - this.dob) + ' years old!'
+    );
+  },
+};
+var rahim = {
+  name: 'Rahim Abdu',
+  dob: 2004,
+};
+karims.age(2018, 'Hello World!');
 
-// const my = myCostumObj.localObj.localHost.checks.bind(
-//   myCostumObj.localObj.localHost
-// );
-// my();
-// console.log(my);
-// var myCustomObj = {
-//   name: 'Zonayed Ahmed',
-//   age: 21,
-//   job: 'Student',
-//   anotherObj: {
-//     name: 'Ahmed Zonayed',
-//     value: function () {
-//       console.log('My name is ' + this.name);
-//     },
-//   },
-// };
+const my = myCostumObj.localObj.localHost.checks.bind(
+  myCostumObj.localObj.localHost
+);
+my();
+console.log(my);
+var myCustomObj = {
+  name: 'Zonayed Ahmed',
+  age: 21,
+  job: 'Student',
+  anotherObj: {
+    name: 'Ahmed Zonayed',
+    value: function () {
+      console.log('My name is ' + this.name);
+    },
+  },
+};
 
-// myCustomObj.anotherObj.value.bind(myCustomObj);
+myCustomObj.anotherObj.value.bind(myCustomObj);
 
-// call of bind mathod
+call of bind mathod
 
-// const person = {
-//   name: 'Emaily',
-//   dob: 2000,
-//   person2: {
-//     name: 'king',
-//     dob: 2003,
-//   },
-//   checkOfAge: function (year, say) {
-//     console.log(`${say} ${this.name} ${year - this.dob} Years old`);
-//   },
-// };
+const person = {
+  name: 'Emaily',
+  dob: 2000,
+  person2: {
+    name: 'king',
+    dob: 2003,
+  },
+  checkOfAge: function (year, say) {
+    console.log(`${say} ${this.name} ${year - this.dob} Years old`);
+  },
+};
 
-// const checkOf = person.checkOfAge.bind(person.person2);
-// checkOf(2022, 'Hi');
-// checkOf(2019, 'Good Morning');
-// checkOf(2021, 'Good Evening');
-// checkOf(2018, 'Darling');
+const checkOf = person.checkOfAge.bind(person.person2);
+checkOf(2022, 'Hi');
+checkOf(2019, 'Good Morning');
+checkOf(2021, 'Good Evening');
+checkOf(2018, 'Darling');
 
-// const rahim = {
-//   name: 'Rahim Rahman',
-//   dob: 2005,
-// };
-// const rahimAge = person.checkOfAge.bind(rahim, 2022);
-// rahimAge('Mr. X');
+const rahim = {
+  name: 'Rahim Rahman',
+  dob: 2005,
+};
+const rahimAge = person.checkOfAge.bind(rahim, 2022);
+rahimAge('Mr. X');
 
-// const person = {
-//   name: 'Al Jabir',
-//   age: 19,
-//   timer: function () {
-//     setTimeout(
-//       function () {
-//         console.log(`My name is ${this.name}`);
-//       }.bind(person),
-//       1000
-//     );
-//   },
-// };
-// // const v = person.timer.bind();
-// // v(person);
-// person.timer();
+const person = {
+  name: 'Al Jabir',
+  age: 19,
+  timer: function () {
+    setTimeout(
+      function () {
+        console.log(`My name is ${this.name}`);
+      }.bind(person),
+      1000
+    );
+  },
+};
+// const v = person.timer.bind();
+// v(person);
+person.timer();
 
-// const person1 = {
-//   name: 'Mafia khan',
-//   age: 23,
-//   timer2: function () {
-//     setTimeout(
-//       function () {
-//         console.log(`I am ${this.name}`);
-//       }.call(person1),
-//       3000
-//     );
-//   },
-// };
+const person1 = {
+  name: 'Mafia khan',
+  age: 23,
+  timer2: function () {
+    setTimeout(
+      function () {
+        console.log(`I am ${this.name}`);
+      }.call(person1),
+      3000
+    );
+  },
+};
 
-// const person2 = {
-//   name: 'King of Mafia',
-//   age: 'unknown',
-//   timer3: function () {
-//     setTimeout(
-//       function () {
-//         console.log(`I am ${this.name}.`);
-//       }.apply(person2),
-//       2000
-//     );
-//   },
-// };
-// person1.timer2();
-// person2.timer3();
+const person2 = {
+  name: 'King of Mafia',
+  age: 'unknown',
+  timer3: function () {
+    setTimeout(
+      function () {
+        console.log(`I am ${this.name}.`);
+      }.apply(person2),
+      2000
+    );
+  },
+};
+person1.timer2();
+person2.timer3();
 
-// const myOb = {
-//   name: 'King',
-//   check: {
-//     name: 'mafia',
-//     c: {
-//       name: 'Knight',
-//       show: function (say) {
-//         console.log(`${say} My name is ${this.name}`);
-//       },
-//     },
-//   },
-// };
-// const a = myOb.check.c.show.bind(myOb.check.c);
-// a('Dare');
-// a('Darling');
-// a('Food Mornig');
-// a('Sexy');
-// a('Fuck off');
+const myOb = {
+  name: 'King',
+  check: {
+    name: 'mafia',
+    c: {
+      name: 'Knight',
+      show: function (say) {
+        console.log(`${say} My name is ${this.name}`);
+      },
+    },
+  },
+};
+const a = myOb.check.c.show.bind(myOb.check.c);
+a('Dare');
+a('Darling');
+a('Food Mornig');
+a('Sexy');
+a('Fuck off');
 
 //OOP
 
