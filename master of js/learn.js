@@ -293,7 +293,7 @@ callMyName('Zonayed Ahmed', hello);
   })
 
 // Array
-/*
+
 const Year = [2003, 2005, 1998, 1996, 2001]
 const age = []
 var sum = 0
@@ -315,51 +315,50 @@ let person = {
   },
 }
 console.log(person)
-*/
 
 // OOP
 
-// class Person {
-//   constructor(n, j) {
-//     this.n = n
-//     this.j = j
-//   }
-//   getting() {
-//     return `Hello ${this.n} tumi ki ${this.j} koro nki`
-//   }
-// }
-// let per = new Person('jaber', 'Frontend developer')
-// console.log(per.getting())
+class Person {
+  constructor(n, j) {
+    this.n = n
+    this.j = j
+  }
+  getting() {
+    return `Hello ${this.n} tumi ki ${this.j} koro nki`
+  }
+}
+let per = new Person('jaber', 'Frontend developer')
+console.log(per.getting())
 
-// function ac(a, b) {
-//   return a + b - 1
-// }
-// let a = ac(40, 10)
-// console.log(a)
-// console.log('king will be developer')
-// console.log('I will fuck exam')
+function ac(a, b) {
+  return a + b - 1
+}
+let a = ac(40, 10)
+console.log(a)
+console.log('king will be developer')
+console.log('I will fuck exam')
 
-// console.log('Abu Rayhan', 'Abu Rayhan'.length)
+console.log('Abu Rayhan', 'Abu Rayhan'.length)
 
-// const names = [
-//   'HM Nayeem',
-//   'Aditya Chakraborty',
-//   'Abu Rayhan',
-//   'Shaker Hossain',
-//   'Akib Ahmad',
-//   'Alvi Chowdhury',
-// ]
-// let index = -1
-// let person = names[++index]
+const names = [
+  'HM Nayeem',
+  'Aditya Chakraborty',
+  'Abu Rayhan',
+  'Shaker Hossain',
+  'Akib Ahmad',
+  'Alvi Chowdhury',
+]
+let index = -1
+let person = names[++index]
 
-// setInterval(() => {
-//   person = names[index++]
-//   console.log(person, person.length)
+setInterval(() => {
+  person = names[index++]
+  console.log(person, person.length)
 
-//   if (index === names.length) {
-//     index = 0
-//   }
-// }, 1000)
+  if (index === names.length) {
+    index = 0
+  }
+}, 1000)
 
 /*
 
