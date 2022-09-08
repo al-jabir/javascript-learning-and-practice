@@ -1096,12 +1096,12 @@ console.log(fasting);
 
 // JS error
 
-// try {
-//   let x = 'How to become web developer';
-//   console.log(x);
-// } catch (e) {
-//   err.x;
-// }
+try {
+  let x = 'How to become web developer';
+  console.log(x);
+} catch (e) {
+  err.x;
+}
 
 // // hoisted
 
@@ -1112,80 +1112,80 @@ console.log(fasting);
 
 //Classes
 
-// class Trust {
-//   constructor(f, l) {
-//     (this.f = f), (this.l = l);
-//   }
-// }
+class Trust {
+  constructor(f, l) {
+    (this.f = f), (this.l = l);
+  }
+}
 
-// let res = new Trust('Al ', 'Jabir');
-// console.log(res.f + res.l);
-// console.log(typeof Trust);
+let res = new Trust('Al ', 'Jabir');
+console.log(res.f + res.l);
+console.log(typeof Trust);
 
-// const add = (function () {
-//   let counter = 0;
-//   return function () {
-//     counter += 1;
-//     return counter;
-//   };
-// })();
+const add = (function () {
+  let counter = 0;
+  return function () {
+    counter += 1;
+    return counter;
+  };
+})();
 
-// console.log(add());
-// console.log(add());
-// console.log(add());
-// console.log(add());
-// console.log(add());
+console.log(add());
+console.log(add());
+console.log(add());
+console.log(add());
+console.log(add());
 
-// function heyCall() {
-//   this.name = 'Jabir';
-// }
-// heyCall();
-// console.log(name);
+function heyCall() {
+  this.name = 'Jabir';
+}
+heyCall();
+console.log(name);
 
-// const si = {
-//   name: 'king',
-//   age: 19,
-//   person: {
-//     name: 'mafia',
-//     age: 24,
-//     check: function () {
-//       console.log(this.age);
-//     },
-//   },
-// };
-// si.age = 20;
-// si.person.check.call(si);
-// console.log(Object.values(si.person));
+const si = {
+  name: 'king',
+  age: 19,
+  person: {
+    name: 'mafia',
+    age: 24,
+    check: function () {
+      console.log(this.age);
+    },
+  },
+};
+si.age = 20;
+si.person.check.call(si);
+console.log(Object.values(si.person));
 
-// const myCostumObj = {
-//   name: 'Mafia',
-//   age: 22,
-//   job: 'Learning of code',
-//   localObj: {
-//     name: 'King',
-//     age: 19,
-//     job: 'Hackers',
-//     localHost: {
-//       name: 'Queen',
-//       age: 20,
-//       job: 'Backend Developer',
-//       checks: function () {
-//         console.log(
-//           `My name is ${this.name}. I am ${this.age} years old. I am ${this.job} of career for money earn`
-//         );
-//       },
-//     },
-//   },
-// };
-// myCostumObj.localObj.localHost.checks.call(myCostumObj.localObj);
+const myCostumObj = {
+  name: 'Mafia',
+  age: 22,
+  job: 'Learning of code',
+  localObj: {
+    name: 'King',
+    age: 19,
+    job: 'Hackers',
+    localHost: {
+      name: 'Queen',
+      age: 20,
+      job: 'Backend Developer',
+      checks: function () {
+        console.log(
+          `My name is ${this.name}. I am ${this.age} years old. I am ${this.job} of career for money earn`
+        );
+      },
+    },
+  },
+};
+myCostumObj.localObj.localHost.checks.call(myCostumObj.localObj);
 
-// const karimg = {
-//   name: 'Abdur Rahman',
-//   dob: 1998,
-//   check: function (year) {
-//     console.log(`My name is ${this.name}. I am ${year - this.dob} years old`);
-//   },
-// };
+const karimg = {
+  name: 'Abdur Rahman',
+  dob: 1998,
+  check: function (year) {
+    console.log(`My name is ${this.name}. I am ${year - this.dob} years old`);
+  },
+};
 
 // const mafia = {
 //   name: 'Mafia Khan',
