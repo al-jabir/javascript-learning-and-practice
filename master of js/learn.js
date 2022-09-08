@@ -83,24 +83,24 @@ if(showTrue){
     console.log('Some else should drive...')
 }
 
-// let str = 'a'
-// switch(str){
-//     case 'a':
-//     case 'e':
-// case 'i':
-//     case 'o':
-//         case 'u':
-//    console.log('This is vowels')
-//    break
-//    default:
-//     console.log('consonats')
-// }
+let str = 'a'
+switch(str){
+    case 'a':
+    case 'e':
+case 'i':
+    case 'o':
+        case 'u':
+   console.log('This is vowels')
+   break
+   default:
+    console.log('consonats')
+}
 
-// let sex = 15;
-// let sex2 = sex >= 18 ? 'I will be sex at night':'I will be coding'
-// console.log(sex2)
-// let sm = 15
-// sm >= 18 ? console.log('I will be dating with you oneday'):console.log('I am not sure what can i do?')
+let sex = 15;
+let sex2 = sex >= 18 ? 'I will be sex at night':'I will be coding'
+console.log(sex2)
+let sm = 15
+sm >= 18 ? console.log('I will be dating with you oneday'):console.log('I am not sure what can i do?')
 
 // // functions
 
@@ -152,49 +152,49 @@ console.log(resOfAge4+' Years old')
 
 // // Arrow functions
 
-// const res33 = (n) => 2022 - n;
-// console.log(res33(1998))
+const res33 = (n) => 2022 - n;
+console.log(res33(1998))
 
-// const resofage = births =>{
-//     const resi = 2022 - births
-//     return resi
-// }
-// console.log(resofage(2003))
-// const packAse = function(resofFruit){
-//     return resofFruit * 2
-// }
+const resofage = births =>{
+    const resi = 2022 - births
+    return resi
+}
+console.log(resofage(2003))
+const packAse = function(resofFruit){
+    return resofFruit * 2
+}
 
-// function pack(mango,kg){
-//     const resA = packAse(mango);
-//     const resB = packAse(kg);
-//     const resOfPack = `You have can ${resA} pack and ${resB} kg`
-//     return resOfPack
-// }
+function pack(mango,kg){
+    const resA = packAse(mango);
+    const resB = packAse(kg);
+    const resOfPack = `You have can ${resA} pack and ${resB} kg`
+    return resOfPack
+}
 
-// console.log(pack(5,3))
+console.log(pack(5,3))
 
 
-// const calcAverage = (a,b,c) => (a+b+c)/3
-// let dolphinsScore = calcAverage(44,23,71)
-// let koalasScore = calcAverage(65,54,49)
-// console.log(dolphinsScore,koalasScore)
+const calcAverage = (a,b,c) => (a+b+c)/3
+let dolphinsScore = calcAverage(44,23,71)
+let koalasScore = calcAverage(65,54,49)
+console.log(dolphinsScore,koalasScore)
 
-// const checkWinner = function(avgDolphins,avgKoalos){
-//     if(avgDolphins >= 2 * avgKoalos){
-//         console.log(`Dolphins win (${avgDolphins} vs ${avgKoalos})`)
-//     }else if(avgKoalos >=2 * avgDolphins){
-//         console.log(`Koalas win  (${avgKoalos} vs ${avgDolphins})`)
-//     }else{
-//         console.log(`No team wins`)
-//     }
-// }
+const checkWinner = function(avgDolphins,avgKoalos){
+    if(avgDolphins >= 2 * avgKoalos){
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalos})`)
+    }else if(avgKoalos >=2 * avgDolphins){
+        console.log(`Koalas win  (${avgKoalos} vs ${avgDolphins})`)
+    }else{
+        console.log(`No team wins`)
+    }
+}
 
-//  dolphinsScore = calcAverage(33,55,88)
-//  koalasScore = calcAverage(88,55,22)
+ dolphinsScore = calcAverage(33,55,88)
+ koalasScore = calcAverage(88,55,22)
 
-// checkWinner(dolphinsScore,koalasScore)
-// checkWinner(443,199)
-// console.log(dolphinsScore,koalasScore)
+checkWinner(dolphinsScore,koalasScore)
+checkWinner(443,199)
+console.log(dolphinsScore,koalasScore)
 
 
 // // add sum of function
