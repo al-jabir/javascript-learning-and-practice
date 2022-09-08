@@ -104,51 +104,51 @@ if(showTrue){
 
 // // functions
 
-// function calling(){
-//     console.log('I will call with my wife....')
-// }
+function calling(){
+    console.log('I will call with my wife....')
+}
 
-// calling()
-// calling()
-// calling()
-// calling()
+calling()
+calling()
+calling()
+calling()
 
-// function ase(){
-//     const a =9,b=5;
-//     console.log(a,b)
-//     const koitaAse = `ame kase ${a} ase. tar kase ${b} ase`
-//    console.log(koitaAse)
-// }
-// ase()
-// ase()
-// ase()
-// ase()
-// let coun= 0;
-// function namoto(n){
-//     for(i=1; i<=10; i++){
-//         console.log(`${n} * ${i} = ${n*i}`);
-//         coun++;
-//     }
-//     console.log('counts = '+coun)
-// }
-// namoto(5)
-// namoto(15)
-// namoto(25)
-// namoto(35)
-// namoto(45)
+function ase(){
+    const a =9,b=5;
+    console.log(a,b)
+    const koitaAse = `ame kase ${a} ase. tar kase ${b} ase`
+   console.log(koitaAse)
+}
+ase()
+ase()
+ase()
+ase()
+let coun= 0;
+function namoto(n){
+    for(i=1; i<=10; i++){
+        console.log(`${n} * ${i} = ${n*i}`);
+        coun++;
+    }
+    console.log('counts = '+coun)
+}
+namoto(5)
+namoto(15)
+namoto(25)
+namoto(35)
+namoto(45)
 
-// function calAge(birth){
-//     const realYear = 2022 - birth;
-//     return realYear;
-// }
-// const resOfAge = calAge(1998)
-// const resOfAge2 = calAge(2000)
-// const resOfAge3 = calAge(2002)
-// const resOfAge4 = calAge(2004)
-// console.log(resOfAge+' Years old')
-// console.log(resOfAge2+' Years old')
-// console.log(resOfAge3+' Years old')
-// console.log(resOfAge4+' Years old')
+function calAge(birth){
+    const realYear = 2022 - birth;
+    return realYear;
+}
+const resOfAge = calAge(1998)
+const resOfAge2 = calAge(2000)
+const resOfAge3 = calAge(2002)
+const resOfAge4 = calAge(2004)
+console.log(resOfAge+' Years old')
+console.log(resOfAge2+' Years old')
+console.log(resOfAge3+' Years old')
+console.log(resOfAge4+' Years old')
 
 // // Arrow functions
 
