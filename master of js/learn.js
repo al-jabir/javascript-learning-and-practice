@@ -753,23 +753,23 @@ if (!notFound) {
 
 // Function invoked
 
-// const person = {
-//   fullName: function () {
-//     return `${this.f} ${this.l}`
-//   },
-// }
-// const person1 = {
-//   f: 'Al',
-//   l: 'Jabir',
-// }
-// const person2 = {
-//   f: 'King',
-//   l: 'Mafia',
-// }
-// console.log(person.fullName.call(person2))
+const person = {
+  fullName: function () {
+    return `${this.f} ${this.l}`
+  },
+}
+const person1 = {
+  f: 'Al',
+  l: 'Jabir',
+}
+const person2 = {
+  f: 'King',
+  l: 'Mafia',
+}
+console.log(person.fullName.call(person2))
 
 // practice and practice
-/*
+
 let str = 'king'
 console.log(str[str.length - 1])
 console.log(str.charAt(2))
@@ -793,19 +793,19 @@ function three() {
   console.log(s3 + name)
 }
 one()
-*/
+
 // String Mathod
 
-// let str = 'My name is Al Jabir '
-// str.startsWith('is')
-// console.log(str)
-// console.log(str.includes('is'))
-// console.log(str.includes('Jabir'))
-// console.log(str.includes('Al Jabir'))
-// console.log(str.includes(' '))
-// console.log(str.includes('name'))
-// console.log(str.repeat(3))
-// console.log(`${str} ${'Developer '.repeat(3)}`)
+let str = 'My name is Al Jabir '
+str.startsWith('is')
+console.log(str)
+console.log(str.includes('is'))
+console.log(str.includes('Jabir'))
+console.log(str.includes('Al Jabir'))
+console.log(str.includes(' '))
+console.log(str.includes('name'))
+console.log(str.repeat(3))
+console.log(`${str} ${'Developer '.repeat(3)}`)
 
 // learn stack learner
 
