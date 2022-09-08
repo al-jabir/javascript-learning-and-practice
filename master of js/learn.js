@@ -199,98 +199,98 @@ console.log(dolphinsScore,koalasScore)
 
 // // add sum of function
 
-// function add(a,b){
-//     console.log(a+b)
-//     console.log(a-b)
-//     console.log(a*b)
-//     console.log(a/b)
-// }
-// add(5,5)
-// add(15,5)
-// add(5,15)
-// add(5,2)
-// add(115,51)
+function add(a,b){
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+}
+add(5,5)
+add(15,5)
+add(5,15)
+add(5,2)
+add(115,51)
 
-// function add2(n1,n2){
-//     const resing = n1*n2
-//     console.log(`Res of value ${resing}`)
-// }
-// add2(4,5)
-// add2(5,5)
-// add2(9,9)
+function add2(n1,n2){
+    const resing = n1*n2
+    console.log(`Res of value ${resing}`)
+}
+add2(4,5)
+add2(5,5)
+add2(9,9)
 
-// const add3 = function(a,b){
-//     const ress = a/b
-//     return ress
-// }
-// console.log(add3(50,10))
-// console.log(add3(30,10))
-// console.log(add3(50,15))
-// console.log(add3(50,20))
+const add3 = function(a,b){
+    const ress = a/b
+    return ress
+}
+console.log(add3(50,10))
+console.log(add3(30,10))
+console.log(add3(50,15))
+console.log(add3(50,20))
 
-// const details = function(name,age,job){
-//     const showOfYourDetails = `My name is ${name}. I am ${age} years old and I will be ${job} developer at remote jobs oneday insha'Allah`
-//     return showOfYourDetails
-// }
-// console.log(details('Jabir',19,'Frontend/Mern stack'))
+const details = function(name,age,job){
+    const showOfYourDetails = `My name is ${name}. I am ${age} years old and I will be ${job} developer at remote jobs oneday insha'Allah`
+    return showOfYourDetails
+}
+console.log(details('Jabir',19,'Frontend/Mern stack'))
 // //copy of site
-// function callMyName(name, callback) {
-//     var myAge = 20;
-//     callback(myAge);
-//     console.log('Is it interesting? Yes it is Mr.' + name);
-// }
+function callMyName(name, callback) {
+    var myAge = 20;
+    callback(myAge);
+    console.log('Is it interesting? Yes it is Mr.' + name);
+}
 
-// function hello(age) {
-//     console.log('I am passed through argument and my age is: ' + age);
-// }
+function hello(age) {
+    console.log('I am passed through argument and my age is: ' + age);
+}
 
-// callMyName('Zonayed Ahmed', hello);
+callMyName('Zonayed Ahmed', hello);
 // //test of callback function
-//  function msg(name){
-//     console.log("Hello mr. "+name)
-//     return function check(job){
-//         console.log('Mr. '+name+' I will be attend your '+job)
-//     }
-//  }
-//  msg('Jabir')('RND Company')
+ function msg(name){
+    console.log("Hello mr. "+name)
+    return function check(job){
+        console.log('Mr. '+name+' I will be attend your '+job)
+    }
+ }
+ msg('Jabir')('RND Company')
 
-//  // try to callback function
+ // try to callback function
 
-//  function callings(name,callback){
-//     let dak = 'Nagbari'
-//     callback(dak)
-//     console.log('my name is '+name)
-//  }
+ function callings(name,callback){
+    let dak = 'Nagbari'
+    callback(dak)
+    console.log('my name is '+name)
+ }
 
-//  function coming(kobe){
-//     console.log('Tumi ki '+kobe+' te aso nki')
-//  }
-//  callings('King',coming)
+ function coming(kobe){
+    console.log('Tumi ki '+kobe+' te aso nki')
+ }
+ callings('King',coming)
 
 
 // //Contructor functions
 
 
-//  const myResult = new Function ('a','b','return a*b')
-//  console.log(myResult(5,3))
-//  console.log(myResult(5,5))
-//  console.log(myResult(5,6))
-//  console.log(myResult(5,9))
+ const myResult = new Function ('a','b','return a*b')
+ console.log(myResult(5,3))
+ console.log(myResult(5,5))
+ console.log(myResult(5,6))
+ console.log(myResult(5,9))
 //  //something
-//  function myFunction(a, b) {
-//     return a * b;
-//   }
+ function myFunction(a, b) {
+    return a * b;
+  }
   
-//   let x = myFunction(4, 3) * 2;
-//   console.log(x)
+  let x = myFunction(4, 3) * 2;
+  console.log(x)
 
 
-//   var foods = ['cake','cala','lichu','juice']
-//   var numbers = [2,5,9,98]
+  var foods = ['cake','cala','lichu','juice']
+  var numbers = [2,5,9,98]
 
-//   foods.forEach(function(v,a){
-//     console.log(`index ${a+1} and valu ${v}`)
-//   })
+  foods.forEach(function(v,a){
+    console.log(`index ${a+1} and valu ${v}`)
+  })
 
 // Array
 /*
