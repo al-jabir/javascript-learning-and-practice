@@ -360,7 +360,7 @@ setInterval(() => {
   }
 }, 1000)
 
-/*
+
 
 
 let count = 1
@@ -402,20 +402,20 @@ while (i < person.length) {
 console.log(cou)
 
 
-*/
 
-// function generateRandomNumber(max) {
-//   const randomNumber = Math.floor(Math.random() * max)
-//   return randomNumber
-// }
 
-// console.log(generateRandomNumber(10))
-// console.log(generateRandomNumber(100))
-// console.log(generateRandomNumber(1000))
-// const randomNumber2 = Math.floor(Math.random() * 100)
-// console.log(randomNumber2)
+function generateRandomNumber(max) {
+  const randomNumber = Math.floor(Math.random() * max)
+  return randomNumber
+}
 
-/*
+console.log(generateRandomNumber(10))
+console.log(generateRandomNumber(100))
+console.log(generateRandomNumber(1000))
+const randomNumber2 = Math.floor(Math.random() * 100)
+console.log(randomNumber2)
+
+
 
 let arr = [4, 5, 6, 3, 2, 5, 32, 11, 44, 55, 33, 24]
 
@@ -443,9 +443,9 @@ updates.forEach(function (v, i, a) {
   }
 })
 console.log('toal: ' + na)
-*/
 
-/*
+
+
 const arr2 = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
 
 let n = 0
@@ -453,11 +453,11 @@ for (i = 0; i < arr2.length; i++) {
   if (typeof arr2[i] != 'number') {
     arr2[i] = undefined
   }
-  // else {
-  //   if (typeof arr2[i] == 'number') {
-  //     n++
-  //   }
-  // }
+  else {
+    if (typeof arr2[i] == 'number') {
+      n++
+    }
+  }
   if (arr[i] == undefined) {
     n++
   }
@@ -465,7 +465,7 @@ for (i = 0; i < arr2.length; i++) {
 arr2.length -= n
 console.log(arr2)
 console.log('songa = ' + n)
-*/
+
 // ai logic ta besi kore practice and try korte hbe that so very importants
 //const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
 
