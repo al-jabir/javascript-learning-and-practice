@@ -811,31 +811,31 @@ console.log(`${str} ${'Developer '.repeat(3)}`)
 
 // string compare
 
-// let str = 'K ak'
-// let str2 = 'Laj kah'
-// console.log(str < str2)
-// let c = str.concat(' ', str2)
-// console.log(c)
-// let d = c.substr(5, 2)
-// console.log(d)
-// let str5 = 'My name is Khan'
-// console.log(str5.slice(3, 7))
+let str = 'K ak'
+let str2 = 'Laj kah'
+console.log(str < str2)
+let c = str.concat(' ', str2)
+console.log(c)
+let d = c.substr(5, 2)
+console.log(d)
+let str5 = 'My name is Khan'
+console.log(str5.slice(3, 7))
 
-// let nam = 'Ami Mafia of king'
-// let len = 0
-// while (true) {
-//   if (nam.charAt(len) == ' ') {
-//     break
-//   } else {
-//     len++
-//   }
-// }
-// let s = nam.length
-// console.log(len)
-// console.log(s)
+let nam = 'Ami Mafia of king'
+let len = 0
+while (true) {
+  if (nam.charAt(len) == ' ') {
+    break
+  } else {
+    len++
+  }
+}
+let s = nam.length
+console.log(len)
+console.log(s)
 
 //Array with stack learner
-/** 
+
 let arr = [4, 9, 22, 'mai', 'bob', 'sex', 88, 2]
 const a = (arr[3] = 'Fuck')
 arr[8] = 'Mafia'
@@ -868,10 +868,9 @@ const arr3 = [3, 5, 7, 9, 11, 13, 5, 33]
 // arr3.unshift()
 // arr3.shift()
 console.log(arr3)
-*/
+
 
 // Multi Dimensional Array
-/*
 const arr = [
   [2, 5, 6, 7, 8, 2],
   [2, 52, 64, 76, 85, 23],
@@ -891,44 +890,44 @@ for (i = 0; i < arr.length; i++) {
 
 console.log(sum)
 console.log(count)
-*/
+
 
 // reverse in Array
 
-// const arr = [1, 5, 33, 21, 2, 36, 4, 45, 6, 7]
+const arr = [1, 5, 33, 21, 2, 36, 4, 45, 6, 7]
 
-// for (i = 0; i < arr.length / 2; i++) {
-//   var temp = arr[i]
-//   arr[i] = arr[arr.length - 1 - i]
-//   arr[arr.length - 1 - i] = temp
-// }
-// console.log(arr)
-// const a = arr.sort()
-// const b = arr.reverse()
-// console.log(arr)
-// console.log(a)
-// console.log(b)
-// console.log(arr.sort())
+for (i = 0; i < arr.length / 2; i++) {
+  var temp = arr[i]
+  arr[i] = arr[arr.length - 1 - i]
+  arr[arr.length - 1 - i] = temp
+}
+console.log(arr)
+const a = arr.sort()
+const b = arr.reverse()
+console.log(arr)
+console.log(a)
+console.log(b)
+console.log(arr.sort())
 
-//Object with Stack learner
+Object with Stack learner
 
-// let point = {
-//   x: 40,
-//   y: 50,
-//   z: 98,
-// }
-// point.xx = 1998
-// console.log(point.z)
-// console.log(point['x'])
-// let show = 'xx'
-// console.log(point[show])
-// console.log(point)
+let point = {
+  x: 40,
+  y: 50,
+  z: 98,
+}
+point.xx = 1998
+console.log(point.z)
+console.log(point['x'])
+let show = 'xx'
+console.log(point[show])
+console.log(point)
 
-// point.x = 24
-// point.s
-// console.log(point)
-// console.log(point.s)
-// console.log(point)
+point.x = 24
+point.s
+console.log(point)
+console.log(point.s)
+console.log(point)
 /*
 let obj = {
   a: 24,
