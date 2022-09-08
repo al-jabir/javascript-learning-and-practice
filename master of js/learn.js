@@ -1550,66 +1550,66 @@ console.log(res4);
 console.log(res5);
 console.log(res6);
 
-// console.log(res.name, res.age);
-// console.log(res2.name, res2.age);
-// console.log(res3.name, res3.age);
-// console.log(res4.name, res4.age);
-// console.log(res5.name, res5.age);
-// console.log(res6.name, res6.age);
+console.log(res.name, res.age);
+console.log(res2.name, res2.age);
+console.log(res3.name, res3.age);
+console.log(res4.name, res4.age);
+console.log(res5.name, res5.age);
+console.log(res6.name, res6.age);
 
-// const Personwitmethod = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-//   this.dateOfBirth = function () {
-//     console.log(
-//       this.name +
-//         ' was born in ' +
-//         (2022 - this.age) +
-//         '. I am still ' +
-//         this.job
-//     );
-//   };
-// };
+const Personwitmethod = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+  this.dateOfBirth = function () {
+    console.log(
+      this.name +
+        ' was born in ' +
+        (2022 - this.age) +
+        '. I am still ' +
+        this.job
+    );
+  };
+};
 
-// const result = new Personwitmethod('Jabir', 24, 'Learning');
-// result.dateOfBirth();
+const result = new Personwitmethod('Jabir', 24, 'Learning');
+result.dateOfBirth();
 
-// function stringReverese(str) {
-//   return str.split(' ').reverse().join(' ');
-// }
+function stringReverese(str) {
+  return str.split(' ').reverse().join(' ');
+}
 
-// console.log(stringReverese('Al Jabir'));
+console.log(stringReverese('Al Jabir'));
 
-// const PersonChild = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// };
-// const CheckPerson = function (name, age, job, village) {
-//   PersonChild.call(this, name, age, job);
-//   this.village = village;
-// };
+const PersonChild = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+};
+const CheckPerson = function (name, age, job, village) {
+  PersonChild.call(this, name, age, job);
+  this.village = village;
+};
 
-// const showing = new CheckPerson('Knight', 30, 'Cricketer', 'Nagbari, Madhupur');
+const showing = new CheckPerson('Knight', 30, 'Cricketer', 'Nagbari, Madhupur');
 
-// console.log(showing.name);
-// console.log(showing.age);
-// console.log(showing.job);
-// console.log(showing.village);
+console.log(showing.name);
+console.log(showing.age);
+console.log(showing.job);
+console.log(showing.village);
 // // console.log(showing.name)
 
-// PersonChild.prototype.dOb = function () {
-//   console.log(
-//     `${this.name} was birth in ${2022 - this.age} He/she is ${this.job}`
-//   );
-// };
+PersonChild.prototype.dOb = function () {
+  console.log(
+    `${this.name} was birth in ${2022 - this.age} He/she is ${this.job}`
+  );
+};
 
-// const check = new PersonChild('Mafia', 18, 'Student');
-// check.dOb();
+const check = new PersonChild('Mafia', 18, 'Student');
+check.dOb();
 
-// PersonChild.prototype.address = 'Nagbari';
-// console.log(check.address);
+PersonChild.prototype.address = 'Nagbari';
+console.log(check.address);
 // // console.log(check.dOb());
 
 // // var PersonOnly = function (name, age, job) {
@@ -1626,45 +1626,45 @@ console.log(res6);
 // // var res = new PersonOnly('Mafia', 19, 'Fighting');
 // // res.dateOfBirth();
 
-// var PersonChilds = function (n, a, j) {
-//   this.n;
-// };
+var PersonChilds = function (n, a, j) {
+  this.n;
+};
 
-// const GeneralPeople = function (name, job, country) {
-//   this.name = name;
-//   this.job = job;
-//   this.country = country;
-// };
+const GeneralPeople = function (name, job, country) {
+  this.name = name;
+  this.job = job;
+  this.country = country;
+};
 
-// const PlayerPeople = function (name, job, country, single) {
-//   GeneralPeople.call(this, name, job, country);
-//   this.single = 'Never';
-// };
+const PlayerPeople = function (name, job, country, single) {
+  GeneralPeople.call(this, name, job, country);
+  this.single = 'Never';
+};
 
-// const showResult = new PlayerPeople('Ozil', 'Footballer', 'Turkey');
+const showResult = new PlayerPeople('Ozil', 'Footballer', 'Turkey');
 // // showResult();
-// console.log(showResult.country);
+console.log(showResult.country);
 
-// const BirthCheck = function (name, age) {
-//   this.name = name;
-//   this.age = age;
-//   this.check = function (year) {
-//     console.log(`${this.name} and birth year ${year - this.age}`);
-//   };
-// };
-// const res = new BirthCheck('King', 20);
-// res.check(2022);
+const BirthCheck = function (name, age) {
+  this.name = name;
+  this.age = age;
+  this.check = function (year) {
+    console.log(`${this.name} and birth year ${year - this.age}`);
+  };
+};
+const res = new BirthCheck('King', 20);
+res.check(2022);
 
-// res.full = function () {
-//   return `${this.name} and ${this.age} years old`;
-// };
-// console.log(res.full());
+res.full = function () {
+  return `${this.name} and ${this.age} years old`;
+};
+console.log(res.full());
 
-// const arr = [4, 5, 63, 22, 55];
-// const r = Array.isArray(arr);
-// console.log(r);
-// const s = arr.keys();
-// console.log(s);
+const arr = [4, 5, 63, 22, 55];
+const r = Array.isArray(arr);
+console.log(r);
+const s = arr.keys();
+console.log(s);
 
 /***** Learn ES6 *****/
 
