@@ -55,33 +55,33 @@ const markhigherBMi = bmiMark > bmiJonh
 console.log(bmiMark,bmiJonh,markhigherBMi) 
 // //end
 
-// const name = 'Jabir'
-// const job = 'Learner of JS'
-// const BirthYear = 1998
-// const year = 2022
+const name = 'Jabir'
+const job = 'Learner of JS'
+const BirthYear = 1998
+const year = 2022
 
-// const res =`I am ${name}, 
-// I am ${year - BirthYear} 
-// years old ${job}!`
-// console.log(res.toUpperCase())
+const res =`I am ${name}, 
+I am ${year - BirthYear} 
+years old ${job}!`
+console.log(res.toUpperCase())
 
-// const age = 16
+const age = 16
 
-// if(age >= 18) console.log("Your are vote of elections")
-// else console.log('You cant the vote of elections')
+if(age >= 18) console.log("Your are vote of elections")
+else console.log('You cant the vote of elections')
 
-// let ages = 16;
-// if(ages != 30) console.log('You can learn driving')
+let ages = 16;
+if(ages != 30) console.log('You can learn driving')
 
-// const me = true
-// const me2 = false
-// console.log(me === me2)
-// const showTrue = me && me2
-// if(showTrue){
-//     console.log("Sarah is able to drive")
-// }else{
-//     console.log('Some else should drive...')
-// }
+const me = true
+const me2 = false
+console.log(me === me2)
+const showTrue = me && me2
+if(showTrue){
+    console.log("Sarah is able to drive")
+}else{
+    console.log('Some else should drive...')
+}
 
 // let str = 'a'
 // switch(str){
