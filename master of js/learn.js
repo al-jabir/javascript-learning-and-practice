@@ -1495,7 +1495,7 @@ for (i = 1; i <= 5; i++) {
 console.log(`You have won ${won}`);
 console.log(`You have lost... ${loss}`);
 
-/Error Handling
+//Error Handling
 
 try {
   console.log('I will be developer');
@@ -1524,31 +1524,31 @@ try {
   console.log(err.message);
 //   // console.log(err.name);
 //   // console.log(err)
-// } finally {
-//   console.log('I will fuck you');
-// }
+} finally {
+  console.log('I will fuck you');
+}
 
-// const Person = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// console.log(name);
-//};
-// new Person('king');
-// console.log(typeof Person);
+const Person = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+console.log(name);
+};
+new Person('king');
+console.log(typeof Person);
 
-// const res = new Person('Mafia', 19, 'Backend Developer');
-// const res2 = new Person('Queen', 18, 'Hackers');
-// const res3 = new Person('Darling', 20, 'Self Learner');
-// const res4 = new Person('Knight', 30, 'Cricketer');
-// const res5 = new Person('Emma', 24, 'Frontend Developer');
-// const res6 = new Person('Jackson', 26, 'Software Engineer');
-// console.log(res);
-// console.log(res2);
-// console.log(res3);
-// console.log(res4);
-// console.log(res5);
-// console.log(res6);
+const res = new Person('Mafia', 19, 'Backend Developer');
+const res2 = new Person('Queen', 18, 'Hackers');
+const res3 = new Person('Darling', 20, 'Self Learner');
+const res4 = new Person('Knight', 30, 'Cricketer');
+const res5 = new Person('Emma', 24, 'Frontend Developer');
+const res6 = new Person('Jackson', 26, 'Software Engineer');
+console.log(res);
+console.log(res2);
+console.log(res3);
+console.log(res4);
+console.log(res5);
+console.log(res6);
 
 // console.log(res.name, res.age);
 // console.log(res2.name, res2.age);
