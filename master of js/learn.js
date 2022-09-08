@@ -1368,160 +1368,160 @@ a('Fuck off');
 
 //OOP
 
-// var as = {
-//   a: 50,
-//   b: 40,
-// };
-// console.log(`a value of : ${as.a} and b value of: ${as.b}`);
-// function calls(x) {
-//   console.log(`inside a value of ${x.a} and b value of : ${x.b}`);
-//   var test = x.a; // 50
-//   x.a += x.b;
-//   x.b = test; //90
-//   console.log(`inside test ${x.a} and ${x.b}`);
-// }
-// calls(as);
-// console.log(`a value of : ${as.a} and b value of: ${as.b}`);
+var as = {
+  a: 50,
+  b: 40,
+};
+console.log(`a value of : ${as.a} and b value of: ${as.b}`);
+function calls(x) {
+  console.log(`inside a value of ${x.a} and b value of : ${x.b}`);
+  var test = x.a; // 50
+  x.a += x.b;
+  x.b = test; //90
+  console.log(`inside test ${x.a} and ${x.b}`);
+}
+calls(as);
+console.log(`a value of : ${as.a} and b value of: ${as.b}`);
 
-// const arr = [4, 3, 2, 6, 7, 1];
+const arr = [4, 3, 2, 6, 7, 1];
 // // arr.sort();
-// console.log(arr);
-// arr.push(98);
-// console.log(arr);
+console.log(arr);
+arr.push(98);
+console.log(arr);
 // // arr.reverse();
-// console.log(arr);
-// console.dir(arr);
+console.log(arr);
+console.dir(arr);
 // // arr.slice(3);
 // // arr.split(' ,');
-// console.log(arr);
-// console.log(arr);
-// arr.splice(3, 0, 1998, 2002, 2004);
-// console.log(arr);
-// console.dir({});
-// console.dir(arr);
+console.log(arr);
+console.log(arr);
+arr.splice(3, 0, 1998, 2002, 2004);
+console.log(arr);
+console.dir({});
+console.dir(arr);
 // // arr.join('|');
-// console.log(arr);
+console.log(arr);
 
-// let str = 'My name is Al Jabir';
-// console.dir(str);
+let str = 'My name is Al Jabir';
+console.dir(str);
 
-// let st = new String('King will be Mafia');
-// st.bold();
-// console.log(st);
-// console.dir(st);
+let st = new String('King will be Mafia');
+st.bold();
+console.log(st);
+console.dir(st);
 
-// function f(far) {
-//   console.log((5 / 9) * (f - 32));
-// }
-// f(30);
-// function temp(f) {
-//   let cel = f * (5 / 9) + 32;
-//   console.log(cel);
-// }
-// temp(22);
-// temp(75);
-// for (i = 1; i <= 50; i++) {
-//   if (i % 2 != 0) {
-//     continue;
-//   }
-//   console.log(i);
-// }
+function f(far) {
+  console.log((5 / 9) * (f - 32));
+}
+f(30);
+function temp(f) {
+  let cel = f * (5 / 9) + 32;
+  console.log(cel);
+}
+temp(22);
+temp(75);
+for (i = 1; i <= 50; i++) {
+  if (i % 2 != 0) {
+    continue;
+  }
+  console.log(i);
+}
 
-// var arr = [3, 13, 155, 7, 9, 11];
-// arr.shift(); // lfirst element remove
-// console.log(arr);
-// arr.unshift(1998); // first element add of array data
-// arr.pop(); // last element remove
-// console.log(arr);
-// arr.push(99); // last element add of value
-// console.log(arr);
-// arr.length;
-// console.log(arr);
+var arr = [3, 13, 155, 7, 9, 11];
+arr.shift(); // lfirst element remove
+console.log(arr);
+arr.unshift(1998); // first element add of array data
+arr.pop(); // last element remove
+console.log(arr);
+arr.push(99); // last element add of value
+console.log(arr);
+arr.length;
+console.log(arr);
 
-// arr.splice(4, 0, 200, 2003, 19);
-// console.log(arr);
-// arr.splice(6, 2);
-// console.log(arr);
-// var s = arr.slice(2, 5);
-// console.log(s);
-// var sa = arr.sort();
-// console.log(sa);
-// console.log(arr.sort());
+arr.splice(4, 0, 200, 2003, 19);
+console.log(arr);
+arr.splice(6, 2);
+console.log(arr);
+var s = arr.slice(2, 5);
+console.log(s);
+var sa = arr.sort();
+console.log(sa);
+console.log(arr.sort());
 
-// const arr = ['king', 'mafia', 'jaring', 'bonna', 'cat', 'ab'];
+const arr = ['king', 'mafia', 'jaring', 'bonna', 'cat', 'ab'];
 // // console.log(arr.sort());
-// arr.sort();
-// console.log(arr);
+arr.sort();
+console.log(arr);
 
-// var arr = [3, 13, 155, 7, 9, 11];
-// arr.sort(function (a, b) {
-//   return a - b;
-// });
-// console.log(arr);
-// console.log(arr(Math.max()));
-// var s = Math.max(arr);
-// console.log(s);
-// function Person(name, age, cgpa, lang) {
-//   this.name = name;
-//   this.age = age;
-// }
-// const res = new Person('King', 34);
-// const res2 = new Person('Maria', 34);
-// const res3 = new Person('Sarah', 34);
-// const res4 = new Person('Knight', 34);
-// const res5 = new Person('Mafia', 34);
-// console.log(res.name);
-// console.log(res2.name);
-// console.log(res3.name);
-// console.log(res4.name);
-// console.log(res5.name);
+var arr = [3, 13, 155, 7, 9, 11];
+arr.sort(function (a, b) {
+  return a - b;
+});
+console.log(arr);
+console.log(arr(Math.max()));
+var s = Math.max(arr);
+console.log(s);
+function Person(name, age, cgpa, lang) {
+  this.name = name;
+  this.age = age;
+}
+const res = new Person('King', 34);
+const res2 = new Person('Maria', 34);
+const res3 = new Person('Sarah', 34);
+const res4 = new Person('Knight', 34);
+const res5 = new Person('Mafia', 34);
+console.log(res.name);
+console.log(res2.name);
+console.log(res3.name);
+console.log(res4.name);
+console.log(res5.name);
 
-// const mx = Math.max(3, 6, 7, 3, 2);
-// console.log(mx);
+const mx = Math.max(3, 6, 7, 3, 2);
+console.log(mx);
 
-// let won = 0;
-// let loss = 0;
-// for (i = 1; i <= 5; i++) {
-//   let geussNum = parseInt(prompt('Enter your type number: '));
-//   let randomNum = Math.floor(Math.random() * 10) + 1;
-//   if (geussNum == randomNum) {
-//     console.log('You are won of the match game!!!!!!!!!!');
-//     won++;
-//   } else {
-//     console.log('Sorry!...You have loss. Random number was ' + randomNum);
-//     loss++;
-//   }
-// }
-// console.log(`You have won ${won}`);
-// console.log(`You have lost... ${loss}`);
+let won = 0;
+let loss = 0;
+for (i = 1; i <= 5; i++) {
+  let geussNum = parseInt(prompt('Enter your type number: '));
+  let randomNum = Math.floor(Math.random() * 10) + 1;
+  if (geussNum == randomNum) {
+    console.log('You are won of the match game!!!!!!!!!!');
+    won++;
+  } else {
+    console.log('Sorry!...You have loss. Random number was ' + randomNum);
+    loss++;
+  }
+}
+console.log(`You have won ${won}`);
+console.log(`You have lost... ${loss}`);
 
-///Error Handling
+/Error Handling
 
-// try {
-//   console.log('I will be developer');
-//   console.log(fuck);
-// } catch (e) {
-//   console.log(e);
-// } finally {
-//   console.log('When I will sex with you?');
-// }
+try {
+  console.log('I will be developer');
+  console.log(fuck);
+} catch (e) {
+  console.log(e);
+} finally {
+  console.log('When I will sex with you?');
+}
 
-// const num = parseInt(prompt('Enter type number here: '));
+const num = parseInt(prompt('Enter type number here: '));
 
-// try {
-//   if (num <= 5) {
-//     throw 'This is number low';
-//   } else if (num >= 5) {
-//     throw 'This is number high';
-//   }
-// } catch (err) {
-//   console.log(err);
-// }
+try {
+  if (num <= 5) {
+    throw 'This is number low';
+  } else if (num >= 5) {
+    throw 'This is number high';
+  }
+} catch (err) {
+  console.log(err);
+}
 
-// try {
-//   addlert('i will fuck you');
-// } catch (err) {
-//   console.log(err.message);
+try {
+  addlert('i will fuck you');
+} catch (err) {
+  console.log(err.message);
 //   // console.log(err.name);
 //   // console.log(err)
 // } finally {
