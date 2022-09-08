@@ -1071,28 +1071,28 @@ ma(9)(9)
 
 //IIFE
 
-// (function myDate() {
-//   console.log('I will be Web Developer');
-// })(); // iife called function
+(function myDate() {
+  console.log('I will be Web Developer');
+})(); // iife called function
 
-// let sum = (function call() {
-//   let s = 80 + 18;
-//   console.log(s);
-// })();
+let sum = (function call() {
+  let s = 80 + 18;
+  console.log(s);
+})();
 
-// const fast = (function dear() {
-//   const as = {
-//     name: 'king',
-//     age: 19,
-//     job: 'Developer',
-//   };
-//   return as;
-// })();
-// console.log(fast);
-// const fasting = (function kal() {
-//   return fast.job;
-// })();
-// console.log(fasting);
+const fast = (function dear() {
+  const as = {
+    name: 'king',
+    age: 19,
+    job: 'Developer',
+  };
+  return as;
+})();
+console.log(fast);
+const fasting = (function kal() {
+  return fast.job;
+})();
+console.log(fasting);
 
 // JS error
 
