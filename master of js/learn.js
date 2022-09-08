@@ -466,33 +466,32 @@ arr2.length -= n
 console.log(arr2)
 console.log('songa = ' + n)
 
-// ai logic ta besi kore practice and try korte hbe that so very importants
-//const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
+ai logic ta besi kore practice and try korte hbe that so very importants
+const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7]
 
-// count = 0
-// for (let i = 0; i < arr.length; i++) {
-//   for (let j = i; j < arr.length - 1; j++) {
-//     if (!arr[j] || typeof arr[j] !== 'number') {
-//       arr[j] = arr[j + 1]
-//       arr[j + 1] = undefined
-//     }
-//   }
+count = 0
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i; j < arr.length - 1; j++) {
+    if (!arr[j] || typeof arr[j] !== 'number') {
+      arr[j] = arr[j + 1]
+      arr[j + 1] = undefined
+    }
+  }
 
-//   if (arr[i] == undefined) {
-//     count++
-//   }
-// }
-// arr.length -= count
+  if (arr[i] == undefined) {
+    count++
+  }
+}
+arr.length -= count
 
-// console.log(arr) // [1, 2, 3, 4, 5, 6, 7];
+console.log(arr) // [1, 2, 3, 4, 5, 6, 7];
 
-// const fillArr = arr.filter((v) => typeof v == 'number')
-// console.log(fillArr)
+const fillArr = arr.filter((v) => typeof v == 'number')
+console.log(fillArr)
 
-// const a = arr.filter((v) => typeof v == 'number')
-// console.log(a)
+const a = arr.filter((v) => typeof v == 'number')
+console.log(a)
 
-/*
 
 const numbers = [1, 2, 3, 4, false, 'a', NaN, 5, 6]
 const filteredArr = numbers.filter((v) => v).map((v) => v.toString())
@@ -527,9 +526,9 @@ next()
 next()
 
 
-*/
+
 // Array learn of junayed site
-/*
+
 let nam = [
   'jabir',
   'makia',
@@ -614,9 +613,9 @@ function hello(age) {
 }
 
 dak('Mafia', hello)
-*/
 
-/*
+
+
 
 const person = {
   fname: 'Al',
@@ -734,7 +733,7 @@ console.log(Math.floor(Math.random() * 9) + 1)
 *****/
 
 //How to data search of match
-/** 
+
 const arr = [4, 9, 2, 10, 44, 29, 18]
 const find = 20
 let notFound = false
