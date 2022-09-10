@@ -1826,46 +1826,46 @@ console.log(sotto);
 
 /****     Spred Operations   ****/
 
-// const arr = [2, 5, 6];
+const arr = [2, 5, 6];
 
-// function cal(a, b, c, d, e, f) {
-//   console.log('sum ' + (a + b + c));
-// }
+function cal(a, b, c, d, e, f) {
+  console.log('sum ' + (a + b + c));
+}
 
 // // cal.apply(null, arr);
-// cal(...arr);
+cal(...arr);
 
-// var arrOne6 = [10, 1, 2, 3, 4];
-// var arrTwo6 = [5, 6, 7, 8, 9];
-// arrOne6 = [...arrOne6, ...arrTwo6];
-// console.log(arrOne6);
+var arrOne6 = [10, 1, 2, 3, 4];
+var arrTwo6 = [5, 6, 7, 8, 9];
+arrOne6 = [...arrOne6, ...arrTwo6];
+console.log(arrOne6);
 
-// let arr4 = [30, 29, 18, 44];
-// let arr5 = [44, 33, 22, 11];
-// arr4 = [...arr4, ...arr5];
-// console.log(arr4);
-// let sum = 0;
-// let s = 0;
-// arr4.forEach(function (val, i) {
-//   sum += arr4[i];
-// });
-// console.log(sum);
-// arr5.forEach((i) => {
-//   sum += i;
-// });
-// console.log(sum);
-// arr4.forEach((i) => {
-//   s += i;
-// });
-// console.log(s);
+let arr4 = [30, 29, 18, 44];
+let arr5 = [44, 33, 22, 11];
+arr4 = [...arr4, ...arr5];
+console.log(arr4);
+let sum = 0;
+let s = 0;
+arr4.forEach(function (val, i) {
+  sum += arr4[i];
+});
+console.log(sum);
+arr5.forEach((i) => {
+  sum += i;
+});
+console.log(sum);
+arr4.forEach((i) => {
+  s += i;
+});
+console.log(s);
 
-// let arr = [2, 3, 4, 5, 6, 2, 7, 8];
-// let arr2 = [49, 30, 28, 19, 37];
-// let arr3 = [11, 55, 33, 22, 89, 43];
-// let arr4 = [44, 68, 37, 20, 28, 87];
-// arr = [...arr, ...arr2, ...arr3, ...arr4];
-// console.log(arr);
-// console.log(arr, arr2, arr3, arr4);
+let arr = [2, 3, 4, 5, 6, 2, 7, 8];
+let arr2 = [49, 30, 28, 19, 37];
+let arr3 = [11, 55, 33, 22, 89, 43];
+let arr4 = [44, 68, 37, 20, 28, 87];
+arr = [...arr, ...arr2, ...arr3, ...arr4];
+console.log(arr);
+console.log(arr, arr2, arr3, arr4);
 
 //rest operations
 
