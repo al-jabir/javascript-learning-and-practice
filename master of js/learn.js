@@ -2180,66 +2180,66 @@ console.log(s);
  *
  *********/
 
-// function dakdeh(name) {
-//   console.log(`Are you mr. ${name}`);
+function dakdeh(name) {
+  console.log(`Are you mr. ${name}`);
 
-//   return function person(e) {
-//     console.log(`Your have a ${e} and mr. ${name}`);
-//   };
-// }
+  return function person(e) {
+    console.log(`Your have a ${e} and mr. ${name}`);
+  };
+}
 
-// dakdeh('Jabir')('Skills');
+dakdeh('Jabir')('Skills');
 
-// function callMyName(name, cb) {
-//   var age = 24;
+function callMyName(name, cb) {
+  var age = 24;
 
-//   cb(age);
-//   console.log('Is it interesting? Yes it is Mr.' + name);
-// }
+  cb(age);
+  console.log('Is it interesting? Yes it is Mr.' + name);
+}
 
-// function myAge(age) {
-//   console.log('I am ' + age + ' Years old.');
-// }
+function myAge(age) {
+  console.log('I am ' + age + ' Years old.');
+}
 
-// callMyName('Mafia', myAge);
+callMyName('Mafia', myAge);
 
-// function person(name, cb) {
-//   let check = 'I have something problem fixed';
-//   cb(check);
-//   console.log(`Your name is ${name}`);
-// }
-// function fixProblem(fix) {
-//   console.log(`hey, ${fix}`);
-// }
+function person(name, cb) {
+  let check = 'I have something problem fixed';
+  cb(check);
+  console.log(`Your name is ${name}`);
+}
+function fixProblem(fix) {
+  console.log(`hey, ${fix}`);
+}
 
-// person('Jacking', fixProblem);
+person('Jacking', fixProblem);
 
 // // expration function
 
-// let check = function (dev) {
-//   console.log(`I will be ${dev} developer.`);
-// };
+let check = function (dev) {
+  console.log(`I will be ${dev} developer.`);
+};
 
-// let skills = check;
-// skills('Frontend');
-// skills('Backend');
-// skills('software developer');
-// skills('Mern Stack');
+let skills = check;
+skills('Frontend');
+skills('Backend');
+skills('software developer');
+skills('Mern Stack');
 
-// var items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// for (let i = 0; i < items.length; i++) {
-//   console.log(items[i] * 2);
-// }
+for (let i = 0; i < items.length; i++) {
+  console.log(items[i] * 2);
+}
 
-// let itemPush = [];
-// let s = 0;
-// items.map((i) => {
-//   return itemPush.push([i] * 3);
+let itemPush = [];
+let s = 0;
+items.map((i) => {
+  return itemPush.push([i] * 3);
 //   // return (s += i);
 // });
 
-// console.log(itemPush);
+console.log(itemPush);
 
 /***********
  *
