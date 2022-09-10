@@ -2247,42 +2247,42 @@ console.log(itemPush);
  *
  *********/
 
-// let item = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let item = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// let res = item.map((i) => {
-//   return i % 2 === 0;
-// });
-// console.log(res);
+let res = item.map((i) => {
+  return i % 2 === 0;
+});
+console.log(res);
 
-// let double = item.map((i) => i * i);
+let double = item.map((i) => i * i);
 
-// console.log(double);
+console.log(double);
 
-// find some event and odd number
+find some event and odd number
 
-// let findEvent = item.filter((i) => i % 2 === 0);
+let findEvent = item.filter((i) => i % 2 === 0);
 
-// let eventSum = 0;
-// let oddSum = 0;
-// let findOdd = item.filter((i) => i % 2 !== 0);
-// let findOdd2 = item.filter((i) => {
-//   if (i % 2 !== 0) {
-//     oddSum += i;
-//   }
-//   return oddSum;
-// });
+let eventSum = 0;
+let oddSum = 0;
+let findOdd = item.filter((i) => i % 2 !== 0);
+let findOdd2 = item.filter((i) => {
+  if (i % 2 !== 0) {
+    oddSum += i;
+  }
+  return oddSum;
+});
 
-// let findEvent2 = item.filter((i) => {
-//   if (i % 2 === 0) {
-//     eventSum += i;
-//   }
-//   return eventSum;
-// });
+let findEvent2 = item.filter((i) => {
+  if (i % 2 === 0) {
+    eventSum += i;
+  }
+  return eventSum;
+});
 
-// console.log(findEvent);
-// console.log(findOdd);
-// console.log(oddSum);
-// console.log(eventSum);
+console.log(findEvent);
+console.log(findOdd);
+console.log(oddSum);
+console.log(eventSum);
 
 // total sum
 
