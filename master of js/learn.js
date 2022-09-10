@@ -2356,28 +2356,28 @@ console.log(evr);
 
 //Object of loop
 
-// var obj = {
-//   Bangladesh: 'Dhaka',
-//   India: 'Delhi',
-//   Nepal: 'Kathmandu',
-//   Afganistan: 'Kabul',
-//   Thailand: 'Bangkok',
-// };
+var obj = {
+  Bangladesh: 'Dhaka',
+  India: 'Delhi',
+  Nepal: 'Kathmandu',
+  Afganistan: 'Kabul',
+  Thailand: 'Bangkok',
+};
 
-// for (objs in obj) {
-//   console.log(obj[objs]);
-//   console.log(obj[objs]);
-// }
-// console.log(Object.keys(obj));
-// console.log(Object.entries(obj));
+for (objs in obj) {
+  console.log(obj[objs]);
+  console.log(obj[objs]);
+}
+console.log(Object.keys(obj));
+console.log(Object.entries(obj));
 
-// Object.values(obj).map((city) => {
-//   console.log(`The city name is ${city}`);
-// });
+Object.values(obj).map((city) => {
+  console.log(`The city name is ${city}`);
+});
 
-// Object.keys(obj).map((country) =>
-//   console.log(`The name is ${country} of city name is ${obj[country]}`)
-// );
+Object.keys(obj).map((country) =>
+  console.log(`The name is ${country} of city name is ${obj[country]}`)
+);
 
 /***********
  *
