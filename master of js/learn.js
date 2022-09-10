@@ -2349,10 +2349,10 @@ console.log(resing);
 
 // every method
 
-// const arrEvery = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-// let evr = arrEvery.every((v) => v === 1);
+const arrEvery = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+let evr = arrEvery.every((v) => v === 1);
 
-// console.log(evr);
+console.log(evr);
 
 //Object of loop
 
