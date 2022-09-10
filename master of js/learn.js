@@ -1993,33 +1993,33 @@ checking4.findMatch();
 
 // Class and inheritancs
 
-// class Person {
-//   constructor(name, job, age, test) {
-//     this.name = name;
-//     this.age = age;
-//     this.job = job;
-//     this.test = () => {
-//       console.log(
-//         `My name is ${this.name}. I am ${this.age} years old and I am a ${this.job}`
-//       );
-//     };
-//   }
-// }
+class Person {
+  constructor(name, job, age, test) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.test = () => {
+      console.log(
+        `My name is ${this.name}. I am ${this.age} years old and I am a ${this.job}`
+      );
+    };
+  }
+}
 
-// class NewSub extends Person {
-//   constructor(name, age, job, sub, loaction) {
-//     super(name, age, job);
-//     this.sub = sub;
-//     this.loaction = loaction;
-//   }
-// }
+class NewSub extends Person {
+  constructor(name, age, job, sub, loaction) {
+    super(name, age, job);
+    this.sub = sub;
+    this.loaction = loaction;
+  }
+}
 
-// const c = new Person('King', 'Teacher', 30, 'cecking');
-// c.test();
+const c = new Person('King', 'Teacher', 30, 'cecking');
+c.test();
 // // console.log(c);
 
-// const s = new NewSub('Emma', 20, 'Developer', 'CSE', 'Mombay');
-// s.test();
+const s = new NewSub('Emma', 20, 'Developer', 'CSE', 'Mombay');
+s.test();
 
 // function
 
