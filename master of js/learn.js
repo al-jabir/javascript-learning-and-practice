@@ -3075,82 +3075,82 @@ request.onreadystatechange = function handleRequest() {
       Learn with sumit and হাতেকলমে জাভাস্ক্রিপ্ট
 ******************************/
 
-// var x = 29;
-// var x = 39;
+var x = 29;
+var x = 39;
 
-// function myCall() {
-//   let x = 19;
-//   console.log(x + ' from func');
-// }
-// myCall();
-// console.log(window.x);
+function myCall() {
+  let x = 19;
+  console.log(x + ' from func');
+}
+myCall();
+console.log(window.x);
 
 //global
 
-// var y = 24;
+var y = 24;
 
-// function myScope() {
+function myScope() {
 //   //local
-//   console.log(y);
-// }
-// myScope();
-// console.log(y);
+  console.log(y);
+}
+myScope();
+console.log(y);
 
-// var local = 25;
+var local = 25;
 
-// function myLocal() {
-//   local = 33;
-//   console.log(`${local} from mylocal()`);
-// }
-// myLocal();
+function myLocal() {
+  local = 33;
+  console.log(`${local} from mylocal()`);
+}
+myLocal();
 
-// function myFunc() {
-//   local = 19;
-//   console.log(local);
-// }
-// myFunc();
+function myFunc() {
+  local = 19;
+  console.log(local);
+}
+myFunc();
 
-// console.log(local);
+console.log(local);
 
-// var data = 'I am global';
+var data = 'I am global';
 
-// function myCall() {
-//   console.log(`I am inside global: ${data}`);
-// }
-// myCall();
+function myCall() {
+  console.log(`I am inside global: ${data}`);
+}
+myCall();
 
-// console.log(data);
+console.log(data);
 
-// function global() {
-//   console.log('I am global function');
+function global() {
+  console.log('I am global function');
 
-//   function local() {
-//     console.log(`I am local function`);
-//   }
-//   global();
-// }
+  function local() {
+    console.log(`I am local function`);
+  }
+  global();
+}
 
-// local();
+local();
 
-//object scope
-// var local = {
-//   name: 'link',
-//   age: 'Unknown',
-//   job: 'Mern stack developer',
-// };
+object scope
+var local = {
+  name: 'link',
+  age: 'Unknown',
+  job: 'Mern stack developer',
+};
 
-// function myObj() {
-//   var local = {
-//     name: 'link',
-//     age: 'Unknown',
-//     job: 'frontend developer',
-//   };
-//   console.log(local);
-//   console.log(local.job);
-// }
-// myObj();
+function myObj() {
+  var local = {
+    name: 'link',
+    age: 'Unknown',
+    job: 'frontend developer',
+  };
+  console.log(local);
+  console.log(local.job);
+}
+myObj();
 
-// console.log(local.job);
+console.log(local.job);
 
 //Lexical Scoping
 
