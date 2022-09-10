@@ -2023,63 +2023,63 @@ s.test();
 
 // function
 
-// function discount(food, tip) {
-//   tipPer = tip / 100;
-//   tipA = food * tipPer;
-//   total = food + tipA;
-//   console.log(total);
-// }
-// discount(100, 20);
+function discount(food, tip) {
+  tipPer = tip / 100;
+  tipA = food * tipPer;
+  total = food + tipA;
+  console.log(total);
+}
+discount(100, 20);
 
-// function disC(price, dis) {
-//   const tipP = dis / 100;
-//   const Am = price * tipP;
-//   const totals = price + Am;
-//   console.log(totals);
-// }
-// disC(300, 20);
+function disC(price, dis) {
+  const tipP = dis / 100;
+  const Am = price * tipP;
+  const totals = price + Am;
+  console.log(totals);
+}
+disC(300, 20);
 
-// function capiLization(text) {
-//   return text[0].toUpperCase() + text.substring(1).toLowerCase();
-// }
-// console.log(capiLization('kiNaf Khan'));
-// console.log(capiLization('saRaH Khan'));
-// console.log(capiLization('abduLLah Khan'));
-// console.log(capiLization('jaKine'));
+function capiLization(text) {
+  return text[0].toUpperCase() + text.substring(1).toLowerCase();
+}
+console.log(capiLization('kiNaf Khan'));
+console.log(capiLization('saRaH Khan'));
+console.log(capiLization('abduLLah Khan'));
+console.log(capiLization('jaKine'));
 
-// function str(text) {
-//   return text[0].toUpperCase() + text.substring(1).toLowerCase();
-// }
-// console.log(str('fack'));
+function str(text) {
+  return text[0].toUpperCase() + text.substring(1).toLowerCase();
+}
+console.log(str('fack'));
 
-// const test = 'king is back';
-// console.log(test[0].toUpperCase() + test.substring(1).toLowerCase());
-// let text = 'How are you doing today?';
-// console.log(text.split('o'));
-// let str = 'king will be mafia';
-// console.log(str.replace('will', 'want to'));
-// console.log(str.search(''));
-// const s = str.substr(5);
-// const s2 = str.split(' ');
-// console.log(s);
-// console.log(s2);
+const test = 'king is back';
+console.log(test[0].toUpperCase() + test.substring(1).toLowerCase());
+let text = 'How are you doing today?';
+console.log(text.split('o'));
+let str = 'king will be mafia';
+console.log(str.replace('will', 'want to'));
+console.log(str.search(''));
+const s = str.substr(5);
+const s2 = str.split(' ');
+console.log(s);
+console.log(s2);
 
-// function text(t) {
-//   return t[0].toUpperCase() + t.substr(1).toLowerCase();
-// }
-// console.log(text('jabir Is a Mafia'));
-// const s3 = str.substring(5, 9);
-// console.log(s3);
-// const s4 = str.slice(2, 9);
-// console.log(s4);
-// const str = prompt('Enter your name: ');
-// const s = str.split(' ')[0];
-// console.log('Mr. ' + s);
+function text(t) {
+  return t[0].toUpperCase() + t.substr(1).toLowerCase();
+}
+console.log(text('jabir Is a Mafia'));
+const s3 = str.substring(5, 9);
+console.log(s3);
+const s4 = str.slice(2, 9);
+console.log(s4);
+const str = prompt('Enter your name: ');
+const s = str.split(' ')[0];
+console.log('Mr. ' + s);
 
-// console.log(Date.now());
+console.log(Date.now());
 
-// const d = new Date();
-// console.log(d.getTime());
+const d = new Date();
+console.log(d.getTime());
 
 /*****
  *
