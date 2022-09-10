@@ -2315,37 +2315,37 @@ let myObj = item.map((v) => {
  *
  *
  *********/
-// let findInx = item.some((v) => {
-//   console.log(`value of ${v}: `);
-//   return v === 5;
-// });
+let findInx = item.some((v) => {
+  console.log(`value of ${v}: `);
+  return v === 5;
+});
 
-// console.log(findInx);
+console.log(findInx);
 
-// const objSome = [
-//   {
-//     name: 'Zawad Ahmed',
-//     age: 1,
-//     job: 'Child',
-//   },
-//   {
-//     name: 'Zobayer Ahmed',
-//     age: 31,
-//     job: 'Pharmacists',
-//   },
-//   {
-//     name: 'Zonayed Ahmed',
-//     age: 21,
-//     job: 'Student',
-//   },
-// ];
+const objSome = [
+  {
+    name: 'Zawad Ahmed',
+    age: 1,
+    job: 'Child',
+  },
+  {
+    name: 'Zobayer Ahmed',
+    age: 31,
+    job: 'Pharmacists',
+  },
+  {
+    name: 'Zonayed Ahmed',
+    age: 21,
+    job: 'Student',
+  },
+];
 
-// objSome.some((v) => {
-//   console.log(`objSome value of ${v.job}`);
-//   return v === 3;
-// });
-// let resing = objSome.some((obj) => obj.age === 31);
-// console.log(resing);
+objSome.some((v) => {
+  console.log(`objSome value of ${v.job}`);
+  return v === 3;
+});
+let resing = objSome.some((obj) => obj.age === 31);
+console.log(resing);
 
 // every method
 
