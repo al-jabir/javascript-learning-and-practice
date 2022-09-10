@@ -2561,117 +2561,117 @@ myCall(onCall);
  *
  *********/
 
-// const newPromise = (control) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (control) {
-//         resolve();
-//       } else {
-//         reject();
-//       }
-//     }, 2500);
-//   });
-// };
-// console.log(newPromise(true));
-// console.log(newPromise(false));
+const newPromise = (control) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (control) {
+        resolve();
+      } else {
+        reject();
+      }
+    }, 2500);
+  });
+};
+console.log(newPromise(true));
+console.log(newPromise(false));
 
-// newPromise(true).then(() => {
-//   console.log('I will be check');
-// });
+newPromise(true).then(() => {
+  console.log('I will be check');
+});
 
-// newPromise(false)
-//   .then(() => {
-//     console.log('I will be check');
-//   })
-//   .catch(() => {
-//     console.log(`I can't successful`);
-//   });
+newPromise(false)
+  .then(() => {
+    console.log('I will be check');
+  })
+  .catch(() => {
+    console.log(`I can't successful`);
+  });
 
-// const promiseWithData = (control) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (control) {
-//         resolve('Data will be success');
-//       } else {
-//         reject('Data not will be successfully.');
-//       }
-//     }, 3000);
-//   });
-// };
+const promiseWithData = (control) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (control) {
+        resolve('Data will be success');
+      } else {
+        reject('Data not will be successfully.');
+      }
+    }, 3000);
+  });
+};
 
-// promiseWithData(false)
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+promiseWithData(false)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const newPromise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('Data is success');
-//     } else {
-//       reject('data is not success');
-//     }
-//   }, 5000);
-// });
+const newPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('Data is success');
+    } else {
+      reject('data is not success');
+    }
+  }, 5000);
+});
 
-// const newPromise2 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('Data is success 2');
-//     } else {
-//       reject('data is not success 2');
-//     }
-//   }, 3000);
-// });
+const newPromise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('Data is success 2');
+    } else {
+      reject('data is not success 2');
+    }
+  }, 3000);
+});
 
-// Promise.all([newPromise, newPromise2]).then((dataArr) => {
-//   console.log(dataArr);
-// });
+Promise.all([newPromise, newPromise2]).then((dataArr) => {
+  console.log(dataArr);
+});
 
 //without console.log
 
-// const newConnect = (test) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (test) {
-//         resolve(`I will be test something`);
-//       } else {
-//         reject(`I can't something test`);
-//       }
-//     }, 3000);
-//   });
-// };
+const newConnect = (test) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (test) {
+        resolve(`I will be test something`);
+      } else {
+        reject(`I can't something test`);
+      }
+    }, 3000);
+  });
+};
 
-// newConnect(false)
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((fail) => {
-//     console.log(fail);
-//   });
+newConnect(false)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((fail) => {
+    console.log(fail);
+  });
 
-// const newConnect = (test) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (test) {
-//         resolve();
-//       } else {
-//         reject();
-//       }
-//     }, 3000);
-//   });
-// };
+const newConnect = (test) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (test) {
+        resolve();
+      } else {
+        reject();
+      }
+    }, 3000);
+  });
+};
 
-// newConnect(false)
-//   .then(() => {
-//     console.log(`I will be test something`);
-//   })
-//   .catch(() => {
-//     console.log(`Never test something`);
-//   });
+newConnect(false)
+  .then(() => {
+    console.log(`I will be test something`);
+  })
+  .catch(() => {
+    console.log(`Never test something`);
+  });
 
 /***********
  *
