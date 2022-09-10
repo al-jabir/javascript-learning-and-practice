@@ -2298,16 +2298,16 @@ console.log(multiple);
 
 //object
 
-// let person12 = {
-//   name: 'king',
-//   age: 18,
-//   job: 'Frontend Developer',
-//   location: 'UK',
-// };
+let person12 = {
+  name: 'king',
+  age: 18,
+  job: 'Frontend Developer',
+  location: 'UK',
+};
 
-// let myObj = item.map((v) => {
-//   console.log(this);
-// }, person12);
+let myObj = item.map((v) => {
+  console.log(this);
+}, person12);
 
 /***********
  *
