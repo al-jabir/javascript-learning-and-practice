@@ -1912,25 +1912,25 @@ console.log(check);
 
 // Map
 
-// const hack = new Map();
-// hack.set('Name', 'Abdullah');
-// hack.get('Name');
-// console.log(hack.get('Name'));
-// const fuck = new Map();
-// fuck.set('Name', 'Jarin');
-// fuck.set('Age', 20);
-// fuck.set('Job', 'Frontend Developer');
-// fuck.set('Country', 'UK');
-// fuck.set('Sexy', 'Korean/Indian');
-// fuck.delete('Sexy');
-// fuck.get('Sexy');
-// console.log(fuck.get('Job'));
-// console.log(fuck);
-// console.log(fuck.size);
+const hack = new Map();
+hack.set('Name', 'Abdullah');
+hack.get('Name');
+console.log(hack.get('Name'));
+const fuck = new Map();
+fuck.set('Name', 'Jarin');
+fuck.set('Age', 20);
+fuck.set('Job', 'Frontend Developer');
+fuck.set('Country', 'UK');
+fuck.set('Sexy', 'Korean/Indian');
+fuck.delete('Sexy');
+fuck.get('Sexy');
+console.log(fuck.get('Job'));
+console.log(fuck);
+console.log(fuck.size);
 
-// fuck.forEach((v, i) => {
-//   console.log(`index of ${i} and value of ${v}`);
-// });
+fuck.forEach((v, i) => {
+  console.log(`index of ${i} and value of ${v}`);
+});
 
 // Normal Contructor
 
