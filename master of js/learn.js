@@ -2484,28 +2484,28 @@ function myAge(age) {
  *
  *********/
 
-// function getCheck() {
-//   var x;
-//   setTimeout(() => {
-//     x = 98;
-//   }, 3300);
-//   return x;
-// }
+function getCheck() {
+  var x;
+  setTimeout(() => {
+    x = 98;
+  }, 3300);
+  return x;
+}
 
-// let aYsn = getCheck();
-// console.log('I will be ' + aYsn);
-// var x;
-// setTimeout(() => {
-//   x = 98;
-// }, 3000);
+let aYsn = getCheck();
+console.log('I will be ' + aYsn);
+var x;
+setTimeout(() => {
+  x = 98;
+}, 3000);
 
-// console.log(`value of ${x}`);
+console.log(`value of ${x}`);
 
-// var value;
-// setTimeout(function () {
-//   value = 12;
-// }, 3000);
-// console.log('The value is: ' + value);
+var value;
+setTimeout(function () {
+  value = 12;
+}, 3000);
+console.log('The value is: ' + value);
 
 /***********
  *
