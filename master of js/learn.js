@@ -2145,11 +2145,11 @@ console.log(padStr);
  * JavaScript String codePointAt()
  */
 
-// let msg = 'I will be Frontend Developer.';
+let msg = 'I will be Frontend Developer.';
 
-// let c = msg.codePointAt(0);
+let c = msg.codePointAt(0);
 
-// console.log(c);
+console.log(c);
 
 /**
  * Array splite
