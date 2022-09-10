@@ -1869,46 +1869,46 @@ console.log(arr, arr2, arr3, arr4);
 
 //rest operations
 
-// function myRest() {
-//   const ses = Array.prototype.slice.call(arguments);
-//   ses.map(function (si) {
-//     console.log('Passed ' + si);
-//   });
-// }
+function myRest() {
+  const ses = Array.prototype.slice.call(arguments);
+  ses.map(function (si) {
+    console.log('Passed ' + si);
+  });
+}
 
-// myRest('king', 'mafia', 'fucking', 'balsal', 'choding');
+myRest('king', 'mafia', 'fucking', 'balsal', 'choding');
 
-// const res = (name, age, job, ...any) => {
-//   console.log(
-//     `My name is ${name} and I am ${age} years old. I will be ${job} developer at remote`
-//   );
-//   any.map((any) => console.log(`There passed away : ${any}.`));
-// };
-// res(
-//   'Al Jabir',
-//   19,
-//   'Frontend',
-//   'Japan',
-//   'I need money',
-//   'How can I get earn money?'
-// );
-// res('Knight', 20, 'Software', 'British', 'Sexy', 'So funny');
+const res = (name, age, job, ...any) => {
+  console.log(
+    `My name is ${name} and I am ${age} years old. I will be ${job} developer at remote`
+  );
+  any.map((any) => console.log(`There passed away : ${any}.`));
+};
+res(
+  'Al Jabir',
+  19,
+  'Frontend',
+  'Japan',
+  'I need money',
+  'How can I get earn money?'
+);
+res('Knight', 20, 'Software', 'British', 'Sexy', 'So funny');
 
-// Default parameter
+Default parameter
 
-// const res = (name = 'Jabir', age = 19) => {
-//   console.log(`I am ${name} and ${age} years old`);
-// };
+const res = (name = 'Jabir', age = 19) => {
+  console.log(`I am ${name} and ${age} years old`);
+};
 
-// res('Jarin', 18);
-// res('Jarin', 18);
-// res();
-// res('Jarin', 18);
+res('Jarin', 18);
+res('Jarin', 18);
+res();
+res('Jarin', 18);
 
-// let str = 'jabir';
-// let str2 = 'Jabir';
-// let check = str !== str2;
-// console.log(check);
+let str = 'jabir';
+let str2 = 'Jabir';
+let check = str !== str2;
+console.log(check);
 
 // Map
 
