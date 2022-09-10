@@ -2087,59 +2087,59 @@ console.log(d.getTime());
  *
  ******/
 
-// let str = 'I will be Frontend Developer.';
-// let s = str.indexOf('will');
-// let s2 = str.indexOf('e', 16);
-// s = str.lastIndexOf('r');
+let str = 'I will be Frontend Developer.';
+let s = str.indexOf('will');
+let s2 = str.indexOf('e', 16);
+s = str.lastIndexOf('r');
 
-// console.log(s);
+console.log(s);
 
-// console.log(s2);
+console.log(s2);
 
-// defining a string
-// var str = 'Programming is good';
+defining a string
+var str = 'Programming is good';
 
-// var substr = 'd';
+var substr = 'd';
 
-// find last occurrence of "g" in str
-// var result = str.lastIndexOf('r');
+find last occurrence of "g" in str
+var result = str.lastIndexOf('r');
 
-// console.log(result);
+console.log(result);
 
-// Output: 15
+Output: 15
 
-// defining a string
+defining a string
 
-// let str = 'I love coding. code will be good output';
+let str = 'I love coding. code will be good output';
 
-//some string match true or false
+some string match true or false
 
-// let s = str.startsWith('Il');
-// let s = str.endsWith('out');
+let s = str.startsWith('Il');
+let s = str.endsWith('out');
 
-// console.log(s);
+console.log(s);
 
-// String padStart()
+String padStart()
 
-// let string1 = 'PROGRAMMING';
+let string1 = 'PROGRAMMING';
 
-// let padString = string1.padStart(15, '#');
+let padString = string1.padStart(15, '#');
 
-// console.log(padString);
+console.log(padString);
 
-// string definition
-// let string = 'CODE';
+string definition
+let string = 'CODE';
 
-// let paddedString = string.padStart(10, '@');
+let paddedString = string.padStart(10, '@');
 
-// console.log(paddedString);
+console.log(paddedString);
 
-// let str = 'KING';
+let str = 'KING';
 
-// let padStr = str.padStart(9, '*');
-// padStr = str.padEnd(8, '!');
+let padStr = str.padStart(9, '*');
+padStr = str.padEnd(8, '!');
 
-// console.log(padStr);
+console.log(padStr);
 
 /**
  * JavaScript String codePointAt()
