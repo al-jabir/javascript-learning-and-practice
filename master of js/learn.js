@@ -2679,153 +2679,153 @@ newConnect(false)
  *
  *********/
 
-// const dataApiSuccess = fetch('https://jsonplaceholder.typicode.com/posts');
+const dataApiSuccess = fetch('https://jsonplaceholder.typicode.com/posts');
 
-// console.log(dataApiSuccess);
+console.log(dataApiSuccess);
 
-// dataApiSuccess.then((data) => {
-//   console.log(data);
-// });
+dataApiSuccess.then((data) => {
+  console.log(data);
+});
 
-//unscceess data of api
+unscceess data of api
 
-// const dataApiFailed = fetch(
-//   'https://jsonplaceholderdoesntexist.typicode.com/posts'
-// );
+const dataApiFailed = fetch(
+  'https://jsonplaceholderdoesntexist.typicode.com/posts'
+);
 
-// console.log(dataApiFailed);
+console.log(dataApiFailed);
 
-// dataApiFailed
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log('Your Error:', err);
-//   });
+dataApiFailed
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log('Your Error:', err);
+  });
 
-// fetch('https://jsonplaceholder.typicode.com/posts')
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .then((posts) => {
-//     console.log(posts);
-//   });
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then((data) => {
+    return data.json();
+  })
+  .then((posts) => {
+    console.log(posts);
+  });
 
-// const newCheck = (control) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (control) {
-//         resolve(`I will be checking now`);
-//       } else {
-//         reject(`I can't find for your personal post`);
-//       }
-//     }, 3000);
-//   });
-// };
+const newCheck = (control) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (control) {
+        resolve(`I will be checking now`);
+      } else {
+        reject(`I can't find for your personal post`);
+      }
+    }, 3000);
+  });
+};
 
-// newCheck(false)
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+newCheck(false)
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const newPerson1 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('check');
-//     } else {
-//       reject('not check');
-//     }
-//   }, 2000);
-// });
+const newPerson1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('check');
+    } else {
+      reject('not check');
+    }
+  }, 2000);
+});
 
-// const newPerson2 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('check will be find');
-//     } else {
-//       reject('not check anywhere');
-//     }
-//   }, 1000);
-// });
+const newPerson2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('check will be find');
+    } else {
+      reject('not check anywhere');
+    }
+  }, 1000);
+});
 
-// Promise.all([newPerson1, newPerson2])
-//   .then((datas) => {
-//     console.log(datas);
-//   })
-//   .catch((err2) => {
-//     console.log(err2);
-//   });
+Promise.all([newPerson1, newPerson2])
+  .then((datas) => {
+    console.log(datas);
+  })
+  .catch((err2) => {
+    console.log(err2);
+  });
 
-// fetch api
+fetch api
 
-// fetch('https://jsonplaceholder.typicode.com/posts')
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .then((posts) => {
-//     console.log(posts);
-//   });
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then((data) => {
+    return data.json();
+  })
+  .then((posts) => {
+    console.log(posts);
+  });
 
-// const apiData = fetch('https://jsonplaceholder.typicode.com/posts');
+const apiData = fetch('https://jsonplaceholder.typicode.com/posts');
 
-// console.log(apiData);
+console.log(apiData);
 
-// const dataCheck = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('Print Out');
-//     } else {
-//       reject('do not print out');
-//     }
-//   }, 3000);
-// });
+const dataCheck = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('Print Out');
+    } else {
+      reject('do not print out');
+    }
+  }, 3000);
+});
 
-// console.log(dataCheck);
+console.log(dataCheck);
 
-// const nes = dataCheck;
-// console.log(nes);
+const nes = dataCheck;
+console.log(nes);
 
-// try {
-//   const data = dataCheck;
-//   console.log(data);
-// } catch (err) {
-//   console.log(err);
-// }
+try {
+  const data = dataCheck;
+  console.log(data);
+} catch (err) {
+  console.log(err);
+}
 
-// const dataFromRemote = fetch('https://jsonplaceholder.typicode.com/posts');
+const dataFromRemote = fetch('https://jsonplaceholder.typicode.com/posts');
 
-// console.log(dataFromRemote);
+console.log(dataFromRemote);
 
-// dataFromRemote
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+dataFromRemote
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// const url = 'https://jsonplaceholder.typicode.com/posts';
+const url = 'https://jsonplaceholder.typicode.com/posts';
 
-// const check = fetch(url);
+const check = fetch(url);
 
-// check
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .catch((posts) => {
-//     console.log(posts);
-//   });
+check
+  .then((data) => {
+    return data.json();
+  })
+  .catch((posts) => {
+    console.log(posts);
+  });
 
-// fetch('https://jsonplaceholder.typicode.com/posts')
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .then((posts) => {
-//     console.log(posts);
-//   });
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then((data) => {
+    return data.json();
+  })
+  .then((posts) => {
+    console.log(posts);
+  });
 
 /***********
  *
