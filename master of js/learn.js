@@ -2513,47 +2513,47 @@ console.log('The value is: ' + value);
  *
  *********/
 
-// const getCall = () => {
-//   setTimeout(() => {
-//     console.log(`A function show some time`);
-//   }, 3000);
-// };
-// const someThing = () => {
-//   console.log(`I will be check now`);
-// };
-// getCall();
-// someThing();
+const getCall = () => {
+  setTimeout(() => {
+    console.log(`A function show some time`);
+  }, 3000);
+};
+const someThing = () => {
+  console.log(`I will be check now`);
+};
+getCall();
+someThing();
 
-// const getCallC = (cb) => {
-//   setTimeout(() => {
-//     console.log(`What are you doing now?`);
-//     cb();
-//   }, 4000);
-// };
-// const someThingC = () => {
-//   console.log(`I will find job for my career`);
-// };
-// getCallC(someThingC);
+const getCallC = (cb) => {
+  setTimeout(() => {
+    console.log(`What are you doing now?`);
+    cb();
+  }, 4000);
+};
+const someThingC = () => {
+  console.log(`I will find job for my career`);
+};
+getCallC(someThingC);
 
-// getSomeData('https://aremoteserver.com', (userInfo) => {
-//   console.log(userInfo);
-// });
+getSomeData('https://aremoteserver.com', (userInfo) => {
+  console.log(userInfo);
+});
 
-// const userInfo = getSomeData('https://aremoteserver.com');
-// console.log(userInfo);
+const userInfo = getSomeData('https://aremoteserver.com');
+console.log(userInfo);
 
-// const myCall = (cb) => {
-//   setTimeout(() => {
-//     console.log(`I will be wait for you.`);
-//     cb();
-//   }, 2000);
-// };
+const myCall = (cb) => {
+  setTimeout(() => {
+    console.log(`I will be wait for you.`);
+    cb();
+  }, 2000);
+};
 
-// const onCall = () => {
-//   console.log(`When will you be wait for me?`);
-// };
+const onCall = () => {
+  console.log(`When will you be wait for me?`);
+};
 
-// myCall(onCall);
+myCall(onCall);
 
 /***********
  *
