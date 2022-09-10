@@ -2286,15 +2286,15 @@ console.log(eventSum);
 
 // total sum
 
-// console.log(oddSum + eventSum);
+console.log(oddSum + eventSum);
 
-//reduce method of total mutiple sum
+reduce method of total mutiple sum
 
-// let multiple = item.reduce((v, i) => {
-//   return (v *= i);
-// }, 1);
+let multiple = item.reduce((v, i) => {
+  return (v *= i);
+}, 1);
 
-// console.log(multiple);
+console.log(multiple);
 
 //object
 
