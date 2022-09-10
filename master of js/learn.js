@@ -1934,62 +1934,62 @@ fuck.forEach((v, i) => {
 
 // Normal Contructor
 
-// const Hack = function (name, age, job) {
-//   this.name = name;
-//   this.age = age;
-//   this.job = job;
-// };
+const Hack = function (name, age, job) {
+  this.name = name;
+  this.age = age;
+  this.job = job;
+};
 
-// const check = new Hack('Jabir', 19, 'Frontend learning');
-// console.log(check.name);
-// console.log(check);
+const check = new Hack('Jabir', 19, 'Frontend learning');
+console.log(check.name);
+console.log(check);
 
-// Hack.prototype.personName = function () {
-//   console.log(`${this.name} and ${this.job}`);
-// };
-// check.personName();
+Hack.prototype.personName = function () {
+  console.log(`${this.name} and ${this.job}`);
+};
+check.personName();
 
-//Class
+Class
 
-// class Person {
-//   constructor(name, job, country) {
-//     this.name = name;
-//     this.job = job;
-//     this.country = country;
-//   }
-//   check() {
-//     console.log(
-//       `I am ${this.name} and I am ${this.job} at  remote job in ${this.country}`
-//     );
-//   }
-// }
+class Person {
+  constructor(name, job, country) {
+    this.name = name;
+    this.job = job;
+    this.country = country;
+  }
+  check() {
+    console.log(
+      `I am ${this.name} and I am ${this.job} at  remote job in ${this.country}`
+    );
+  }
+}
 
-// const text = new Person('Jabir', 'Junior Developer', 'Germany');
-// text.check();
+const text = new Person('Jabir', 'Junior Developer', 'Germany');
+text.check();
 
-// console.log(text.job, text.country);
+console.log(text.job, text.country);
 
-// const mafia = class {
-//   constructor(name, job, location) {
-//     this.name = name;
-//     this.job = job;
-//     this.location = location;
-//   }
-//   findMatch() {
-//     console.log(
-//       `Her name is ${this.name} and He is a ${this.job} men and He live in ${this.location} for career`
-//     );
-//   }
-// };
+const mafia = class {
+  constructor(name, job, location) {
+    this.name = name;
+    this.job = job;
+    this.location = location;
+  }
+  findMatch() {
+    console.log(
+      `Her name is ${this.name} and He is a ${this.job} men and He live in ${this.location} for career`
+    );
+  }
+};
 
-// const checking = new mafia('Jonh', 'Fighter', 'Munich');
-// const checking2 = new mafia('Knight', 'Hacker', 'Pakistan');
-// const checking3 = new mafia('Sadia', 'Thif', 'Sylhet');
-// const checking4 = new mafia('Jonh', 'Fighter', 'Munich');
-// checking.findMatch();
-// checking2.findMatch();
-// checking3.findMatch();
-// checking4.findMatch();
+const checking = new mafia('Jonh', 'Fighter', 'Munich');
+const checking2 = new mafia('Knight', 'Hacker', 'Pakistan');
+const checking3 = new mafia('Sadia', 'Thif', 'Sylhet');
+const checking4 = new mafia('Jonh', 'Fighter', 'Munich');
+checking.findMatch();
+checking2.findMatch();
+checking3.findMatch();
+checking4.findMatch();
 
 // Class and inheritancs
 
