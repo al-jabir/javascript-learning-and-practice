@@ -2385,98 +2385,98 @@ Object.keys(obj).map((country) =>
  *
  *********/
 
-// try {
-//   console.aula('This is an error');
-// } catch (err) {
-//   console.log(err);
-// }
+try {
+  console.aula('This is an error');
+} catch (err) {
+  console.log(err);
+}
 
-// const age = 17;
+const age = 17;
 
-// try {
-//   if (age < 18) {
-//     throw `You are too young men`;
-//   } else {
-//     console.log(`You are adult men`);
-//   }
-// } catch (err) {
-//   console.log(err);
-// } finally {
-//   console.log('I also always runing code..');
-// }
+try {
+  if (age < 18) {
+    throw `You are too young men`;
+  } else {
+    console.log(`You are adult men`);
+  }
+} catch (err) {
+  console.log(err);
+} finally {
+  console.log('I also always runing code..');
+}
 
-// error constdructions
+error constdructions
 
-// let checkError = new Error('I always error run...');
-// console.log(checkError);
+let checkError = new Error('I always error run...');
+console.log(checkError);
 
-// let n = 10;
+let n = 10;
 
-// if (n > 5) {
-//   throw new Error('N is greater than 10');
-// }
+if (n > 5) {
+  throw new Error('N is greater than 10');
+}
 
-// let maxN = 2.7976931348623157e608;
-// try {
-//   if (maxN > Number.MAX_VALUE) {
-//     throw new Error('This is number too long.');
-//   }
-// } catch (err) {
-//   console.log(err);
-// }
+let maxN = 2.7976931348623157e608;
+try {
+  if (maxN > Number.MAX_VALUE) {
+    throw new Error('This is number too long.');
+  }
+} catch (err) {
+  console.log(err);
+}
 
-// function changeToInt(v) {
-//   let res = Number.parseInt(v);
-//   if (!res) {
-//     return `please provide a value which is able to convert in Integer`;
-//   }
-//   return res;
-// }
-// let resError = changeToInt('ajalkhfda345.64jkahkfdha');
-// console.log(resError);
-// let resError2 = changeToInt('345jhaklfh');
-// console.log(resError2);
+function changeToInt(v) {
+  let res = Number.parseInt(v);
+  if (!res) {
+    return `please provide a value which is able to convert in Integer`;
+  }
+  return res;
+}
+let resError = changeToInt('ajalkhfda345.64jkahkfdha');
+console.log(resError);
+let resError2 = changeToInt('345jhaklfh');
+console.log(resError2);
 
-// function makeWord(text) {
-//   try {
-//     let str = text.trim();
-//     let res = str.split(' ');
-//     return res;
-//   } catch (e) {
-//     console.log(`please provide valid text...`);
-//   }
-// }
-// console.log(makeWord('kai'));
-// let ss = makeWord(84);
-// console.log(ss);
+function makeWord(text) {
+  try {
+    let str = text.trim();
+    let res = str.split(' ');
+    return res;
+  } catch (e) {
+    console.log(`please provide valid text...`);
+  }
+}
+console.log(makeWord('kai'));
+let ss = makeWord(84);
+console.log(ss);
 
-// try {
-//   console.log('I am Jabir');
-//   throw new Error(`Who Am I?`);
-//   console.log('King will be mafia');
-// } catch (e) {
-//   console.log(e.message);
-// } finally {
-//   console.log('I always run code');
-// }
+try {
+  console.log('I am Jabir');
+  throw new Error(`Who Am I?`);
+  console.log('King will be mafia');
+} catch (e) {
+  console.log(e.message);
+} finally {
+  console.log('I always run code');
+}
 
-// try {
-//   throw `that is code error`;
-// } catch {
-//   console.log('provide');
-// } finally {
-//   console.log('please provide error solutions');
-// }
+try {
+  throw `that is code error`;
+} catch {
+  console.log('provide');
+} finally {
+  console.log('please provide error solutions');
+}
 
-// function higherOrder(name, callback) {
-//   var age = 19;
-//   callback(age);
-//   console.log(`my name is ${name}`);
-// }
+function higherOrder(name, callback) {
+  var age = 19;
+  callback(age);
+  console.log(`my name is ${name}`);
+}
 
-// function myAge(age) {
-//   console.log(`I am ${age} years old`);
-// }
+function myAge(age) {
+  console.log(`I am ${age} years old`);
+}
 
 /***********
  *
