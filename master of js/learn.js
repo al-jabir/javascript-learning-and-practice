@@ -2835,9 +2835,9 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
 //normal
 
-//async function asyncCode() {
-// Asynchronous Codes
-//}
+async function asyncCode() {
+Asynchronous Codes
+}
 
 //es6
 
@@ -2845,142 +2845,142 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 //   // Asynchronous Codes
 // }
 
-// const hasPromise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('I will be win for the code');
-//     } else {
-//       reject('Something is an error');
-//     }
-//   }, 3000);
-// });
+const hasPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('I will be win for the code');
+    } else {
+      reject('Something is an error');
+    }
+  }, 3000);
+});
 
-// const handlePromise = async () => {
-//   const out = await hasPromise;
-//   console.log(out);
-// };
+const handlePromise = async () => {
+  const out = await hasPromise;
+  console.log(out);
+};
 
-// handlePromise();
+handlePromise();
 
-// const rejectWait = new Promise((reject, resolve) => {
-//   setTimeout(() => {
-//     if (true) {
-//       reject('No ! It is an error');
-//     } else {
-//       resolve('I am here for you');
-//     }
-//   }, 1000);
-// });
+const rejectWait = new Promise((reject, resolve) => {
+  setTimeout(() => {
+    if (true) {
+      reject('No ! It is an error');
+    } else {
+      resolve('I am here for you');
+    }
+  }, 1000);
+});
 
-// const rejectSec = async () => {
-//   try {
-//     const d = await rejectWait;
-//     console.log(d);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// };
+const rejectSec = async () => {
+  try {
+    const d = await rejectWait;
+    console.log(d);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-// rejectSec();
+rejectSec();
 
-// const test = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('i will be handle');
-//     } else {
-//       reject('i cant handle about that');
-//     }
-//   }, 2000);
-// });
+const test = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('i will be handle');
+    } else {
+      reject('i cant handle about that');
+    }
+  }, 2000);
+});
 
-// const res = async () => {
-//   const data = await test;
-//   console.log(data);
-// };
+const res = async () => {
+  const data = await test;
+  console.log(data);
+};
 
-// res();
+res();
 
-// const test = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (false) {
-//       resolve('i will be handle');
-//     } else {
-//       reject('i cant handle about that');
-//     }
-//   }, 2000);
-// });
+const test = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (false) {
+      resolve('i will be handle');
+    } else {
+      reject('i cant handle about that');
+    }
+  }, 2000);
+});
 
-// const res = async () => {
-//   try {
-//     const data = await test;
-//     console.log(data);
-//   } catch (err) {
-//     console.log(err);
-//   }
-// };
+const res = async () => {
+  try {
+    const data = await test;
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-// res();
+res();
 
-// const promise1 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('Promise 1 Resolved');
-//     } else {
-//       reject('Promise 1 Error');
-//     }
-//   }, 5000);
-// });
+const promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('Promise 1 Resolved');
+    } else {
+      reject('Promise 1 Error');
+    }
+  }, 5000);
+});
 
-// const promise2 = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (true) {
-//       resolve('Promise 2 Resolved');
-//     } else {
-//       reject('Promise 2 Error');
-//     }
-//   }, 5000);
-// });
+const promise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (true) {
+      resolve('Promise 2 Resolved');
+    } else {
+      reject('Promise 2 Error');
+    }
+  }, 5000);
+});
 
-// const res2 = async () => {
-//   const datas = await Promise.all([promise1, promise2]);
-//   console.log(datas);
-// };
+const res2 = async () => {
+  const datas = await Promise.all([promise1, promise2]);
+  console.log(datas);
+};
 
-// res2();
+res2();
 
-// const getMyName = new Promise((resolved) => {
-//   resolved('Jabir');
-// });
+const getMyName = new Promise((resolved) => {
+  resolved('Jabir');
+});
 
-// const getMyAge = (name) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (name === 'Jabir') {
-//         resolve(19);
-//       } else {
-//         reject('Data not found');
-//       }
-//     }, 1000);
-//   });
-// };
+const getMyAge = (name) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (name === 'Jabir') {
+        resolve(19);
+      } else {
+        reject('Data not found');
+      }
+    }, 1000);
+  });
+};
 
-// getMyName.then((name) => {
-//   getMyAge(name)
-//     .then((age) => {
-//       console.log(`My name is ${name} and I am ${age} years old.`);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
+getMyName.then((name) => {
+  getMyAge(name)
+    .then((age) => {
+      console.log(`My name is ${name} and I am ${age} years old.`);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
-// const details = async () => {
-//   const name = await getMyName;
-//   const age = await getMyAge(name);
-//   console.log(`My name is ${name} and I am ${age} years old.`);
-// };
+const details = async () => {
+  const name = await getMyName;
+  const age = await getMyAge(name);
+  console.log(`My name is ${name} and I am ${age} years old.`);
+};
 
-// details();
+details();
 
 /****
  *
