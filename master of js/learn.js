@@ -3154,25 +3154,25 @@ console.log(local.job);
 
 //Lexical Scoping
 
-// function parentScope() {
-//   var a = 19;
-//   function childScope() {
-//     var b = 5;
-//     console.log(`total sum = ${a + b}`);
-//   }
-//   childScope();
-// }
-// parentScope();
+function parentScope() {
+  var a = 19;
+  function childScope() {
+    var b = 5;
+    console.log(`total sum = ${a + b}`);
+  }
+  childScope();
+}
+parentScope();
 
-// function ba() {
-//   var x = 35;
-//   function ma() {
-//     var y = 15;
-//     console.log(`total== ${x + y}`);
-//   }
-//   ma();
-// }
-// ba();
+function ba() {
+  var x = 35;
+  function ma() {
+    var y = 15;
+    console.log(`total== ${x + y}`);
+  }
+  ma();
+}
+ba();
 
 /******************************
       Closures
