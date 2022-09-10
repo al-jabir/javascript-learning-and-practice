@@ -1705,124 +1705,124 @@ const army = arr.map(function (dob) {
 
 //Arrow function
 
-// const cc = arr.map((dob, i) => `index : ${i} and value of : ${2022 - dob}`);
-// console.log(cc);
+const cc = arr.map((dob, i) => `index : ${i} and value of : ${2022 - dob}`);
+console.log(cc);
 
-// const as = arr.map((dob) => {
-//   const si = 2022 - dob;
-//   return si;
-// });
-// console.log(as[2]);
+const as = arr.map((dob) => {
+  const si = 2022 - dob;
+  return si;
+});
+console.log(as[2]);
 
-// myCall();
+myCall();
 
-// function myCall() {
-//   console.log('When I will be developer');
-// }
+function myCall() {
+  console.log('When I will be developer');
+}
 
-// myC();
+myC();
 
-// const myc = () => {
-//   console.log('I will be Mafia');
-// };
+const myc = () => {
+  console.log('I will be Mafia');
+};
 
-// const s = {
-//   mycheck: function () {
-//     console.log(this);
-//     return function () {
-//       console.log(this);
-//     };
-//   },
-// };
+const s = {
+  mycheck: function () {
+    console.log(this);
+    return function () {
+      console.log(this);
+    };
+  },
+};
 
-// s.mycheck()();
+s.mycheck()();
 
-// const s = {
-//   myCheck: function () {
-//     console.log(this);
-//     return () => {
-//       console.log(this);
-//     };
-//   },
-// };
-// s.myCheck()();
+const s = {
+  myCheck: function () {
+    console.log(this);
+    return () => {
+      console.log(this);
+    };
+  },
+};
+s.myCheck()();
 
-// const check = ((n) => {
-//   console.log(n + ' will be good Men insha-Allah');
-// })('Jabir');
+const check = ((n) => {
+  console.log(n + ' will be good Men insha-Allah');
+})('Jabir');
 
-// Destructuring
+Destructuring
 
-// es6
+es6
 
-// const check = [
-//   'Jabir',
-//   33,
-//   'student',
-//   'Frontend',
-//   'Nodejs',
-//   'mafia',
-//   1998,
-//   2004,
-//   2002,
-// ];
-// const [name, age, job, dob] = check;
-// console.log([name]);
+const check = [
+  'Jabir',
+  33,
+  'student',
+  'Frontend',
+  'Nodejs',
+  'mafia',
+  1998,
+  2004,
+  2002,
+];
+const [name, age, job, dob] = check;
+console.log([name]);
 
-// const myO = {
-//   cost: {
-//     c: {
-//       my: 'I will be Frontend Developer',
-//       cse: {
-//         name: 'Jabir',
-//         title: 'JavaScript',
-//       },
-//     },
-//   },
-// };
+const myO = {
+  cost: {
+    c: {
+      my: 'I will be Frontend Developer',
+      cse: {
+        name: 'Jabir',
+        title: 'JavaScript',
+      },
+    },
+  },
+};
 
-// const {
-//   cost: {
-//     c: {
-//       my,
-//       cse: { name, title },
-//     },
-//   },
-// } = myO;
-// console.log(my, title);
+const {
+  cost: {
+    c: {
+      my,
+      cse: { name, title },
+    },
+  },
+} = myO;
+console.log(my, title);
 
-// const myS = {
-//   name: 'king',
-//   age: 24,
-//   job: 'Mern Stack Developer',
-//   s: 'Remote',
-//   salary: '20K',
-// };
+const myS = {
+  name: 'king',
+  age: 24,
+  job: 'Mern Stack Developer',
+  s: 'Remote',
+  salary: '20K',
+};
 
-// const { name, age, job, s, salary } = myS;
-// console.log(name, job, s, salary);
-// console.log(age);
+const { name, age, job, s, salary } = myS;
+console.log(name, job, s, salary);
+console.log(age);
 
-// const zonayed = ['Zonayed Ahmed', 21, 'Student'];
+const zonayed = ['Zonayed Ahmed', 21, 'Student'];
 
-// const [name6, age6, profession6] = zonayed;
-// console.log(name6);
-// console.log(age6);
-// console.log(profession6);
+const [name6, age6, profession6] = zonayed;
+console.log(name6);
+console.log(age6);
+console.log(profession6);
 
-// const arr = [
-//   'Mafia',
-//   19,
-//   'Developer',
-//   'Remote',
-//   'Japan',
-//   'Germany',
-//   'UK',
-//   true,
-// ];
-// const [name, age, job, locations, country1, country2, country3, sotto] = arr;
-// console.log(country2);
-// console.log(sotto);
+const arr = [
+  'Mafia',
+  19,
+  'Developer',
+  'Remote',
+  'Japan',
+  'Germany',
+  'UK',
+  true,
+];
+const [name, age, job, locations, country1, country2, country3, sotto] = arr;
+console.log(country2);
+console.log(sotto);
 
 /****     Spred Operations   ****/
 
