@@ -3061,13 +3061,13 @@ console.log(ourSir.subject);
 
 //test
 
-// var request = new XMLHttpRequest();
-// request.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
-// request.send();
+var request = new XMLHttpRequest();
+request.open('GET', 'https://jsonplaceholder.typicode.com/posts', true);
+request.send();
 
-// request.onreadystatechange = function handleRequest() {
-//   console.log(request.responseText);
-// };
+request.onreadystatechange = function handleRequest() {
+  console.log(request.responseText);
+};
 
 // test end
 
