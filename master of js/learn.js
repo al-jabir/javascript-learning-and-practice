@@ -2990,74 +2990,74 @@ details();
  *
  ****/
 
-// const Child = function (name, age) {
-//   this.name = name;
-//   this.age = age;
-// };
+const Child = function (name, age) {
+  this.name = name;
+  this.age = age;
+};
 
-// const resChild = new Child('Zara', 2022);
-// console.log(resChild.name, resChild.age);
+const resChild = new Child('Zara', 2022);
+console.log(resChild.name, resChild.age);
 
-// Child.prototype.date = function () {
-//   console.log(`My name is ${this.name} and I am ${this.age - 1998} years old`);
-// };
-// resChild.date();
+Child.prototype.date = function () {
+  console.log(`My name is ${this.name} and I am ${this.age - 1998} years old`);
+};
+resChild.date();
 
-// class MyDetails {
-//   constructor(name, age, job, location) {
-//     this.name = name;
-//     this.age = age;
-//     this.job = job;
-//     this.location = location;
-//   }
+class MyDetails {
+  constructor(name, age, job, location) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.location = location;
+  }
 
-//   personCheck() {
-//     console.log(
-//       `My name is ${this.name}. I am ${this.age} years old. I Will be ${this.job} developer at ${this.location}`
-//     );
-//   }
-// }
+  personCheck() {
+    console.log(
+      `My name is ${this.name}. I am ${this.age} years old. I Will be ${this.job} developer at ${this.location}`
+    );
+  }
+}
 
-// const checks = new MyDetails('Al Jabir', 19, 'Frontend', 'Remote / UK');
+const checks = new MyDetails('Al Jabir', 19, 'Frontend', 'Remote / UK');
 
-// checks.personCheck();
-// console.log(checks.job);
+checks.personCheck();
+console.log(checks.job);
 
-// class TeacherClass {
-//   constructor(name, age, job, subject) {
-//     this.name = name;
-//     this.age = age;
-//     this.job = job;
-//     this.subject = subject;
-//   }
-// }
+class TeacherClass {
+  constructor(name, age, job, subject) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.subject = subject;
+  }
+}
 
-// class PersonClass {
-//   constructor(name, age, job) {
-//     this.name = name;
-//     this.age = age;
-//     this.job = job;
-//   }
-// }
+class PersonClass {
+  constructor(name, age, job) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+  }
+}
 
-// class TeacherClass extends PersonClass {
-//   constructor(name, age, job, subject) {
-//     super(name, age, job, subject);
-//     this.subject = subject;
-//   }
-// }
+class TeacherClass extends PersonClass {
+  constructor(name, age, job, subject) {
+    super(name, age, job, subject);
+    this.subject = subject;
+  }
+}
 
-// const ourSir = new TeacherClass(
-//   'Shafiq Sir',
-//   46,
-//   'Assistant Teacher',
-//   'Physics'
-// );
+const ourSir = new TeacherClass(
+  'Shafiq Sir',
+  46,
+  'Assistant Teacher',
+  'Physics'
+);
 
-// console.log(ourSir.name);
-// console.log(ourSir.age);
-// console.log(ourSir.job);
-// console.log(ourSir.subject);
+console.log(ourSir.name);
+console.log(ourSir.age);
+console.log(ourSir.job);
+console.log(ourSir.subject);
 
 //test
 
