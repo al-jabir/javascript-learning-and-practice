@@ -2155,18 +2155,18 @@ console.log(c);
  * Array splite
  */
 
-// let arr = [
-//   'king',
-//   44,
-//   'coding',
-//   'Programing is best',
-//   'still hard is coding',
-//   24,
-//   18,
-// ];
+let arr = [
+  'king',
+  44,
+  'coding',
+  'Programing is best',
+  'still hard is coding',
+  24,
+  18,
+];
 
-// let s = arr.splice(3, 2);
-// console.log(s);
+let s = arr.splice(3, 2);
+console.log(s);
 
 /***********
  *
