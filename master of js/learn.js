@@ -3325,87 +3325,87 @@ timer();
 
 console.dir(timer);
 
-// var a;
-// function async() {
-//   a = 50;
-//   var func = () => {
-//     console.log(a);
-//   };
-//   setTimeout(func, 3000);
-//   console.dir(func);
-// }
-// async();
-// a = 30;
+var a;
+function async() {
+  a = 50;
+  var func = () => {
+    console.log(a);
+  };
+  setTimeout(func, 3000);
+  console.dir(func);
+}
+async();
+a = 30;
 
-// function apiFunc(url) {
-//   fetch(url).then((res) => {
-//     console.log(res);
-//   });
-// }
+function apiFunc(url) {
+  fetch(url).then((res) => {
+    console.log(res);
+  });
+}
 
-// apiFunc('https://jsonplaceholder.typicode.com/todos/1');
+apiFunc('https://jsonplaceholder.typicode.com/todos/1');
 
-// for (var i = 0; i < 5; i++) {
-//   const myfunc = () => {
-//     console.log(i);
-//   };
-//   console.log(i);
-//   console.dir(myfunc);
-//   setTimeout(myfunc, 3000);
-// }
-// console.log(i);
+for (var i = 0; i < 5; i++) {
+  const myfunc = () => {
+    console.log(i);
+  };
+  console.log(i);
+  console.dir(myfunc);
+  setTimeout(myfunc, 3000);
+}
+console.log(i);
 
-// function greeting() {
-//   let message = 'Hi';
+function greeting() {
+  let message = 'Hi';
 
-//   function sayHi() {
-//     console.log(message);
-//   }
+  function sayHi() {
+    console.log(message);
+  }
 
-//   sayHi();
-// }
-// var s = greeting();
-// console.dir(s);
+  sayHi();
+}
+var s = greeting();
+console.dir(s);
 
-// var a = 5;
+var a = 5;
 
-// function my() {
-//   var b = 6;
-//   return function () {
-//     console.log(a);
-//   };
-// }
+function my() {
+  var b = 6;
+  return function () {
+    console.log(a);
+  };
+}
 
-// var s = my();
-// console.dir(s);
+var s = my();
+console.dir(s);
 
-// var num = 5;
+var num = 5;
 
-// var sum = function () {
-//   var num2 = 9;
+var sum = function () {
+  var num2 = 9;
 
-//   return function () {
-//     return num + num2;
-//   };
-// };
-// var s = sum();
-// console.dir(s);
+  return function () {
+    return num + num2;
+  };
+};
+var s = sum();
+console.dir(s);
 
-// let n = 5;
+let n = 5;
 
-// let sum = function () {
-//   let n2 = 6;
-//   return function () {
-//     let n3 = 9;
-//     return function () {
-//       let n4 = 98;
-//       return n + n2 + n3 + n4;
-//     };
-//   };
-// };
+let sum = function () {
+  let n2 = 6;
+  return function () {
+    let n3 = 9;
+    return function () {
+      let n4 = 98;
+      return n + n2 + n3 + n4;
+    };
+  };
+};
 
-// let res = sum()();
-// console.dir(res);
+let res = sum()();
+console.dir(res);
 
 // (function () {
 //   let sum = 5;
