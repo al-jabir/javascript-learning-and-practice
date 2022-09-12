@@ -3498,23 +3498,23 @@ console.log(`I love ${call()}`);
       prototype
 ******************************/
 
-// let person = {};
+let person = {};
 
-// person.name = 'janos';
-// person.age = 19;
+person.name = 'janos';
+person.age = 19;
 
-// console.log(person);
+console.log(person);
 
-// person.eat = function () {
-//   console.log(`person is eating`);
-// };
+person.eat = function () {
+  console.log(`person is eating`);
+};
 
-// person.sleep = function () {
-//   console.log(`person is sleeping`);
-// };
+person.sleep = function () {
+  console.log(`person is sleeping`);
+};
 
-// person.eat();
-// person.sleep();
+person.eat();
+person.sleep();
 
 const personMethod = {
   eat() {
