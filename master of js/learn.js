@@ -3483,16 +3483,16 @@ async();
       hoisting
 ******************************/
 
-// let LANGUAGE = 'C Programming';
-// let language = 'JavaScript';
+let LANGUAGE = 'C Programming';
+let language = 'JavaScript';
 
-// function call() {
-//   if (!language) {
-//     let language = LANGUAGE;
-//   }
-//   return language;
-// }
-// console.log(`I love ${call()}`);
+function call() {
+  if (!language) {
+    let language = LANGUAGE;
+  }
+  return language;
+}
+console.log(`I love ${call()}`);
 
 /******************************
       prototype
