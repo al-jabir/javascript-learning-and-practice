@@ -3407,77 +3407,77 @@ let sum = function () {
 let res = sum()();
 console.dir(res);
 
-// (function () {
-//   let sum = 5;
-//   let sums = () => {
-//     let s = 5;
-//     return function () {
-//       return sum + s;
-//     };
-//   };
-//   console.dir(sums);
-// })();
+(function () {
+  let sum = 5;
+  let sums = () => {
+    let s = 5;
+    return function () {
+      return sum + s;
+    };
+  };
+  console.dir(sums);
+})();
 
-// function bankAccount(bal) {
-//   var balance = bal;
-//   return function () {
-//     return balance;
-//   };
-// }
+function bankAccount(bal) {
+  var balance = bal;
+  return function () {
+    return balance;
+  };
+}
 
-// var account = bankAccount(4432);
+var account = bankAccount(4432);
 
-// console.dir(account);
+console.dir(account);
 
-// let s = 5;
+let s = 5;
 
-// function my() {
-//   let n = 4;
-//   return function () {
-//     return s;
-//   };
-// }
-// let res = my();
-// console.dir(res);
+function my() {
+  let n = 4;
+  return function () {
+    return s;
+  };
+}
+let res = my();
+console.dir(res);
 
-// (function () {
-//   var nam = 4;
-//   var num4 = 3;
-//   var myFunc = function () {
-//     return num + num4;
-//   };
-//   var res = myFunc();
-//   console.dir(res);
-// })();
+(function () {
+  var nam = 4;
+  var num4 = 3;
+  var myFunc = function () {
+    return num + num4;
+  };
+  var res = myFunc();
+  console.dir(res);
+})();
 
-// (function () {
-//   var num = 4;
-//   var num2 = 6;
+(function () {
+  var num = 4;
+  var num2 = 6;
 
-//   var sex = function () {
-//     return num + num2;
-//   };
-//   console.dir(sex);
+  var sex = function () {
+    return num + num2;
+  };
+  console.dir(sex);
 
-//   num = 9;
-//   num2 = 59;
+  num = 9;
+  num2 = 59;
 
-//   console.dir(sex);
-// })();
-// (function () {
-//   console.log('King will be mafia');
-// })();
+  console.dir(sex);
+})();
+(function () {
+  console.log('King will be mafia');
+})();
 
-// var s = 34;
-// function async() {
+var s = 34;
+function async() {
 //   // let s = 5;
-//   var res = () => {
-//     console.log(s);
-//   };
-//   setTimeout(res, 3000);
-//   console.dir(res);
-// }
-// async();
+  var res = () => {
+    console.log(s);
+  };
+  setTimeout(res, 3000);
+  console.dir(res);
+}
+async();
 
 /******************************
       hoisting
