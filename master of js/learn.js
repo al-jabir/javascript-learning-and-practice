@@ -3178,152 +3178,152 @@ ba();
       Closures
 ******************************/
 
-// var x = 5;
+var x = 5;
 
-// function myCall() {
-//   var y = 9;
-//   return function () {
-//     var c = 13;
-//     return function () {
-//       return x + y + c;
-//     };
-//   };
-// }
+function myCall() {
+  var y = 9;
+  return function () {
+    var c = 13;
+    return function () {
+      return x + y + c;
+    };
+  };
+}
 
-// var s = myCall()();
-// console.log(s());
+var s = myCall()();
+console.log(s());
 
-// console.dir(s);
+console.dir(s);
 
-// function closuresDemo() {
-//   var x = 10;
-//   return function () {
-//     var y = 20;
-//     console.log('Sum: ' + (x + y));
-//   };
-// }
+function closuresDemo() {
+  var x = 10;
+  return function () {
+    var y = 20;
+    console.log('Sum: ' + (x + y));
+  };
+}
 
-// var aVar = closuresDemo();
+var aVar = closuresDemo();
 
-// console.log(aVar());
+console.log(aVar());
 
-// function bankAccount(bal) {
-//   var balance = bal;
-//   return function () {
-//     return balance;
-//   };
-// }
+function bankAccount(bal) {
+  var balance = bal;
+  return function () {
+    return balance;
+  };
+}
 
-// var account = bankAccount(98000);
-// console.dir(account);
+var account = bankAccount(98000);
+console.dir(account);
 
-// var num1 = 5;
+var num1 = 5;
 
-// var sum = function () {
-//   var num = 98;
-//   return function () {
-//     return num1 + num;
-//   };
-// };
+var sum = function () {
+  var num = 98;
+  return function () {
+    return num1 + num;
+  };
+};
 
-// var myc = sum();
+var myc = sum();
 
-// console.dir(myc);
+console.dir(myc);
 
-// (function () {
-//   var s = 5;
-//   var sum = function () {
-//     var s2 = 3;
-//     return s + s2;
-//   };
-//   console.dir(sum);
-// })();
+(function () {
+  var s = 5;
+  var sum = function () {
+    var s2 = 3;
+    return s + s2;
+  };
+  console.dir(sum);
+})();
 
-// var num1 = 2;
-// var num2 = 5;
+var num1 = 2;
+var num2 = 5;
 
-// var sum = function () {
-//   return num1 + num2;
-// };
+var sum = function () {
+  return num1 + num2;
+};
 
-// console.log(sum());
-// console.dir(sum);
+console.log(sum());
+console.dir(sum);
 
-// num1 = 9;
-// num2 = 49;
+num1 = 9;
+num2 = 49;
 
-// console.log(sum());
+console.log(sum());
 
-// console.dir(sum);
+console.dir(sum);
 
-// (function () {
-//   var num1 = 2;
-//   var num2 = 5;
+(function () {
+  var num1 = 2;
+  var num2 = 5;
 
-//   var sum = function () {
-//     return num1 + num2;
-//   };
+  var sum = function () {
+    return num1 + num2;
+  };
 
-//   console.log(sum());
-//   console.dir(sum);
+  console.log(sum());
+  console.dir(sum);
 
-//   num1 = 9;
-//   num2 = 49;
+  num1 = 9;
+  num2 = 49;
 
-//   console.log(sum());
+  console.log(sum());
 
-//   console.dir(sum);
-// })();
+  console.dir(sum);
+})();
 
-// var num3 = 2;
-// var num4 = 5;
+var num3 = 2;
+var num4 = 5;
 
-// var sum = function () {
-//   return num3 + num4;
-// };
-
-// // console.log(sum());
-// console.dir(sum);
-
-// let num1 = 2;
-// let num2 = 5;
-
-// var sum2 = function () {
-//   return num1 + num2;
-// };
+var sum = function () {
+  return num3 + num4;
+};
 
 // // console.log(sum());
-// console.dir(sum2);
+// console.dir(sum);
 
-// (function () {
-//   let num1 = 2;
-//   let num2 = 5;
+let num1 = 2;
+let num2 = 5;
 
-//   var sum2 = function () {
-//     return num1 + num2;
-//   };
+var sum2 = function () {
+  return num1 + num2;
+};
 
-//   // console.log(sum());
-//   console.dir(sum2);
-// })();
+// // console.log(sum());
+console.dir(sum2);
 
-// function stopwatch() {
-//   var startTime = Date.now();
+(function () {
+  let num1 = 2;
+  let num2 = 5;
 
-//   function getDelay() {
-//     console.log(Date.now() - startTime);
-//   }
-//   return getDelay;
-// }
+  var sum2 = function () {
+    return num1 + num2;
+  };
 
-// var timer = stopwatch();
+  // console.log(sum());
+  console.dir(sum2);
+})();
+
+function stopwatch() {
+  var startTime = Date.now();
+
+  function getDelay() {
+    console.log(Date.now() - startTime);
+  }
+  return getDelay;
+}
+
+var timer = stopwatch();
 
 // // timer();
-// timer();
-// timer();
-// timer();
+timer();
+timer();
+timer();
 
-// console.dir(timer);
+console.dir(timer);
 
 // var a;
 // function async() {
