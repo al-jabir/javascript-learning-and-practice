@@ -1,6 +1,7 @@
 function call_back(name, age, task) {
   console.log('Hello ', name);
   console.log(`I am ${age} years old`);
+  task();
 }
 
 function dev() {
@@ -12,3 +13,4 @@ function target() {
 }
 
 call_back('I am Jabir', 19);
+call_back('I am King', 21, dev);
