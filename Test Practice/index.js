@@ -36,3 +36,9 @@ switch (selectedPaymentMethod) {
     console.log('kisu korte hobe nah');
     break;
 }
+
+let aj = 1;
+while (aj <= 20) {
+  console.log(aj);
+  aj++;
+}
