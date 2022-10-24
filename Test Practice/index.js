@@ -1,5 +1,5 @@
 //Conditional
-/*
+
 if (1 != 2) {
   console.log(`Payment`);
 } else {
@@ -36,4 +36,3 @@ switch (selectedPaymentMethod) {
     console.log('kisu korte hobe nah');
     break;
 }
-*/
