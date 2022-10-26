@@ -56,3 +56,16 @@ const mySum = (n, n3) => {
 };
 
 console.log(mySum(9, 9));
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function betonDao(mulBeton, providentAmount, tax, name) {
+  let kataHobe = providentAmount + (providentAmount * tax) / 100;
+  let betonPabo = mulBeton - kataHobe;
+  console.log(kataHobe);
+  console.log(`${name} ei mashe beton pabe ${betonPabo} tk`);
+}
+
+betonDao(30000, 5000, 10, 'Jabir');
