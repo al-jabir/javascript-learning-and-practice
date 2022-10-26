@@ -42,3 +42,17 @@ while (aj <= 20) {
   console.log(aj);
   aj++;
 }
+
+//Function
+
+function sum(n1, n2) {
+  console.log(n1 + n2);
+}
+
+sum(9, 10);
+
+const mySum = (n, n3) => {
+  return n + n3;
+};
+
+console.log(mySum(9, 9));
