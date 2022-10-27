@@ -85,3 +85,16 @@ let jomiRegistry = 'Sona Mia';
 let revisedJomiRegistry = jomiRegistry.replace('Sona', 'Lal');
 
 console.log(revisedJomiRegistry);
+
+//trim, toUpperCase, toLowerCase
+
+let s1 = ' ami Bartie Jabo  ';
+
+console.log(s1.trim());
+
+console.log(s1);
+
+console.log(s1.toLowerCase());
+
+console.log(s1.toUpperCase());
+console.log(s1.trim().toUpperCase());
