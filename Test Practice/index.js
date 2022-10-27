@@ -98,3 +98,9 @@ console.log(s1.toLowerCase());
 
 console.log(s1.toUpperCase());
 console.log(s1.trim().toUpperCase());
+
+let txt = 'aam,jam,kathal';
+
+console.log(txt.split(','));
+
+console.log(txt.indexOf('hal'));
