@@ -117,3 +117,53 @@ console.log(txt.startsWith('aam'));
 console.log(txt.endsWith('kathal'));
 
 console.log(txt.startsWith('jaam', 5));
+
+// Array
+
+let names = ['takdir', 'jabir', 'mafia', 'Kaif', 'radee', 'prem'];
+
+console.log(names);
+
+console.log(names[1]);
+console.log(names[5]);
+
+console.log(names.length - 1);
+console.log(names.length);
+
+for (i = 0; i <= names.length; i++) {
+  if (names[i] !== undefined) {
+    console.log(names[i]);
+  }
+}
+
+let ss1 = ['abdul', 'rahim', 'karim', 'manik', 'kalam'];
+
+console.log(ss1);
+
+for (i = 0; i <= ss1.length; i++) {
+  let el = ss1[i];
+  console.log(`list of name : ${el}`);
+}
+
+let nums = [13, 33, 31, 44, 55, 65, 22, 14, 67, 88];
+
+// console.log(nums);
+
+let totalSum = 0;
+
+for (i = 0; i < nums.length; i++) {
+  totalSum += nums[i];
+}
+console.log(totalSum);
+
+let muls = [5, 7, 9, 2, 1, 4, 10];
+
+console.log(muls);
+
+let gun = 1;
+
+for (i = 0; i < muls.length; i++) {
+  gun *= muls[i];
+}
+
+console.log(gun);
