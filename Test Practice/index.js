@@ -69,3 +69,19 @@ function betonDao(mulBeton, providentAmount, tax, name) {
 }
 
 betonDao(30000, 5000, 10, 'Jabir');
+
+// Repalce String
+
+let vat = 'Ami vat khabo nah';
+
+let rp = vat.replace('vat', 'ciggarate');
+
+console.log(vat);
+
+console.log(rp);
+
+let jomiRegistry = 'Sona Mia';
+
+let revisedJomiRegistry = jomiRegistry.replace('Sona', 'Lal');
+
+console.log(revisedJomiRegistry);
