@@ -104,3 +104,5 @@ let txt = 'aam,jam,kathal';
 console.log(txt.split(','));
 
 console.log(txt.indexOf('hal'));
+
+console.log(txt.charCodeAt(3));
