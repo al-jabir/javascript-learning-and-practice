@@ -106,3 +106,14 @@ console.log(txt.split(','));
 console.log(txt.indexOf('hal'));
 
 console.log(txt.charCodeAt(3));
+
+console.log(txt.includes('jam'));
+
+console.log(txt.includes('jams'));
+
+console.log(txt.startsWith('jam'));
+console.log(txt.startsWith('aam'));
+
+console.log(txt.endsWith('kathal'));
+
+console.log(txt.startsWith('jaam', 5));
