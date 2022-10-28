@@ -197,3 +197,37 @@ for (let items in smartphone) {
   texts += `<li>${smartphone[items]}</li>`;
 }
 console.log(texts);
+
+class MobilePhone {
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+  }
+  getModel() {
+    return this.model;
+  }
+
+  getBrand() {
+    return this.brand;
+  }
+  details() {
+    return `using ${this.model} of ${this.brand}`;
+  }
+}
+
+class SmartPhone extends MobilePhone {
+  constructor(brand, model, videoCall) {
+    super(brand, model);
+    this.videoCall = videoCall;
+  }
+}
+
+let newPhone = new MobilePhone('Oneplus', '9 pro');
+
+console.log(newPhone.details());
+
+let newPhoneTo = new SmartPhone('Rezar', '9pro 22', true);
+
+console.log(newPhoneTo);
+console.log(newPhoneTo.model);
+console.log(newPhoneTo.brand);
