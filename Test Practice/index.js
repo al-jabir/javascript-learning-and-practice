@@ -167,3 +167,22 @@ for (i = 0; i < muls.length; i++) {
 }
 
 console.log(gun);
+
+// Object
+
+const smartphone = {
+  brand: 'Oneplue',
+  model: '9 pro',
+  makeCall: phoneNumber => {
+    console.log(phoneNumber);
+  },
+  lastBuy: {
+    shop: 'London, England',
+    date: '09-09-23',
+  },
+};
+
+// console.log(smartphone.makeCall(+880));
+smartphone.makeCall(1998);
+
+console.log(smartphone.lastBuy.date);
