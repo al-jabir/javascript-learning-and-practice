@@ -186,3 +186,14 @@ const smartphone = {
 smartphone.makeCall(1998);
 
 console.log(smartphone.lastBuy.date);
+
+for (let item in smartphone) {
+  console.log(item);
+}
+
+let texts = '';
+
+for (let items in smartphone) {
+  texts += `<li>${smartphone[items]}</li>`;
+}
+console.log(texts);
