@@ -231,3 +231,18 @@ let newPhoneTo = new SmartPhone('Rezar', '9pro 22', true);
 console.log(newPhoneTo);
 console.log(newPhoneTo.model);
 console.log(newPhoneTo.brand);
+
+function Calculator() {
+  this.result = 0;
+
+  this.add = function (newNum) {
+    this.result = this.result + newNum;
+  };
+  this.getResult = function () {
+    return this.result;
+  };
+}
+
+let newCalculation = new Calculator();
+
+console.log(newCalculation.add(9).getResult());
