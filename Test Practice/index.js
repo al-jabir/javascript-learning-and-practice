@@ -245,4 +245,40 @@ function Calculator() {
 
 let newCalculation = new Calculator();
 
-console.log(newCalculation.add(9).getResult());
+// console.log(newCalculation.add(9).getResult());
+
+console.log(window.innerWidth);
+console.log(window.innerHeight);
+
+function openGamil() {
+  window.open('https://mail.google.com', '_blank', 'width=700,height=500');
+}
+
+console.log(location.href);
+console.log(location.host);
+console.log(location.hostname);
+console.log(location.origin);
+console.log(location.pathname);
+console.log(location.port);
+console.log(location.protocol);
+
+console.log(navigator.language);
+
+console.log(navigator.clipboard);
+
+console.log(navigator.hardwareConcurrency);
+
+console.log(navigator.cookieEnabled);
+console.log(navigator.appName);
+console.log(navigator.appCodeName);
+console.log(navigator.appVersion);
+console.log(navigator.userAgent);
+console.log(navigator.platform);
+console.log(navigator.credentials);
+console.log(navigator.doNotTrack);
+console.log(navigator.geolocation);
+console.log(navigator.locks);
+console.log(navigator.maxTouchPoints);
+console.log(navigator.onLine);
+console.log(navigator.permissions);
+console.log(navigator.storage);
