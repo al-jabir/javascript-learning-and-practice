@@ -282,3 +282,34 @@ console.log(navigator.maxTouchPoints);
 console.log(navigator.onLine);
 console.log(navigator.permissions);
 console.log(navigator.storage);
+
+// Local Storage
+
+let data = {
+  name: 'Jabir',
+  email: 'jabir@gmail.com',
+  phone: +880153842987,
+  address: 'Nagbari, Madhupur',
+};
+
+localStorage.setItem('userInfo', JSON.stringify(data));
+
+localStorage.setItem('email', 'aljabirceo@gmail.com');
+console.log(localStorage.getItem('email'));
+
+console.log(localStorage.getItem('jwt'));
+
+// call function
+
+const mobilePhone = {
+  details: function (orgn) {
+    return `My moblie is ${this.brand} of ${this.model} and Made in ${orgn}`;
+  },
+};
+
+const myPhone = {
+  brand: 'Oneplus',
+  model: '9 pro',
+};
+
+console.log(mobilePhone.details.call(myPhone, 'UK'));
