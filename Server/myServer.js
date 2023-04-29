@@ -1,8 +1,4 @@
-var http = require('http');
-
-http
-  .createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end('I will be developer');
-  })
-  .listen(1998);
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(data => data.json())
+  .then(data => console.log(data))
+  .catch(err => console.log(`Data is not found`));
